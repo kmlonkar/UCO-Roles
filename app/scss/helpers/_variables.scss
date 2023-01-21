@@ -38,38 +38,10 @@ $grid-space: 15px;
 $images-path: "../images" !default;
 
 // icomoon
-
-
-  
-.icon-Allocated-but-Not-Accepted:before {
-    content: "\e900";
-    color: #5d5d5d;
-  }
-  .icon-Allocation-Completed:before {
-    content: "\e901";
-    color: #15734e;
-  }
-  .icon-calendar:before {
-    content: "\e902";
-    color: #707070;
-  }
-  .icon-contactus:before {
-    content: "\e903";
-    color: #fff;
-  }
-  .icon-Document:before {
-    content: "\e904";
-    color: #fff;
-  }
-  .icon-dropdown:before {
-    content: "\e905";
-    color: #54586e;
-  }
-  .icon-Flagged-for-Discussion:before {
-    content: "\e906";
-    color: #f7a029;
-  }
-  .icon-home:before {
-    content: "\e907";
-    color: #fff;
-  }
+$icomoon: 'icomoon';
+$icon-Allocated-but-Not-Accepted: '\e900';
+$icon-Yet-to-be-Allocated: '\e913';
+$icon-Allocated-but-Not-Accepted : '\e900';
+$icon-Allocation-Completed: '\e901';
+$flagged: '\e906';
+$right-arrow: '\e912';

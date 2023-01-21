@@ -39,14 +39,43 @@
 }
 .allocation-category{
     &__list{
-        padding: 1.3rem;
+        padding: 1.3rem 0; 
 
     }
     &__item{
-   display: flex;
+        display: flex;
         color: $text-clr-black;
         font-size: 1.4rem;
         margin-bottom: 0.8rem;
+        &::before{
+            width: 15px;
+            height: 15px;
+            margin-right: 5px;
+        }
+        &.allocated--no{
+            &::before{
+                content: $icon-Yet-to-be-Allocated;
+                font-family: $icomoon;
+            }
+        }
+        &.accepted--no{
+            &::before{
+                content: $icon-Allocated-but-Not-Accepted;
+                font-family: $icomoon;
+            }
+        }
+        &.flagged{
+            &::before{
+                content: $flagged;
+                font-family: $icomoon;
+            }
+        }
+        &.accepted{
+            &::before{
+                content: $icon-Allocation-Completed;
+                font-family: $icomoon;
+            }
+        }
         p{
             font-family: $primary-font-medium;
             margin-left: 1rem;
