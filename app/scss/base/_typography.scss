@@ -14,6 +14,21 @@ h6 {
     line-height: 3.1rem;
     margin-bottom: 1.6rem;
 }
+.b2{
+    font-size: 1.8rem;
+    font-family: $primary-font-bold;
+    margin-bottom: 1rem
+}
+.b3{
+    font-size: 1.7rem;
+    font-family: $primary-font-bold;
+    margin-bottom: 1.5rem;
+}
+.b4{
+    font-size: 1.6rem;
+    font-family: $primary-font-extrabold;
+    margin-bottom: 1.5rem;
+}
 .b1-lg{
     @extend .b1;
     font-size: 3.1rem;

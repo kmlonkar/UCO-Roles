@@ -12,6 +12,7 @@
             margin-right: 15px;
             margin-bottom: 0;
         }
+       
     }
 
     .members {
@@ -21,6 +22,10 @@
 
             &:first-of-type {
                 border-right: 1px solid #eee;
+                @media screen and (max-width: 1200px) {
+                    border-bottom: 1px solid #eee;
+                    border-right: 0 none;
+                }
             }
 
             p {
@@ -50,4 +55,31 @@
             font-family: $primary-font-bold;
         }
     }
+}
+.team-listing{
+    &--add-role{
+        .card{
+            .guide-lines{
+                font-size: 1.4rem;
+                p:first-of-type{
+                    span{
+                        font-weight: 600;
+                    }
+                }
+            }
+
+        }
+    }
+}
+.kra{
+    &>div{
+        width: 45%;
+    }
+    &--add{
+        margin-right: 1.8rem;
+    }
+    &--view{
+        margin-left: 1.8rem;
+    }
+
 }
