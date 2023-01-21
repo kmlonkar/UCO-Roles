@@ -1,0 +1,53 @@
+.role_allocation-summary {
+    border-bottom: 1px solid #000;
+    .section-title {
+        color: $text-clr-secondary-blue;
+    }
+
+    .card {
+        border-radius: 10px;
+
+        .value {
+            color: $primary-blue;
+            margin-right: 15px;
+            margin-bottom: 0;
+        }
+    }
+
+    .members {
+        &-details {
+            display: flex;
+            align-items: center;
+
+            &:first-of-type {
+                border-right: 1px solid #eee;
+            }
+
+            p {
+                color: $text-clr-black;
+                font-family: $primary-font-bold;
+                font-size: 1.1rem;
+
+            }
+        }
+    }
+}
+.allocation-category{
+    &__list{
+        padding: 1.3rem;
+
+    }
+    &__item{
+   display: flex;
+        color: $text-clr-black;
+        font-size: 1.4rem;
+        margin-bottom: 0.8rem;
+        p{
+            font-family: $primary-font-medium;
+            margin-left: 1rem;
+        }
+        span{
+            font-family: $primary-font-bold;
+        }
+    }
+}
