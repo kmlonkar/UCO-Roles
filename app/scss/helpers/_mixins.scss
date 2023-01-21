@@ -32,11 +32,18 @@ $breakpoints: (
   }
 }	
 
-// Opacity
-@mixin opacity($opacity) {
-  opacity: $opacity;
-  $opacity-ie: $opacity * 100;
-  filter: alpha(opacity=$opacity-ie); //IE8
+@mixin btn{
+  padding: 0.9rem 1.2rem;
+  width: auto;
+  font-size: 1.3rem;
+  font-family: $primary-font-bold;
+  text-transform: capitalize;
+  border: 0 none;
+  border-radius: 0;
+  &:hover,
+  &:focus{
+    color: initial;
+  }
 }
 
 // Transition
@@ -44,40 +51,6 @@ $breakpoints: (
   transition: $what $time $how;
 }
 
-// rgba Border
-@mixin border-rgba ($color, $opacity) {
-  border: 1px solid rgba(red($color), green($color), blue($color), $opacity);
-}
-
-// Background Color rgba
-@mixin background-color-rgba($color, $opacity) {
-  background-color: rgba($color, $opacity);
-}
-
-// Color rgba
-@mixin color-rgba($color, $opacity) {
-  color: rgba($color, $opacity);
-}
-
-// Horizontal and Center Align using Transform
-@mixin horizontal-center-transform {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-@mixin vertical-center-transform {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-@mixin horizontal-vertical-center-transform {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
 
 // Center Block
 @mixin center-block {

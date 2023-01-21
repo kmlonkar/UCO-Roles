@@ -121,6 +121,57 @@
         margin-top: 0.5rem;
     }
 }
+.assignment-duration{
+    .input-group{
+        display: block;
+        width: auto;
+        input{
+            width: fit-content;
+            border: 0;
+            display: inline-block;
+        
+        }
+    }
+    .total-duration{
+
+        span{
+            display: inline-block;
+            background-color: orange;
+            width: 0.6rem;
+            height: 0.6rem;
+            border-radius: 0.6rem;
+            position: relative;
+            margin-bottom: 3px;
+            &::before{
+                content: '';
+                position: absolute;
+                background: $grey;
+                width: 2rem;
+                height: 1px;
+            }
+            &:first-of-type{
+                margin-right: 2rem;
+                &::before{
+                    top: 2px;
+                    left: 5.5px;
+                }
+            }
+            &:last-of-type{
+                margin-left: 2rem;
+                &::before{
+                    top: 2px;
+                    right: 5.5px;
+                }
+            }
+        }
+    }
+}
+.new-role-wrap,
+.kra-list-wrap{
+    height: 300px;
+    overflow-y: auto;
+
+}
 .new-role{
     .assignment-duration{
         border: 1px dashed $grey;

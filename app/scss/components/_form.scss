@@ -24,7 +24,8 @@
 }
 label{
     color: $primary-blue;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
+    font-family: $primary-font-bold;
 }
 .form-check{
     padding: 0;
@@ -41,4 +42,42 @@ label{
         border-radius: 0;
         box-shadow: 0 0 0 rgba(0,0,0,0);
     }
+}
+
+.search-click {
+    border: 1px solid #ccc;
+    background-image: url('../images/Search.svg');
+    background-repeat: no-repeat;
+    outline: none;
+    background-size: 2.2rem;
+    background-position: 1.3rem;
+    border-radius: 5rem;
+    width: 5rem;
+    height: 5rem;
+    padding: 1.2rem 1.3rem 1.5rem 3.5rem;
+    transition: all 0.5s;
+    position: relative;
+    overflow: hidden;
+    height: 50px;
+    margin-bottom: 1rem;
+    input{
+        background: transparent;
+        border: 1px solid #ccc;
+        outline: none;
+        position: absolute;
+        width: 300px;
+        height: 50px;
+        left: 0%;
+        padding: 10px;
+    }
+    &:focus{
+        background-image: none;
+        width: 100%;
+        padding: 1.5rem;
+    }
+}
+
+
+.search-click input {
+
 }

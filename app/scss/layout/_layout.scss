@@ -25,7 +25,8 @@
     &--add-role{
         width: calc(100% - 310px);
         .card{
-            min-height: 84vh;
+            min-height: calc(100vh - 125px);
+            padding: 1.5rem 2.5rem;
             &>div{
                 padding: 1.5rem 0;
                 &:first-of-type{

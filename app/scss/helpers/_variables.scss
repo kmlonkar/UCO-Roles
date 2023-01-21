@@ -7,12 +7,14 @@ $primary-font-bold: 'OpenSans-Bold', sans-serif;
 $primary-font-extrabold: 'OpenSans-ExtraBold', sans-serif;
 
 // Color
-$base-color: #e23434;
+
 $text-color: #2d2d2d;
 $text-clr-secondary-blue :#0C5F9D;
 $text-clr-blue: #031D8B;
 $primary-blue: #0C56BB;
+$clr-white : #fff;
 $text-clr-black: #171717;
+$clr-red: #C93535;
 //backgroud color 
 $bg-clr-white: #fff;
 $bg-clr-grey: #EDF1F5;
@@ -36,3 +38,38 @@ $grid-space: 15px;
 $images-path: "../images" !default;
 
 // icomoon
+
+
+  
+.icon-Allocated-but-Not-Accepted:before {
+    content: "\e900";
+    color: #5d5d5d;
+  }
+  .icon-Allocation-Completed:before {
+    content: "\e901";
+    color: #15734e;
+  }
+  .icon-calendar:before {
+    content: "\e902";
+    color: #707070;
+  }
+  .icon-contactus:before {
+    content: "\e903";
+    color: #fff;
+  }
+  .icon-Document:before {
+    content: "\e904";
+    color: #fff;
+  }
+  .icon-dropdown:before {
+    content: "\e905";
+    color: #54586e;
+  }
+  .icon-Flagged-for-Discussion:before {
+    content: "\e906";
+    color: #f7a029;
+  }
+  .icon-home:before {
+    content: "\e907";
+    color: #fff;
+  }

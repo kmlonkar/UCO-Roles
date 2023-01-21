@@ -1,0 +1,16 @@
+.btn{
+    @include btn;
+}
+.btn-primary{
+    background-color:$primary-blue ;
+    color: $clr-white;
+}
+.btn-danger{
+    background-color: transparent;
+    color: $clr-red;
+    border: 1px solid $clr-red;
+}
+.btn--transparent{
+    background-color: transparent;
+    color: $primary-blue;
+}
