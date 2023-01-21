@@ -8,198 +8,278 @@
     <title>My Roles</title>
 </head>
 <body>
-    <header class="hero-banner">
-        <img class="hero-banner__image" src="images/banner.png" alt="Hero Banner">
-        <div class="hero-banner__content hero-content">
-            <div class="hero-content__logo">
-                <img src="images/UCO_logo.png" alt="UCO Bank">
-            </div>
-            <div class="hero-content__actions">
-                <div class="search">lorem</div>
-                <div class="profile">ipsm</div>
-            </div>
+<header class="hero-banner">
+    <img class="hero-banner__image" src="images/banner.png" alt="Hero Banner">
+    <div class="hero-banner__content hero-content">
+        <div class="hero-content__logo">
+            <img src="images/UCO_logo.png" alt="UCO Bank">
         </div>
-    </header>
-    <main class="content-wrapper">
-        <section class="sidebar">
-            <nav class="sidebar-navigation navigation">
-                <ul class="navigation-list">
-                    <li class="navigation-list_item">
-                        <div class="navigation-list_item__logo">
-                            <img src="images/home.svg" alt="home">
-                        </div>
-                        <a class="navigation-list_item__link" href="#">Home</a>
-                    </li>
-                    <li class="navigation-list_item">
-                        <div class="navigation-list_item__logo">
-                            <img src="images/myTeam.svg" alt="home">
-                        </div>
-                        <a class="navigation-list_item__link" href="#">My team</a>
-                    </li>
-                    <li class="navigation-list_item">
-                        <div class="navigation-list_item__logo">
-                            <img src="images/tools.svg" alt="home">
-                        </div>
-                        <a class="navigation-list_item__link" href="#">my tools</a>
-                    </li>
-                    <li class="navigation-list_item">
-                        <div class="navigation-list_item__logo">
-                            <img src="images/tools.svg" alt="home">
-                        </div>
-                        <a class="navigation-list_item__link" href="#">my documentation</a>
-                    </li>
-                    <li class="navigation-list_item">
-                        <div class="navigation-list_item__logo">
-                            <img src="images/tools.svg" alt="home">
-                        </div>
-                        <a class="navigation-list_item__link" href="#">my documentation</a>
-                    </li>
-                    <li class="navigation-list_item">
-                        <div class="navigation-list_item__logo">
-                            <img src="images/tools.svg" alt="home">
-                        </div>
-                        <a class="navigation-list_item__link" href="#">my documentation</a>
-                    </li>
-                    
-                 
-                </ul>
-            </nav>
-        </section>
-        <div class="content">
-         <div class="team-listing two-col-layout">
-             <div class="team-listing--list fixed-section two-col-layout--left">
-                <div class="role_allocation-summary">
-                    <h1 class="b1 section-title">Role Clarity</h1>
-                    <div class="role_allocation-summary--details">
-                        <div class="card">
-                            <div class="row members">
-                                <div class="col-12 col-xl-6 members-details"><span class="b1-lg value">05</span>
-                                    <p>Total Members</p>
-                                </div>
-                                <div class="col-12 col-xl-6 members-details"><span
-                                    class="b1-lg value">05</span>
-                                    <p>Available Members</p>
-                                </div>
-                            </div>
-                        </div>
-                        <ul class="allocation-category__list">
-                            <li class="allocation-category__item allocated--no">
-                                <span class="value">01</span>
-                                <p>Yet to be Allocated</p>
-                            </li>
-                            <li class="allocation-category__item accepted--no">
-                                <span class="value">01</span>
-                                <p>Allocated but Not Accepted</p>
-                            </li>
-                            <li class="allocation-category__item flagged">
-                                <span class="value">03</span>
-                                <p>Flagged for Discussion</p>
-                            </li>
-                            <li class="allocation-category__item accepted">
-                                <span class="value">01</span>
-                                <p>Allocation Completed</p>
-                            </li>
-                        </ul>
+        <div class="hero-content__actions">
+            <div class="search">lorem</div>
+            <div class="profile">ipsm</div>
+        </div>
+    </div>
+</header>
+<main class="content-wrapper">
+    <section class="sidebar">
+        <nav class="sidebar-navigation navigation">
+            <ul class="navigation-list">
+                <li class="navigation-list_item">
+                    <div class="navigation-list_item__logo">
+                        <img src="images/home.svg" alt="home">
                     </div>
-                </div>
-                <div class="team-listing-wrapper">
-                    <h2 class="b2">My team members</h2>
+                    <a class="navigation-list_item__link" href="#">Home</a>
+                </li>
+                <li class="navigation-list_item">
+                    <div class="navigation-list_item__logo">
+                        <img src="images/myTeam.svg" alt="home">
+                    </div>
+                    <a class="navigation-list_item__link" href="#">My team</a>
+                </li>
+                <li class="navigation-list_item">
+                    <div class="navigation-list_item__logo">
+                        <img src="images/tools.svg" alt="home">
+                    </div>
+                    <a class="navigation-list_item__link" href="#">my tools</a>
+                </li>
+                <li class="navigation-list_item">
+                    <div class="navigation-list_item__logo">
+                        <img src="images/tools.svg" alt="home">
+                    </div>
+                    <a class="navigation-list_item__link" href="#">my documentation</a>
+                </li>
+                <li class="navigation-list_item">
+                    <div class="navigation-list_item__logo">
+                        <img src="images/tools.svg" alt="home">
+                    </div>
+                    <a class="navigation-list_item__link" href="#">my documentation</a>
+                </li>
+                <li class="navigation-list_item">
+                    <div class="navigation-list_item__logo">
+                        <img src="images/tools.svg" alt="home">
+                    </div>
+                    <a class="navigation-list_item__link" href="#">my documentation</a>
+                </li>
                 
-                    <ul class="nav nav-tabs custom-tabs" id="myTab" role="tablist">
-                      <li class="nav-item team-list-item" role="presentation">
-                        <button class="nav-link profile active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home"
-                          type="button" role="tab" aria-controls="home" aria-selected="true">
-                          <span class="profile-picture--no">SM</span>
-                          <div>
-                            <div class="member-details">
-                                <p class="member__name">Sonal Rajotia</p>
-                                <p class="member__designation"> Deputy Branch Manager</p>
+                
+            </ul>
+        </nav>
+    </section>
+    <div class="content">
+        <div class="team-listing two-col-layout">
+            <div class="team-listing--list fixed-section two-col-layout--left">
+            <div class="role_allocation-summary">
+                <h1 class="b1 section-title">Role Clarity</h1>
+                <div class="role_allocation-summary--details">
+                    <div class="card">
+                        <div class="row members">
+                            <div class="col-12 col-xl-6 members-details"><span class="b1-lg value">05</span>
+                                <p>Total Members</p>
                             </div>
-                          </div>
-                          
-                        </button>
-                      </li>
-                      <li class="nav-item" role="presentation">
-                        <button class="nav-link profile" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile"
-                          type="button" role="tab" aria-controls="profile" aria-selected="false">
-                         <span class="profile-picture--no accepted--no">SM</span>
-                        
-                            <div class="member-details">
-                              <p class="member__name">Sonal Rajotia</p>
-                              <p class="member__designation"> Deputy Branch Manager</p>
-                        
-                        </button>
-                      </li>
-                      <li class="nav-item" role="presentation">
-                        <button class="nav-link profile" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact"
-                          type="button" role="tab" aria-controls="contact" aria-selected="false">
-                         <span class="profile-picture--no allocated--">SM</span>
-                          <div class="member-details">
-                            <p class="member__name">Sonal Rajotia</p>
-                            <p class="member__designation"> Deputy Branch Manager</p>
-                          </div>
-                        </button>
-                      </li>
-                      <li class="nav-item" role="presentation">
-                        <button class="nav-link profile" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact"
-                          type="button" role="tab" aria-controls="contact" aria-selected="false">
-                          <span class="profile-picture--no allocated--">SM</span>
-                          <div class="member-details">
-                            <p class="member__name">Sonal Rajotia</p>
-                            <p class="member__designation"> Deputy Branch Manager</p>
-                          </div>
-                        </button>
-                      </li>
+                            <div class="col-12 col-xl-6 members-details"><span
+                                class="b1-lg value">05</span>
+                                <p>Available Members</p>
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="allocation-category__list">
+                        <li class="allocation-category__item allocated--no">
+                            <span class="value">01</span>
+                            <p>Yet to be Allocated</p>
+                        </li>
+                        <li class="allocation-category__item accepted--no">
+                            <span class="value">01</span>
+                            <p>Allocated but Not Accepted</p>
+                        </li>
+                        <li class="allocation-category__item flagged">
+                            <span class="value">03</span>
+                            <p>Flagged for Discussion</p>
+                        </li>
+                        <li class="allocation-category__item accepted">
+                            <span class="value">01</span>
+                            <p>Allocation Completed</p>
+                        </li>
                     </ul>
                 </div>
-             </div>
-             <div class="team-listing--add-role fixed-section two-col-layout--right">
-                <div class="tab-content" id="myTabContent">
-                  <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-                    <div class="card">
-                     <div class="intro profile dotted-border">
+            </div>
+            <div class="team-listing-wrapper">
+                <h2 class="b2">My team members</h2>
+            
+                <ul class="nav nav-tabs custom-tabs" id="myTab" role="tablist">
+                    <li class="nav-item team-list-item" role="presentation">
+                    <button class="nav-link profile active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home"
+                        type="button" role="tab" aria-controls="home" aria-selected="true">
+                        <span class="profile-picture--no">SM</span>
+                        <div>
+                        <div class="member-details">
+                            <p class="member__name">Sonal Rajotia</p>
+                            <p class="member__designation"> Deputy Branch Manager</p>
+                        </div>
+                        </div>
+                        
+                    </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                    <button class="nav-link profile" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile"
+                        type="button" role="tab" aria-controls="profile" aria-selected="false">
+                        <span class="profile-picture--no accepted--no">SM</span>
+                    
+                        <div class="member-details">
+                            <p class="member__name">Sonal Rajotia</p>
+                            <p class="member__designation"> Deputy Branch Manager</p>
+                    
+                    </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                    <button class="nav-link profile" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact"
+                        type="button" role="tab" aria-controls="contact" aria-selected="false">
                         <span class="profile-picture--no allocated--">SM</span>
                         <div class="member-details">
-                          <p class="member__name">Sonal Rajotia</p>
-                          <p class="member__designation"> Deputy Branch Manager</p>
+                        <p class="member__name">Sonal Rajotia</p>
+                        <p class="member__designation"> Deputy Branch Manager</p>
                         </div>
-                     </div>
-                     <div class="guide-lines dotted-border">
-                        <div class="row">
-                            <div class="col-8">
-                                <p>Please enter all roles performed by <span>Sonal Rajotia</span> in Branch Shirva (CBS
-                                  Code 1322) since 1st April 2021</p>
-                            </div>
-                              <div class="col-4">
-                                Make inactive
-                              </div>
+                    </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                    <button class="nav-link profile" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact"
+                        type="button" role="tab" aria-controls="contact" aria-selected="false">
+                        <span class="profile-picture--no allocated--">SM</span>
+                        <div class="member-details">
+                        <p class="member__name">Sonal Rajotia</p>
+                        <p class="member__designation"> Deputy Branch Manager</p>
                         </div>
-                     </div>
-                     <div class="add-detail ">
-                         <div class="d-flex justify-content-between kra">
-                            <div class="b4 kra--add">add role</div>
-                            <div class="b3  kra--view">
-                                <div class="row">
-                                    <div class="col-6">kra</div>
-                                    <div class="col-6"> wgt</div>
-                                </div>
-                                <ul class="dotted-border--top">
-                                    <li>
-                                        
-                                    </li>
-                                </ul>
-                            </div>
-                         </div>
-                     </div>
+                    </button>
+                    </li>
+                </ul>
+            </div>
+            </div>
+            <div class="team-listing--add-role fixed-section two-col-layout--right">
+            <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                <div class="card">
+                    <div class="intro profile dotted-border">
+                    <span class="profile-picture--no allocated--">SM</span>
+                    <div class="member-details">
+                        <p class="member__name">Sonal Rajotia</p>
+                        <p class="member__designation"> Deputy Branch Manager</p>
                     </div>
-                  </div>
-                  <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">efg</div>
-                  <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">hig</div>
+                    </div>
+                    <div class="guide-lines dotted-border">
+                    <div class="row">
+                        <div class="col-8">
+                            <p>Please enter all roles performed by <span>Sonal Rajotia</span> in Branch Shirva (CBS
+                                Code 1322) since 1st April 2021</p>
+                        </div>
+                            <div class="col-4">
+                            Make inactive
+                            </div>
+                    </div>
+                    </div>
+                    <div class="add-detail ">
+                        <div class="d-flex justify-content-between kra">
+                        <div class="
+                        kra--add">
+                            <h3 class="b4"> Add New Role Mix</h3>
+                            <div class="new-role">
+                                <div class="assignment-duration">
+                                    <label for="assignment floating-label">Assignment Start Date</label>
+                                    <div class="d-flex mt-3">
+                                        <div class="input-group date" id="datepicker">
+                                            <input type="text" class="form-control" id="date"/>
+                                            <span class="input-group-append"></span>
+                                        </div>
+                                        <p class="total-duration">
+                                            <span></span>
+                                            1y 3m
+                                            <span></span>
+                                        </p>
+                                        <div class="input-group date" id="datepicker2">
+                                        <input type="text" class="form-control" id="date"/>
+                                        <span class="input-group-append"></span>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                <div class="role-duration">
+                                  <div class="row">
+                                        <div class="col-6">
+                                            <div class="form-floating mb-4 d-flex">
+                                                <input class="datepicker form-control border-2" id="datepicker1" placeholder="DD/MM/YYYY">
+                                                <label for="datepicker1">New Role Start Date</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="form-floating mb-4 d-flex">
+                                                <input class="datepicker form-control border-2" id="datepicker1" placeholder="DD/MM/YYYY">
+                                                <label for="datepicker1">Role End Date</label>
+                                            </div>
+                                        </div>
+                                  </div>      
+                                        
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="b3  kra--view">
+                            <div class="row">
+                                <div class="col-6 b3">kra</div>
+                                <div class="col-6 b3"> wgt</div>
+                            </div>
+                            <ul class="kra-list dotted-border--top">
+                                <li class="kra-list-item">
+                                    <div class="kra-detail">
+                                        <p class="kra-param">% Growth in average retail term deposits</p>
+                                        <p class="kra-value">12</p>
+                                    </div>
+                                </li>
+                                <li class="kra-list-item">
+                                    <div class="kra-detail">
+                                        <p class="kra-param">% Growth in average retail term deposits</p>
+                                        <p class="kra-value">12</p>
+                                    </div>
+                                </li>
+                                <li class="kra-list-item">
+                                    <div class="kra-detail">
+                                        <p class="kra-param">% Growth in average retail term deposits</p>
+                                        <p class="kra-value">12</p>
+                                    </div>
+                                </li>
+                                <li class="kra-list-item">
+                                    <div class="kra-detail">
+                                        <p class="kra-param">% Growth in average retail term deposits</p>
+                                        <p class="kra-value">12</p>
+                                    </div>
+                                </li>
+                                <li class="kra-list-item">
+                                    <div class="kra-detail">
+                                        <p class="kra-param">% Growth in average retail term deposits</p>
+                                        <p class="kra-value">12</p>
+                                    </div>
+                                </li>
+                                <li class="kra-list-item">
+                                    <div class="kra-detail">
+                                        <p class="kra-param">% Growth in average retail term deposits</p>
+                                        <p class="kra-value">12</p>
+                                    </div>
+                                </li>
+                                
+                            </ul>
+                            <div class="kra-summary kra-detail">
+                                <p class="kra-param">Total</p>
+                                <p class="kra-value">70</p>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
                 </div>
-             </div>
-         </div>
+                </div>
+                <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">efg</div>
+                <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">hig</div>
+            </div>
+            </div>
         </div>
-    </main>
+    </div>
+</main>
     <script src="/node_modules/jquery/dist/jquery.min.js"></script>
     <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
     <script src="/node_modules/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"></script>

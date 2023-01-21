@@ -73,13 +73,63 @@
 }
 .kra{
     &>div{
-        width: 45%;
+        width: 55%;
+        &:first-child{
+            width: 45%;
+            border-right: 1px solid $grey;
+        }
     }
     &--add{
-        margin-right: 1.8rem;
+        padding-right: 1.8rem;
+       
     }
     &--view{
-        margin-left: 1.8rem;
+        padding-left: 1.8rem;
+        &>.row{
+            div{
+                &:last-of-type{
+                    display: flex;
+                    justify-content: flex-end;
+                }
+            }
+        }
+        .kra-list{
+            padding-top: 1.5rem;
+            .kra-list-item{
+                margin-bottom: 1rem;
+                &:last-of-type{
+                    margin-bottom: 0;
+                }
+            }
+        }
     }
+    .kra-detail{
+        font-size: 1.3rem;
+        font-family: $primary-font-regular;
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        .kra-value{
+            font-family: $primary-font-bold;
 
+        }
+    }
+    .kra-summary{
+        font-family: $primary-font-bold;
+        font-size: 1.6rem;
+        color: $text-clr-secondary-blue;
+        margin-top: 0.5rem;
+    }
+}
+.new-role{
+    .assignment-duration{
+        border: 1px dashed $grey;
+        border-radius: 5px;
+        padding: 0.9rem 1.2rem;
+    }
+}
+.role-duration{
+    input.datepicker{
+        background-color: ;
+    }
 }
