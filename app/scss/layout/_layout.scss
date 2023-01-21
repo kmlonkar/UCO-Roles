@@ -23,8 +23,9 @@
         }
     }
     &--add-role{
-        width: 70%;
+        width: calc(100% - 310px);
         .card{
+            min-height: 84vh;
             &>div{
                 padding: 1.5rem 0;
                 &:first-of-type{

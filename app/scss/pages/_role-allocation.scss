@@ -73,9 +73,9 @@
 }
 .kra{
     &>div{
-        width: 55%;
+        width: 53%;
         &:first-child{
-            width: 45%;
+            width: 47%;
             border-right: 1px solid $grey;
         }
     }
@@ -129,7 +129,7 @@
     }
 }
 .role-duration{
-    input.datepicker{
-        background-color: ;
-    }
+    font-family: $primary-font-bold;
+    margin-top: 1.1rem;
+    
 }
