@@ -22,13 +22,15 @@ $bg-clr-blue: #0C56BB;
 $bg-clr-light-blue : #EFEFEF;
 $text-clr-secondary-blue: #006AE1;
 //profile colors
-$profile-clr-1: #C7CC78;
+$profile-clr-1: #77A868;
+$profile-clr-2: #C7CC78;
+$profile-clr-3: #82B492;
 
 //box shadow
 $common-box-shadow: #00000029;
 
 //border
-$grey: rgb(122, 119, 119);
+$grey: rgb(122, 119, 119,0.5);
 
 // Container and Grid Spacing
 $container-width: 1170px;
@@ -40,8 +42,23 @@ $images-path: "../images" !default;
 // icomoon
 $icomoon: 'icomoon';
 $icon-Allocated-but-Not-Accepted: '\e900';
-$icon-Yet-to-be-Allocated: '\e913';
-$icon-Allocated-but-Not-Accepted : '\e900';
 $icon-Allocation-Completed: '\e901';
-$flagged: '\e906';
+$icon-calendar: '\e902';
+$icon-contactus: '\e903';
+$icon-Document: '\e904';
+$icon-dropdown: '\e905';
+$icon-Flagged-for-Discussion: '\e906';
+$icon-home: '\e907';
+$icon-instructions: '\e908';
+$icon-logout: '\e909';
+$icon-myTeam: '\e90a';
+$icon-PMS: '\e90b';
+$icon-redArrow: '\e90c';
+$icon-remove: '\e90d';
+$icon-RoleClarity: '\e903';
+$icon-Search: '\e90f';
+$icon-Search: '\e9010';
+$icon-Search: '\e9011';
 $right-arrow: '\e912';
+$icon-Yet-to-be-Allocated: '\e913';
+

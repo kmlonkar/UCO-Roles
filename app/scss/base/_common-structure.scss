@@ -64,15 +64,42 @@
     
     
         }
+  .profile-picture {
+    // background-color: $profile-clr-1;
+    width: 3.7rem;
+    height: 3.7rem;
+    border-radius: 3.7rem;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+}
+
+.profile-picture--no {
+  &:nth-of-type(3n + 1) {
     .profile-picture {
-            &--no {
-                background-color: $profile-clr-1;
-                width: 3.7rem;
-                height: 3.7rem;
-                border-radius: 3.7rem;
-                display: inline-flex;
-                justify-content: center;
-                align-items: center;
-            }
-        }
+      background-color: $profile-clr-1;
+    }
+  }
+  &:nth-of-type(3n + 2) {
+    .profile-picture {
+      background-color: $profile-clr-2;
+    }
+  }
+  &:nth-of-type(3n + 3) {
+    .profile-picture {
+      background-color: $profile-clr-3;
+    }
+  }
+}
+.profile-picture {
+  position: relative;
+  &::after {
+    font-family: $icomoon;
+    position: absolute;
+    width: 1.5rem;
+    height: 1.5rem;
+    top: -4px;
+    right: -7px;
+  }
 }

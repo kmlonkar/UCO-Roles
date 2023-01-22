@@ -1,215 +1,229 @@
 .role_allocation-summary {
-    border-bottom: 1px solid #000;
-    .section-title {
-        color: $text-clr-secondary-blue;
+  border-bottom: 1px solid #000;
+  .section-title {
+    color: $text-clr-secondary-blue;
+  }
+
+  .card {
+    border-radius: 10px;
+
+    .value {
+      color: $primary-blue;
+      margin-right: 15px;
+      margin-bottom: 0;
     }
+  }
 
-    .card {
-        border-radius: 10px;
+  .members {
+    &-details {
+      display: flex;
+      align-items: center;
 
-        .value {
-            color: $primary-blue;
-            margin-right: 15px;
-            margin-bottom: 0;
+      &:first-of-type {
+        border-right: 1px solid $grey;
+        @media screen and (max-width: 1200px) {
+          border-bottom: 1px solid #eee;
+          border-right: 0 none;
         }
-       
-    }
+      }
 
-    .members {
-        &-details {
-            display: flex;
-            align-items: center;
-
-            &:first-of-type {
-                border-right: 1px solid #eee;
-                @media screen and (max-width: 1200px) {
-                    border-bottom: 1px solid #eee;
-                    border-right: 0 none;
-                }
-            }
-
-            p {
-                color: $text-clr-black;
-                font-family: $primary-font-bold;
-                font-size: 1.1rem;
-
-            }
-        }
-    }
-}
-.allocation-category{
-    &__list{
-        padding: 1.3rem 0; 
-
-    }
-    &__item{
-        display: flex;
+      p {
         color: $text-clr-black;
-        font-size: 1.4rem;
-        margin-bottom: 0.8rem;
-        &::before{
-            width: 15px;
-            height: 15px;
-            margin-right: 5px;
-        }
-        &.allocated--no{
-            &::before{
-                content: $icon-Yet-to-be-Allocated;
-                font-family: $icomoon;
-            }
-        }
-        &.accepted--no{
-            &::before{
-                content: $icon-Allocated-but-Not-Accepted;
-                font-family: $icomoon;
-            }
-        }
-        &.flagged{
-            &::before{
-                content: $flagged;
-                font-family: $icomoon;
-            }
-        }
-        &.accepted{
-            &::before{
-                content: $icon-Allocation-Completed;
-                font-family: $icomoon;
-            }
-        }
-        p{
-            font-family: $primary-font-medium;
-            margin-left: 1rem;
-        }
-        span{
-            font-family: $primary-font-bold;
-        }
-    }
-}
-.team-listing{
-    &--add-role{
-        .card{
-            .guide-lines{
-                font-size: 1.4rem;
-                p:first-of-type{
-                    span{
-                        font-weight: 600;
-                    }
-                }
-            }
-
-        }
-    }
-}
-.kra{
-    &>div{
-        width: 53%;
-        &:first-child{
-            width: 47%;
-            border-right: 1px solid $grey;
-        }
-    }
-    &--add{
-        padding-right: 1.8rem;
-       
-    }
-    &--view{
-        padding-left: 1.8rem;
-        &>.row{
-            div{
-                &:last-of-type{
-                    display: flex;
-                    justify-content: flex-end;
-                }
-            }
-        }
-        .kra-list{
-            padding-top: 1.5rem;
-            .kra-list-item{
-                margin-bottom: 1rem;
-                &:last-of-type{
-                    margin-bottom: 0;
-                }
-            }
-        }
-    }
-    .kra-detail{
-        font-size: 1.3rem;
-        font-family: $primary-font-regular;
-        display: flex;
-        width: 100%;
-        justify-content: space-between;
-        .kra-value{
-            font-family: $primary-font-bold;
-
-        }
-    }
-    .kra-summary{
         font-family: $primary-font-bold;
-        font-size: 1.6rem;
-        color: $text-clr-secondary-blue;
-        margin-top: 0.5rem;
+        font-size: 1.1rem;
+      }
     }
+  }
 }
-.assignment-duration{
-    .input-group{
-        display: block;
-        width: auto;
-        input{
-            width: fit-content;
-            border: 0;
-            display: inline-block;
-        
-        }
+.allocation-category {
+  &__list {
+    padding: 1.3rem 0;
+  }
+  &__item {
+    display: flex;
+    color: $text-clr-black;
+    font-size: 1.4rem;
+    margin-bottom: 0.8rem;
+    &::before {
+      width: 15px;
+      height: 15px;
+      margin-right: 5px;
     }
-    .total-duration{
+    &.allocated--no {
+      &::before {
+        content: $icon-Yet-to-be-Allocated;
+        font-family: $icomoon;
+      }
+    }
+    &.accepted--no {
+      &::before {
+        content: $icon-Allocated-but-Not-Accepted;
+        font-family: $icomoon;
+      }
+    }
+    &.flagged {
+      &::before {
+        content: $icon-Flagged-for-Discussion;
+        font-family: $icomoon;
+      }
+    }
+    &.accepted {
+      &::before {
+        content: $icon-Allocation-Completed;
+        font-family: $icomoon;
+      }
+    }
+    p {
+      font-family: $primary-font-medium;
+      margin-left: 1rem;
+    }
+    span {
+      font-family: $primary-font-bold;
+    }
+  }
+}
 
-        span{
-            display: inline-block;
-            background-color: orange;
-            width: 0.6rem;
-            height: 0.6rem;
-            border-radius: 0.6rem;
-            position: relative;
-            margin-bottom: 3px;
-            &::before{
-                content: '';
-                position: absolute;
-                background: $grey;
-                width: 2rem;
-                height: 1px;
-            }
-            &:first-of-type{
-                margin-right: 2rem;
-                &::before{
-                    top: 2px;
-                    left: 5.5px;
-                }
-            }
-            &:last-of-type{
-                margin-left: 2rem;
-                &::before{
-                    top: 2px;
-                    right: 5.5px;
-                }
-            }
-        }
+
+.allocation-yes {
+  .profile-picture {
+    &::after {
+      content: "\e901";
     }
+  }
+}
+.allocation-no {
+  .profile-picture {
+    &::after {
+      content: "\e913";
+    }
+  }
+}
+.flagged {
+  .profile-picture {
+    &::after {
+      content: "\e906";
+    }
+  }
+}
+
+.team-listing {
+  &--add-role {
+    .card {
+      .guide-lines {
+        font-size: 1.4rem;
+        p:first-of-type {
+          span {
+            font-weight: 600;
+          }
+        }
+      }
+    }
+  }
+}
+.kra {
+  & > div {
+    width: 53%;
+    &:first-child {
+      width: 47%;
+      border-right: 1px solid $grey;
+    }
+  }
+  &--add {
+    padding-right: 1.8rem;
+  }
+  &--view {
+    padding-left: 1.8rem;
+    & > .row {
+      div {
+        &:last-of-type {
+          display: flex;
+          justify-content: flex-end;
+        }
+      }
+    }
+    .kra-list {
+      padding-top: 1.5rem;
+      .kra-list-item {
+        margin-bottom: 1rem;
+        &:last-of-type {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+  .kra-detail {
+    font-size: 1.3rem;
+    font-family: $primary-font-regular;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    .kra-value {
+      font-family: $primary-font-bold;
+    }
+  }
+  .kra-summary {
+    font-family: $primary-font-bold;
+    font-size: 1.6rem;
+    color: $text-clr-secondary-blue;
+    margin-top: 0.5rem;
+  }
+}
+.assignment-duration {
+  .input-group {
+    display: block;
+    width: auto;
+    input {
+      width: fit-content;
+      border: 0;
+      display: inline-block;
+    }
+  }
+  .total-duration {
+    span {
+      display: inline-block;
+      background-color: orange;
+      width: 0.6rem;
+      height: 0.6rem;
+      border-radius: 0.6rem;
+      position: relative;
+      margin-bottom: 3px;
+      &::before {
+        content: "";
+        position: absolute;
+        background: $grey;
+        width: 2rem;
+        height: 1px;
+      }
+      &:first-of-type {
+        margin-right: 2rem;
+        &::before {
+          top: 2px;
+          left: 5.5px;
+        }
+      }
+      &:last-of-type {
+        margin-left: 2rem;
+        &::before {
+          top: 2px;
+          right: 5.5px;
+        }
+      }
+    }
+  }
 }
 .new-role-wrap,
-.kra-list-wrap{
-    height: 300px;
-    overflow-y: auto;
-
+.kra-list-wrap {
+  height: 300px;
+  overflow-y: auto;
 }
-.new-role{
-    .assignment-duration{
-        border: 1px dashed $grey;
-        border-radius: 5px;
-        padding: 0.9rem 1.2rem;
-    }
+.new-role {
+  .assignment-duration {
+    border: 1px dashed $grey;
+    border-radius: 5px;
+    padding: 0.9rem 1.2rem;
+  }
 }
-.role-duration{
-    font-family: $primary-font-bold;
-    margin-top: 1.1rem;
-    
+.role-duration {
+  font-family: $primary-font-bold;
+  margin-top: 1.1rem;
 }
