@@ -6,6 +6,9 @@
  }
  &-list{
     width: 10rem;
+    @media screen and (max-width:578px) {
+        width: 100%;
+    }
  }
     &-list_item{
         display: flex;
@@ -13,6 +16,13 @@
         justify-content: center;
         align-items: center;
         margin-bottom: 1.8rem;
+        @media screen and (max-width:578px) {
+            flex-direction: row;
+            justify-content: flex-start;
+            .navigation-list_item__logo{
+                margin-right: 1.5rem;
+            }
+        }
 
         &__logo{
             background-color: $primary-blue;

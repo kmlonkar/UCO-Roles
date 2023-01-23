@@ -10,13 +10,21 @@
   </head>
 
   <body>
-    <header class="hero-banner">
+    <header class="hero-banner navbar-lg">
       <img class="hero-banner__image" src="images/banner.png" alt="Hero Banner">
       <div class="hero-banner__content hero-content">
         <div class="hero-content__logo">
           <img src="images/UCO_logo.png" alt="UCO Bank">
         </div>
         <div class="hero-content__actions">
+          <div class="self-profile active">
+            <span><img src="images/johnDoe.jpg" alt="johndoe"></span>
+          </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
          <span class="icon-logout"></span>
         </div>
       </div>
@@ -246,7 +254,7 @@
                             <div class="assignment-duration">
                               <label for="assignment floating-label">Assignment Start
                                 Date</label>
-                              <div class="d-flex justify-content-between mt-2">
+                              <div class="assignment-input mt-2">
                                 <p class="start-date">14-JUL-21</p>
                                 <p class="total-duration">
                                   <span></span>
@@ -259,14 +267,14 @@
                             </div>
                             <div class="role-duration">
                               <div class="row">
-                                <div class="col-6">
+                                <div class="col-sm-6">
                                   <div class="form-floating d-flex">
                                     <input class="datepicker form-control border-2" id="datepicker1"
                                       placeholder="DD/MM/YYYY">
-                                    <label for="datepicker1">New Role Start Date</label>
+                                    <label for="datepicker1">Role Start Date</label>
                                   </div>
                                 </div>
-                                <div class="col-6">
+                                <div class="col-sm-6">
                                   <div class="form-floating  d-flex">
                                     <input class="datepicker form-control border-2" id="datepicker2"
                                       placeholder="DD/MM/YYYY">

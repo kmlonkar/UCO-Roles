@@ -15,4 +15,7 @@ $(function(){
      $('.search-results').removeClass('search-results--open');
 
    })
+  $('.navbar-toggler').click(function () {
+    $('.sidebar').toggleClass('sidebar-mobile sidebar-mobile--open');
+  })
 });

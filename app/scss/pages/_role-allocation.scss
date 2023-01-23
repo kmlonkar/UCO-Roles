@@ -1,4 +1,26 @@
 .role_allocation-summary {
+  &--details{
+    &>.card{
+      @media screen and (max-width:991px) {
+        width:50%;
+
+      }
+      @media screen and (max-width: 768px) {
+        width: 100%;
+
+      }
+    }
+    @media screen and (max-width:991px) {
+      display: flex;
+      width:100%;
+      margin-bottom: 1.5rem;
+      
+    }
+    @media screen and (max-width:767px){
+      flex-wrap: wrap;
+      margin-bottom: 0;
+    }
+  }
   border-bottom: 1px solid #000;
   .section-title {
     color: $text-clr-secondary-blue;
@@ -38,6 +60,16 @@
 .allocation-category {
   &__list {
     padding: 1rem 0;
+    @media screen and (max-width: 991px) {
+          width: 50%;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-end;
+    }
+    @media screen and (max-width: 787px) {
+      width: 100%;
+      align-items: flex-start;
+    }
   }
   &__item {
     display: flex;
@@ -141,6 +173,9 @@
     padding-right: 1.8rem;
     @media screen and (max-width:1200px) {
        padding-bottom: 1.5rem;
+      }
+      @media screen and (max-width:578px) {
+        padding-right: 0;
       }
   }
   &--view {
@@ -265,7 +300,13 @@
     border: 1px dashed $grey;
     border-radius: 5px;
     padding: 0.9rem 1.2rem;
-
+    .assignment-input{
+      display: flex;
+      justify-content:space-between;
+      @media screen and (max-width: 410px) {
+          flex-direction: column;
+      }
+    }
     .date{
         position: relative;
         font-family: $primary-font-bold;
@@ -276,6 +317,16 @@
 .role-duration {
   font-family: $primary-font-bold;
   margin-top: 1.1rem;
+  .row{
+    &>div{
+      &:first-child{
+        @media screen and (max-width:575px){
+          margin-bottom: 1.5rem;
+          
+        }
+      }
+    }
+  }
   .datepicker{
     &+label{
       top:5px;

@@ -6,6 +6,7 @@
 }
 .two-col-layout {
   display: flex;
+  flex-wrap: wrap;
 
   &--left,
   &--right {

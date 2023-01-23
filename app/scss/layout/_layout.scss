@@ -6,6 +6,14 @@
         width: 100%;
         height: calc(100vh - 70px);
         padding-left: 13.6rem;
+        @media screen and (max-width:991px) {
+                // padding-left: 0;
+                height: auto;
+        }
+        @media screen and (max-width: 578px) {
+                padding-left: 0;
+                
+        }
     }
 }
 
@@ -20,6 +28,12 @@
                 z-index: 3;
                 height: 100%;
         }
+        @media screen and (max-width: 991px) {
+            position: static;
+            z-index: 0;
+            width: 100%;
+            height: auto;
+        }
         &>div{
             margin-bottom: 1rem;
             &:last-of-type{
@@ -32,6 +46,13 @@
         @media screen and (max-width:1200px){
             padding-left: 34rem;
             width: 100%;
+        }
+        @media screen and (max-width:991px){
+            padding-left:3rem;
+        }
+        @media screen and (max-width:578px){
+            padding: 1.5rem;
+            
         }
         .card{
             min-height: calc(100vh - 125px);

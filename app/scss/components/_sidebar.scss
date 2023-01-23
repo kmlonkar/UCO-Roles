@@ -2,5 +2,21 @@
     background-color: $bg-clr-white;
     position: fixed;
     height: 100%;
-
+    z-index: 9;
+    .self-profile{
+        @media screen and (max-width:578px) {
+            display: none;
+        }
+    }
+   @media screen and (max-width:578px) {
+    left: -50%;
+    
+   }
+    &.sidebar-mobile{
+        &--open{
+            left: 0;
+            width: 100%;
+            transition: left 0.5s ease;
+        }
+    }
 }
