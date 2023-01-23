@@ -1,6 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="11.7" height="12.445" viewBox="0 0 11.7 12.445">
-  <g id="remove" transform="translate(-349.772 -14.23)">
-    <path id="Path_66" data-name="Path 66" d="M362.3,13.25l-9.58,10.325" transform="translate(-1.893 2.04)" fill="none" stroke="#383030" stroke-linecap="round" stroke-width="1.5"/>
-    <path id="Path_67" data-name="Path 67" d="M352.725,13.25l9.58,10.325" transform="translate(-1.893 2.04)" fill="none" stroke="#383030" stroke-linecap="round" stroke-width="1.5"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="11.085" height="11.825" viewBox="0 0 11.085 11.825">
+  <g id="remove" transform="translate(-350.077 -14.54)">
+    <path id="Path_66" data-name="Path 66" d="M352.72,24.325a.75.75,0,0,1-.55-1.26l9.58-10.325a.75.75,0,0,1,1.1,1.02l-9.58,10.325A.748.748,0,0,1,352.72,24.325Z" transform="translate(-1.893 2.04)" fill="#383030"/>
+    <path id="Path_67" data-name="Path 67" d="M362.305,24.325a.748.748,0,0,1-.55-.24l-9.58-10.325a.75.75,0,0,1,1.1-1.02l9.58,10.325a.75.75,0,0,1-.55,1.26Z" transform="translate(-1.893 2.04)" fill="#383030"/>
   </g>
 </svg>

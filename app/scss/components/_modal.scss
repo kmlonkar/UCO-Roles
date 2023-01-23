@@ -1,0 +1,29 @@
+.modal{
+    &-header{
+        border-bottom: 0;
+        display: block;
+    }
+    &-content{
+        height: 100vh;
+        border-radius: 0;
+        border: 0;
+        padding: 3rem;
+    }
+    &-dialog{
+        margin:0;
+        position:absolute;
+        right: 0;
+        width: 400px;
+    }
+}
+.modal.fade .modal-dialog {
+    transform: translate3d(0, 0, 0);
+}
+.confirmation{
+    position:absolute;
+    top:50%;
+    transform: translateY(-100%);
+    &-text{
+        margin-bottom: 4rem;
+    }
+}

@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="13.527" height="10.491" viewBox="0 0 13.527 10.491">
-  <g id="redArrow" transform="translate(0 0.352)">
-    <line id="Line_24" data-name="Line 24" x2="12.913" transform="translate(0 5.131)" fill="none" stroke="#c7373a" stroke-width="1"/>
-    <path id="Path_33" data-name="Path 33" d="M341.961,1430.744l4.875,4.922-4.875,4.863" transform="translate(-334.015 -1430.744)" fill="none" stroke="#c7373a" stroke-width="1"/>
+  <g id="redArrow" transform="translate(0 0.356)">
+    <path id="Line_24" data-name="Line 24" d="M12.913.5H0v-1H12.913Z" transform="translate(0 5.131)" fill="#c7373a"/>
+    <path id="Path_33" data-name="Path 33" d="M342.314,1440.879l-.706-.708,4.522-4.511-4.524-4.568.711-.7,5.226,5.276Z" transform="translate(-334.015 -1430.744)" fill="#c7373a"/>
   </g>
 </svg>

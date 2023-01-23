@@ -12,16 +12,43 @@
     &__content{
         position: absolute;
         top: 1rem;
-        right: 0.1rem;
-        left:6rem;
+        right: 4rem;
+        left:1rem;
         display: flex;
         justify-content: space-between;
+        align-items: center;
+        
     }
+    
     .hero-content{
         &__logo{
             img{
                 height: 51px;
 
+            }
+        }
+    }
+}
+.self-profile{
+    text-align: center;
+    img,span{
+        height:5.3rem;
+        width: 5.3rem;
+    }
+    &.active{
+        span{
+            position: relative;
+            display: inline-block;
+            &::before{
+                content: '';
+                background-color: #0FA80F;
+                border: 2px solid $clr-white;
+                position: absolute;
+                height:1.8rem;
+                width: 1.8rem;
+                border-radius: 1.7rem;
+                bottom: 3px;
+                right:0;
             }
         }
     }

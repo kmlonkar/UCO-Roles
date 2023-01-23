@@ -37,48 +37,26 @@
 }
 .allocation-category {
   &__list {
-    padding: 1.3rem 0;
+    padding: 1rem 0;
   }
   &__item {
     display: flex;
     color: $text-clr-black;
     font-size: 1.4rem;
     margin-bottom: 0.8rem;
-    &::before {
-      width: 15px;
-      height: 15px;
-      margin-right: 5px;
+    align-items: center;
+    span.value{
+      margin-left: 1rem;
+      font-family: $primary-font-bold;
     }
-    &.allocated--no {
-      &::before {
-        content: $icon-Yet-to-be-Allocated;
-        font-family: $icomoon;
-      }
-    }
-    &.accepted--no {
-      &::before {
-        content: $icon-Allocated-but-Not-Accepted;
-        font-family: $icomoon;
-      }
-    }
-    &.flagged {
-      &::before {
-        content: $icon-Flagged-for-Discussion;
-        font-family: $icomoon;
-      }
-    }
-    &.accepted {
-      &::before {
-        content: $icon-Allocation-Completed;
-        font-family: $icomoon;
-      }
-    }
+    
+  
     p {
       font-family: $primary-font-medium;
       margin-left: 1rem;
     }
-    span {
-      font-family: $primary-font-bold;
+    span[class^=icon] {
+      margin-bottom: 1px;
     }
   }
 }
@@ -87,21 +65,32 @@
 .allocation-yes {
   .profile-picture {
     &::after {
-      content: "\e901";
+      content: $icon-Allocation-Completed;
+      color: #15734e;
+    }
+  }
+}
+.accepted-no {
+  .profile-picture {
+    &::after {
+      content: $icon-Allocated-but-Not-Accepted;
+    
     }
   }
 }
 .allocation-no {
   .profile-picture {
     &::after {
-      content: "\e913";
+      content: $icon-Yet-to-be-Allocated;
+      color: #c93535;
     }
   }
 }
 .flagged {
   .profile-picture {
     &::after {
-      content: "\e906";
+      content: $icon-Flagged-for-Discussion;
+      color: #f7a029;
     }
   }
 }
@@ -121,18 +110,44 @@
   }
 }
 .kra {
+  display: flex;
+  justify-content: space-between;
+  @media screen and (max-width: 1200px){
+    flex-wrap: wrap;
+  }
   & > div {
     width: 53%;
     &:first-child {
       width: 47%;
       border-right: 1px solid $grey;
+      @media  screen and (max-width:1300px) {
+          width: 50%;
+      }
+      @media screen and (max-width: 1200px) {
+        width: 100%;
+        margin-bottom: 1.5rem;
+        border-bottom: 1px solid $grey;
+        border-right: 0;
+      }
+    }
+    @media screen and (max-width:1300px) {
+      width: 50%;
+    }
+    @media screen and (max-width:1200px) {
+      width: 100%;
     }
   }
   &--add {
     padding-right: 1.8rem;
+    @media screen and (max-width:1200px) {
+       padding-bottom: 1.5rem;
+      }
   }
   &--view {
     padding-left: 1.8rem;
+    @media screen and (max-width:1200px) {
+      padding-left: 0 ;
+    }
     & > .row {
       div {
         &:last-of-type {
@@ -169,6 +184,28 @@
   }
 }
 .assignment-duration {
+    .start-date {
+      position: relative;
+      padding-left: 2.5rem;
+      font-family: $primary-font-bold;
+        &::before {
+          content: $icon-calendar;
+          font-family: $icomoon;
+          content: "\e902";
+          font-family: "icomoon";
+          left: 1px;
+          top: 1px;
+          position: absolute;
+          color: $grey;
+          z-index: 6;
+        }
+      }
+    
+      .end-date {
+        padding-left: 0;
+        text-transform: capitalize;
+        font-family: $primary-font-bold;
+      }
   .input-group {
     display: block;
     width: auto;
@@ -216,10 +253,14 @@
 }
 .new-role-wrap,
 .kra-list-wrap {
-  height: 300px;
+  height:43vh;
   overflow-y: auto;
 }
 .new-role {
+  margin-top: 1.5rem;
+  &:first-of-type{
+    margin-top: 0;
+  }
   .assignment-duration {
     border: 1px dashed $grey;
     border-radius: 5px;
@@ -227,26 +268,23 @@
 
     .date{
         position: relative;
-        &:nth-child(1){
-                &::before{
-                    content: $icon-calendar;
-                    font-family: $icomoon;
-                    content: "\e902";
-                    font-family: "icomoon";
-                    left: 1px;
-                    top:3px;
-                    position: absolute;
-                    color: $grey;
-                    // height: 30px;
-                    // width: 30px;
-                    z-index: 6;
-                }
-
-        }
+        font-family: $primary-font-bold;
+     
     }
   }
 }
 .role-duration {
   font-family: $primary-font-bold;
   margin-top: 1.1rem;
+  .datepicker{
+    &+label{
+      top:5px;
+    }
+  }
+  .form-floating{
+      &:last-of-type{
+        margin-bottom: 0;
+
+    }
+  }
 }

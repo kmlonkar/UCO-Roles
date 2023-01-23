@@ -15,8 +15,13 @@
     &--list{
         width:31rem;
         background: $bg-clr-grey;
+        @media screen and (max-width:1200px){
+                position: fixed;
+                z-index: 3;
+                height: 100%;
+        }
         &>div{
-            margin-bottom: 1.5rem;
+            margin-bottom: 1rem;
             &:last-of-type{
                 margin-bottom: 0;
             }
@@ -24,6 +29,10 @@
     }
     &--add-role{
         width: calc(100% - 310px);
+        @media screen and (max-width:1200px){
+            padding-left: 34rem;
+            width: 100%;
+        }
         .card{
             min-height: calc(100vh - 125px);
             padding: 1.5rem 2.5rem;

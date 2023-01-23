@@ -1,5 +1,9 @@
 .navigation{
  padding: 5.5rem 1.8rem;
+ @media screen and (max-width:991px) {
+    padding: 2rem 1.8rem;
+    height: 100%;
+ }
  &-list{
     width: 10rem;
  }
