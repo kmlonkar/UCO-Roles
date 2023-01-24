@@ -1,5 +1,5 @@
 .navigation{
- padding: 5.5rem 1.8rem;
+ padding: 4.5rem 1.8rem;
  @media screen and (max-width:991px) {
     padding: 2rem 1.8rem;
     height: 100%;
@@ -16,6 +16,9 @@
         justify-content: center;
         align-items: center;
         margin-bottom: 1.8rem;
+        &.dropdown{
+            position: relative;
+        }
         @media screen and (max-width:578px) {
             flex-direction: row;
             justify-content: flex-start;
@@ -40,6 +43,35 @@
             text-align: center;
             font-family: $primary-font-medium;
             text-transform: capitalize;
+        }
+    }
+    .dropdown-menu{
+        cursor: pointer;
+        &--open{
+            display: block;
+            padding: 2rem 1.5rem;
+            left: 100%;
+            width: 200px;
+            margin-top: 2rem;
+            border-radius: 0 20px 20px 0;
+            >li{
+                margin: 2rem 0;
+            
+                &:last-of-type{
+                    margin: 2rem 0 0;
+                }
+                font-size: 1.4rem;
+                span{
+                    margin-right: 1.5rem;
+                    &::before{
+                        font-size:2rem;
+                    }
+                }
+            }
+        }
+        &__title{
+            border-bottom: 1px solid $grey;
+            padding-bottom: 1.5rem;
         }
     }
  }

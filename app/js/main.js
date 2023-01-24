@@ -18,4 +18,14 @@ $(function(){
   $('.navbar-toggler').click(function () {
     $('.sidebar').toggleClass('sidebar-mobile sidebar-mobile--open');
   })
+  $('.dropdown').mouseenter(function () {
+    $('.dropdown > .dropdown-menu').addClass('dropdown-menu--open');
+  });
+  $('.dropdown').mouseleave(function () {
+    $('.dropdown > .dropdown-menu.dropdown-menu--open').removeClass('dropdown-menu--open');
+  });
+
+});
+$(document).ready(function () {
+  $('.js-example-basic-single').select2();
 });

@@ -2,12 +2,25 @@
     &-header{
         border-bottom: 0;
         display: block;
+        .modal-title{
+            margin-bottom: 0.7rem;
+        }
+        .modal-subtitle{
+            font-family: $primary-font-regular;
+        }
     }
     &-content{
         height: 100vh;
         border-radius: 0;
         border: 0;
         padding: 3rem;
+        
+    }
+    &-body{
+        .popup-actions{
+            display: flex;
+            justify-content:space-around;
+        }
     }
     &-dialog{
         margin:0;
@@ -25,5 +38,24 @@
     transform: translateY(-100%);
     &-text{
         margin-bottom: 4rem;
+    }
+
+    &-received{
+        width: 100%;
+        text-align: center;
+        padding: 0 5rem;
+        transform: translateY(-55%);
+        img{
+            margin-bottom: 1.5rem;
+        }
+        .confirmation-text{
+            margin-bottom: 1.4rem;
+        }
+        .confirmation-subtext{
+            font-size:1.4rem;
+        }
+        .popup-actions{
+            margin-top: 3rem;
+        }
     }
 }

@@ -1,9 +1,11 @@
-.form-control{
+.form-control {
+
   &:focus,
-  &:hover{
-    box-shadow: 0 0 0 rgba(0,0,0,0);
+  &:hover {
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0);
   }
 }
+
 .two-col-layout {
   display: flex;
   flex-wrap: wrap;
@@ -15,13 +17,13 @@
 }
 
 .custom-tabs {
-    
-    &.nav-tabs {
-        flex-direction: column;
-        flex-wrap: nowrap;
-        overflow-y: auto;
-        height: 25vh;
-        border-bottom: 0 none;
+
+  &.nav-tabs {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    overflow-y: auto;
+    height: 25vh;
+    border-bottom: 0 none;
   }
 
   .nav-item {
@@ -29,7 +31,7 @@
   }
 
   .nav-link {
-   
+
     border: 0 none;
     padding: 0.5rem 1.9rem;
     color: $text-clr-black;
@@ -44,33 +46,36 @@
       border-radius: 0;
     }
 
-  
+
   }
 
 
 }
-.profile{
-    width: 100%;
-    display: flex;
-    .member-details {
-            margin-left: 1.5rem;
-    
-            p {
-                text-align: left;
-    
-                &:nth-of-type(1) {
-                    font-family: $primary-font-bold;
-                    font-size: 1.3rem;
-                }
-    
-                &:nth-of-type(2) {
-                    font-family: $primary-font-regular;
-                    font-size: 1rem;
-                }
-            }
-    
-    
-        }
+
+.profile {
+  width: 100%;
+  display: flex;
+
+  .member-details {
+    margin-left: 1.5rem;
+
+    p {
+      text-align: left;
+
+      &:nth-of-type(1) {
+        font-family: $primary-font-bold;
+        font-size: 1.3rem;
+      }
+
+      &:nth-of-type(2) {
+        font-family: $primary-font-regular;
+        font-size: 1rem;
+      }
+    }
+
+
+  }
+
   .profile-picture {
     // background-color: $profile-clr-1;
     width: 3.7rem;
@@ -79,7 +84,7 @@
     display: inline-flex;
     justify-content: center;
     align-items: center;
-}
+  }
 }
 
 .profile-picture--no {
@@ -88,19 +93,23 @@
       background-color: $profile-clr-1;
     }
   }
+
   &:nth-of-type(3n + 2) {
     .profile-picture {
       background-color: $profile-clr-2;
     }
   }
+
   &:nth-of-type(3n + 3) {
     .profile-picture {
       background-color: $profile-clr-3;
     }
   }
 }
+
 .profile-picture {
   position: relative;
+
   &::after {
     font-family: $icomoon;
     position: absolute;
@@ -108,5 +117,113 @@
     height: 1.8rem;
     top: -4px;
     right: -7px;
+  }
+}
+
+.assignment-input {
+  display: flex;
+  justify-content: space-between;
+
+  @media screen and (max-width: 410px) {
+    flex-direction: column;
+  }
+
+  .start-date {
+    position: relative;
+    padding-left: 2.5rem;
+    font-family: $primary-font-bold;
+
+    &::before {
+      content: $icon-calendar;
+      font-family: $icomoon;
+      content: "\e902";
+      font-family: "icomoon";
+      left: 1px;
+      top: 1px;
+      position: absolute;
+      color: $grey;
+      z-index: 6;
+    }
+  }
+
+  .end-date {
+    padding-left: 0;
+    text-transform: capitalize;
+    font-family: $primary-font-bold;
+  }
+
+  .input-group {
+    display: block;
+    width: auto;
+
+    input {
+      width: 9.5rem;
+      border: 0;
+      display: inline-block;
+      padding-left: 2rem;
+      font-size: 1.3rem;
+      font-family: $primary-font-bold;
+    }
+  }
+
+  .total-duration {
+    span {
+      display: inline-block;
+      background-color: orange;
+      width: 0.6rem;
+      height: 0.6rem;
+      border-radius: 0.6rem;
+      position: relative;
+      margin-bottom: 3px;
+
+      &::before {
+        content: "";
+        position: absolute;
+        background: $grey;
+        width: 2rem;
+        height: 1px;
+      }
+
+      &:first-of-type {
+        margin-right: 2rem;
+
+        &::before {
+          top: 2px;
+          left: 5.5px;
+        }
+      }
+
+      &:last-of-type {
+        margin-left: 2rem;
+
+        &::before {
+          top: 2px;
+          right: 5.5px;
+        }
+      }
+    }
+  }
+}
+.kra-edit-logs{
+  margin-top: 1rem;
+  &>div[class^=card]{
+    margin-bottom: 1.5rem;
+  }
+  &__title{
+    display: flex;
+    font-family: $primary-font-bold;
+    span{
+      color: $clr-red;
+      margin-right: 1.5rem;
+      font-size: 1.3rem;
+
+     
+    }
+  }
+  &__comments{
+    .comment{
+      font-size:1.4rem;
+      font-family: $primary-font-bold;
+    }
   }
 }

@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <title>My Roles</title>
+    <title>role clarity 2</title>
   </head>
 
   <body>
@@ -82,6 +82,7 @@
         </nav>
       </section>
       <div class="content">
+        
         <div class="team-listing two-col-layout">
           <div class="team-listing--list fixed-section two-col-layout--left">
             <div class="role_allocation-summary">
@@ -237,7 +238,7 @@
                         </div>
                       </div>
                   </div>
-                  <div class="guide-lines dotted-border">
+                  <div class="guide-lines">
                     <div class="row">
                       <div class="col-xl-9">
                         <p>Please enter all roles performed by <span>Sonal Rajotia</span> in Branch
@@ -245,143 +246,104 @@
                           Code 1322) since 1st April 2021</p>
                       </div>
                       <div class="col-xl-3 d-flex justify-content-xl-end mt-xl-0 mt-4">
-                        <a href="#" class="btn btn-danger">Make inactive</a>
+                        <a href="#" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#makeInactive">Make
+                          inactive </a>
+                          <!-- modal for making inactive -->
+                           <div class="modal fade " id="makeInactive" data-bs-backdrop="static" data-bs-keyboard="false"
+                             tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                             <div class="modal-dialog">
+                               <div class="modal-content">
+                                 <div class="d-flex d-flex justify-content-between">
+                                   <div class="modal-header">
+                                     <h5 class="modal-title b2" id="staticBackdropLabel">Make User Inactive</h5>
+                                     <p class="modal-subtitle b4">Confirmation</p>
+                                   </div>
+                                   <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                     aria-label="Close"></button>
+                                 </div>
+                                 <div class="modal-body">
+                                    <div class="make-inactive-form">
+                                     
+                                        <div class="form-group">
+                                          <div class="form-floating with-dropdown">
+                                            <label for="floatingInput">Select appropriate reason</label>
+                                             <select class="js-example-basic-single" name="state">
+                                               <option value="AL">Alabama</option>
+                                              
+                                               <option value="WY">Wyoming</option>
+                                             </select>
+                                            
+                                          </div>
+                                        </div>
+                                    </div>
+
+                                 </div>
+
+                               </div>
+                             </div>
+                           </div>
                       </div>
                     </div>
                   </div>
+                 
                   <div class="add-detail ">
                     <div class=" kra">
-                      <div class="
-                    kra--add">
-                        <h3 class="b4"> Add New Role Mix</h3>
-                        <div class="new-role-wrap overflow-container">
-                          <div class="new-role">
-                            <div class="assignment-duration">
-                              <label for="assignment floating-label">Assignment Start
-                                Date</label>
-                              <div class="assignment-input mt-2">
-                                <p class="start-date">14-JUL-21</p>
-                                <p class="total-duration">
-                                  <span></span>
-                                  1y 3m
-                                  <span></span>
-                                </p>
-                                <p class="end-date">Till Present</p>
-                              </div>
-
-                            </div>
-                            <div class="role-duration">
-                              <div class="row">
-                                <div class="col-sm-6">
-                                  <div class="form-floating d-flex">
-                                    <input class="datepicker form-control border-2" id="datepicker1"
-                                      placeholder="DD/MM/YYYY">
-                                    <label for="datepicker1">Role Start Date</label>
-                                  </div>
-                                </div>
-                                <div class="col-sm-6">
-                                  <div class="form-floating  d-flex">
-                                    <input class="datepicker form-control border-2" id="datepicker2"
-                                      placeholder="DD/MM/YYYY">
-                                    <label for="datepicker1">Role End Date</label>
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="form-check my-3">
-                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                <label class="form-check-label" for="flexCheckDefault">
-                                  Current Role
-                                </label>
-                              </div>
-                              <div class="form-floating">
-                                <select class="form-select" id="floatingSelectGrid"
-                                  aria-label="Floating label select example">
-                                  <option selected>Current Account Officer</option>
-                                  <option value="1">One</option>
-                                  <option value="2">Two</option>
-                                  <option value="3">Three</option>
-                                </select>
-                                <label for="floatingSelectGrid">Role 1</label>
-                              </div>
-
-                            </div>
-
-                          </div>
-                          <button href="#" class="btn btn-link">+add</button>
+                      <div class="kra--add">
+                        <div class="role-history-title">
+                          <h3 class="b4"> Role History</h3>
+                          <div class="btn btn-link">Add New Role +</div>
                         </div>
-
-
-                        <a href="#" type="button" class="btn btn-arrow btn-primary" data-bs-toggle="modal"
-                          data-bs-target="#staticBackdrop">submit role <span
-                            class="icon-WhiteArrow"></span></a>
-                        <!-- Modal for asking confirmation-->
-                        <div class="modal fade " id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
-                          tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                          <div class="modal-dialog">
-                            <div class="modal-content">
-                              <div class="d-flex d-flex justify-content-between">
-                                <div class="modal-header">
-                                  <h5 class="modal-title b2" id="staticBackdropLabel">Role Submission</h5>
-                                  <p class="modal-subtitle b4">Confirmation</p>
-                                </div>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                  aria-label="Close"></button>
+                        <div class="new-role-wrap role-history overflow-container">
+                          
+                          <div class="card--style-2 card--style-2-focused">
+                            <h2 class="b2 saved saved--not">Current Account Officer</h2>
+                            <div class="card-body">
+                             <div class="assignment-input mt-2">
+                              <div>
+                                <p>Role Start Date</p>
+                                <p class="start-date">23-JAN-23</p>
                               </div>
-                              <div class="modal-body">
-                                <div class="confirmation bordered-box">
-                                    <p class="confirmation-text">Do you want to proceed with the role mix?</p>
-
-                                    <div class="popup-actions">
-                                      <button type="button" class="btn btn-arrow btn-arrow--rotated btn-secondary"
-                                        data-bs-dismiss="modal"><span class="icon-WhiteArrow"></span>
-                                        No</button>
-                                      <button type="button" class="btn btn-arrow btn-primary" data-bs-toggle="modal"
-                                        data-bs-target="#confirm"
-                                        data-bs-dismiss="modal">Yes<span class="icon-WhiteArrow"></span></button>
-
-                                    </div>
-                                </div>
-                        
-                              </div>
-                             
-                            </div>
-                          </div>
-                        </div>
-                        <!-- modal for showing confirmation -->
-                         <div class="modal fade " id="confirm" data-bs-backdrop="static" data-bs-keyboard="false"
-                           tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                           <div class="modal-dialog">
-                             <div class="modal-content">
-                               <div class="d-flex d-flex justify-content-between">
-                                 <div class="modal-header">
-                                   <h5 class="modal-title b2" id="staticBackdropLabel">Role Submission</h5>
-                                   <p class="modal-subtitle b4">Confirmation</p>
-                                 </div>
-                                 <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                   aria-label="Close"></button>
+                               <p class="total-duration">
+                                 <span></span>
+                                 0y 0m
+                                 <span></span>
+                               </p>
+                               <div class="text-end">
+                                <p>Role End Date</p>
+                                 <p class="end-date">Present</p>
                                </div>
-                               <div class="modal-body">
-                                 <div class="confirmation confirmation-received">
-                                  <img src="images/Completed-pana.png" alt="completed">
-                                   <h2 class="b1 confirmation-text">You are good to go</h2>
-                                   <p class="confirmation-subtext">You have successfully allocated the role mix to your
-                                     team member.</p>
-
-                                   <div class="popup-actions">
-                                     
-                                     <a type="button" class="btn btn-arrow btn-primary" data-bs-toggle="modal"
-                                       onclick="javascript:window.location.href='Role-clarity-2.html';"
-                                       data-bs-target="#confirm" data-bs-dismiss="modal">Ok<span
-                                         class="icon-WhiteArrow"></span></a>
-
-                                   </div>
-                                 </div>
-
-                               </div>
-
                              </div>
-                           </div>
-                         </div>
+                            </div>
+                            <div class="card-actions">
+                              <button type="button" class="btn btn-arrow btn-dark">Delete Role <span class="icon-WhiteArrow"></span></button>
+                              <button type="button" class="btn btn-arrow btn-primary">Edit Role <span
+                                  class="icon-WhiteArrow"></span></button>
+
+                            </div>
+                          </div>
+                          <div class="card--style-2">
+                            <h2 class="b2 saved">Advances Officer</h2>
+                            <div class="card-body">
+                             <div class="assignment-input mt-2">
+                              <div>
+                                <p>Role Start Date</p>
+                                <p class="start-date">14-JUL-21</p>
+                              </div>
+                               <p class="total-duration">
+                                 <span></span>
+                                 1y 3m
+                                 <span></span>
+                               </p>
+                               <div class="text-end">
+                                <p>Role End Date</p>
+                                 <p class="end-date">23-JAN-23</p>
+                               </div>
+                             </div>
+                            </div>
+                         
+                          </div>
+                          
+                        </div>
                       </div>
                       <div class="kra--view">
                         <div class="row">
@@ -437,8 +399,29 @@
                             <p class="kra-param">Total</p>
                             <p class="kra-value">70</p>
                           </div>
+                          <div class="kra-edit-logs">
+                            <div class="card--style-3">
+                              <div class="kra-edit-logs__title">
+                                <span>KRA Added :</span>
+                                <p class="kra-edited">% Growth In Digital Transactions</p>
+                              </div>
+                                <section class="kra-edit-logs__comments">
+                                  <span class="small-text">comments</span>
+                                  <p class="comment">NA</p>
+                                </section>
+                            </div>
+                            <div class="card--style-3">
+                              <div class="kra-edit-logs__title">
+                                <p class="kra-edited">KRA Weightage Edited</p>
+                              </div>
+                                <section class="kra-edit-logs__comments">
+                                  <span class="small-text">comments</span>
+                                  <p class="comment">NA</p>
+                                </section>
+                            </div>
+                          </div>
                         </div>
-                        <div class="d-flex justify-content-end"><a href="#" type="button" class="btn btn-arrow btn-secondary" >Raise Exception <span class="icon-WhiteArrow"></span></a></div>
+                        
                       </div>
                     </div>
                   </div>
@@ -453,6 +436,7 @@
     </main>
     <script src="/node_modules/jquery/dist/jquery.min.js"></script>
     <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="/node_modules/select2/dist/js/select2.min.js"></script>
     <script src="/node_modules/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"></script>
     <script src="js/apexcharts.js"></script>
     <script src="js/main.js"></script>
