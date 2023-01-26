@@ -20,6 +20,10 @@
         .popup-actions{
             display: flex;
             justify-content:space-around;
+            margin-top: 3rem;
+            &.form-action{
+                justify-content: flex-start;
+            }
         }
     }
     &-dialog{
@@ -35,14 +39,20 @@
 .confirmation{
     position:absolute;
     top:50%;
-    transform: translateY(-100%);
+    transform: translateY(0);
+    text-align: center;
+    width: 100%;
+    .confirmation-text {
+       font-family: $primary-font-bold;
+       margin-top: 1.5rem;
+    }
     &-text{
         margin-bottom: 4rem;
     }
 
     &-received{
-        width: 100%;
-        text-align: center;
+       
+        
         padding: 0 5rem;
         transform: translateY(-55%);
         img{
@@ -54,8 +64,6 @@
         .confirmation-subtext{
             font-size:1.4rem;
         }
-        .popup-actions{
-            margin-top: 3rem;
-        }
     }
+    
 }

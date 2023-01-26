@@ -3,6 +3,14 @@
     box-shadow: 0 3px 46px $common-box-shadow;
     border: 0 none;
     padding: 1.5rem;
+    &-header{
+        background: transparent;
+        padding:0;
+        border-bottom: 0;
+    }
+    &-body{
+        padding: 0;
+    }
     &-actions{
         display: flex;
         justify-content: space-between;
@@ -20,7 +28,7 @@
         padding: 1.5rem;
         position: relative;
         z-index: 9;
-        width: calc(100% + 1px);
+        width: 100%;
         .total-duration{
             span{
                 background-color: $text-clr-dark-gray

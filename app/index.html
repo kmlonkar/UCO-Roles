@@ -228,33 +228,35 @@
             <div class="tab-content" id="myTabContent">
               <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
                 <div class="card">
-                  <div class="profile-picture--no allocation-yes dotted-border">
-                      <div class="intro profile">
-                        <span class="profile-picture allocated--no">SM</span>
-                        <div class="member-details">
-                          <p class="member__name">Sonal Rajotia</p>
-                          <p class="member__designation"> Deputy Branch Manager</p>
+                  <div class="card-header">
+                    <div class="profile-picture--no allocation-yes dotted-border">
+                        <div class="intro profile">
+                          <span class="profile-picture allocated--no">SM</span>
+                          <div class="member-details">
+                            <p class="member__name">Sonal Rajotia</p>
+                            <p class="member__designation"> Deputy Branch Manager</p>
+                          </div>
                         </div>
-                      </div>
-                  </div>
-                  <div class="guide-lines dotted-border">
-                    <div class="row">
-                      <div class="col-xl-9">
-                        <p>Please enter all roles performed by <span>Sonal Rajotia</span> in Branch
-                          Shirva (CBS
-                          Code 1322) since 1st April 2021</p>
-                      </div>
-                      <div class="col-xl-3 d-flex justify-content-xl-end mt-xl-0 mt-4">
-                        <a href="#" class="btn btn-danger">Make inactive</a>
+                    </div>
+                    <div class="guide-lines dotted-border">
+                      <div class="row">
+                        <div class="col-xl-9">
+                          <p>Please enter all roles performed by <span>Sonal Rajotia</span> in Branch
+                            Shirva (CBS
+                            Code 1322) since 1st April 2021</p>
+                        </div>
+                        <div class="col-xl-3 d-flex justify-content-xl-end mt-xl-0 mt-4">
+                          <a href="#" class="btn btn-danger">Make inactive</a>
+                        </div>
                       </div>
                     </div>
                   </div>
-                  <div class="add-detail ">
+                  <div class="add-detail overflow-container">
                     <div class=" kra">
                       <div class="
                     kra--add">
                         <h3 class="b4"> Add New Role Mix</h3>
-                        <div class="new-role-wrap overflow-container">
+                        <div class="new-role-wrap">
                           <div class="new-role">
                             <div class="assignment-duration">
                               <label for="assignment floating-label">Assignment Start
@@ -328,7 +330,25 @@
                                   aria-label="Close"></button>
                               </div>
                               <div class="modal-body">
-                                <div class="confirmation bordered-box">
+                                 <div class="modal-body">
+                                   <div class="confirmation">
+                                     <img src="images/Completed-pana.png" alt="completed">
+                                       <p class="b1 confirmation-text">Do you want to proceed with the role mix?</p>
+
+                                    <div class="popup-actions">
+                                      <button type="button" class="btn btn-arrow btn-arrow--rotated btn-secondary"
+                                        data-bs-dismiss="modal"><span class="icon-WhiteArrow"></span>
+                                        No</button>
+                                      <button type="button" class="btn btn-arrow btn-primary" data-bs-toggle="modal"
+                                        data-bs-target="#confirm" data-bs-dismiss="modal">Yes<span
+                                          class="icon-WhiteArrow"></span></button>
+
+                                    </div>
+                                   </div>
+
+                                 </div>
+
+                                <!-- <div class="confirmation bordered-box">
                                     <p class="confirmation-text">Do you want to proceed with the role mix?</p>
 
                                     <div class="popup-actions">
@@ -340,7 +360,7 @@
                                         data-bs-dismiss="modal">Yes<span class="icon-WhiteArrow"></span></button>
 
                                     </div>
-                                </div>
+                                </div> -->
                         
                               </div>
                              
@@ -388,7 +408,7 @@
                           <div class="col-6 b3">KRA Description </div>
                           <div class="col-6 b3"> Wgt</div>
                         </div>
-                        <div class="kra-list-wrap overflow-container">
+                        <div class="kra-list-wrap">
                           <ul class="kra-list dotted-border--top">
                             <li class="kra-list-item">
                               <div class="kra-detail">
@@ -438,7 +458,8 @@
                             <p class="kra-value">70</p>
                           </div>
                         </div>
-                        <div class="d-flex justify-content-end"><a href="#" type="button" class="btn btn-arrow btn-secondary" >Raise Exception <span class="icon-WhiteArrow"></span></a></div>
+                        <a href="#" type="button" class="btn btn-arrow btn-outline-dark">Raise Exception <span
+                            class="icon-WhiteArrow"></span></a>
                       </div>
                     </div>
                   </div>

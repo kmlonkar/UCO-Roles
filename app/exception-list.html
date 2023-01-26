@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>exception</title>
+  </head>
+
+  <body>
+    <header class="hero-banner navbar-lg">
+      <img class="hero-banner__image" src="images/banner.png" alt="Hero Banner">
+      <div class="hero-banner__content hero-content">
+        <div class="hero-content__logo">
+          <img src="images/UCO_logo.png" alt="UCO Bank">
+        </div>
+        <div class="hero-content__actions">
+          <div class="self-profile active">
+            <span><img src="images/johnDoe.jpg" alt="johndoe"></span>
+          </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+         <span class="icon-logout"></span>
+        </div>
+      </div>
+    </header>
+    <main class="content-wrapper">
+      <section class="sidebar">
+        <nav class="sidebar-navigation navigation">
+          <ul class="navigation-list">
+            <li class="navigation-list_item">
+              <div class="navigation-list_item__logo">
+                <img src="images/home.svg" alt="home">
+              </div>
+              <a class="navigation-list_item__link" href="#">Home</a>
+            </li>
+            <li class="navigation-list_item">
+              <div class="navigation-list_item__logo">
+                <img src="images/myTeam.svg" alt="home">
+              </div>
+              <a class="navigation-list_item__link" href="#">My team</a>
+            </li>
+            <li class="navigation-list_item dropdown">
+              <div class="navigation-list_item__logo">
+                <img src="images/tools.svg" alt="home">
+              </div>
+              <a class="navigation-list_item__link" id="navbarDropdown" href="#">my tools</a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <h5 class="dropdown-menu__title">MY TOOLS</h5>
+                <li><span class="icon-targetsetting"></span>Role Clarity</li>
+                <li><span class="icon-targetsetting"></span>Target Setting</li>
+                <li><span class="icon-PMS"></span>PMS Profiler</li>
+              </ul>
+            </li>
+            <li class="navigation-list_item">
+              <div class="navigation-list_item__logo">
+                <img src="images/Document.svg" alt="home">
+              </div>
+              <a class="navigation-list_item__link" href="#">My Documents</a>
+            </li>
+            <li class="navigation-list_item">
+              <div class="navigation-list_item__logo">
+                <img src="images/instructions.svg" alt="home">
+              </div>
+              <a class="navigation-list_item__link" href="#">Instructions</a>
+            </li>
+            <li class="navigation-list_item">
+              <div class="navigation-list_item__logo">
+                <img src="images/contactus.svg" alt="home">
+              </div>
+              <a class="navigation-list_item__link" href="#">Contact Us</a>
+            </li>
+          </ul>
+          <div class="self-profile active">
+            <span><img src="images/johnDoe.jpg" alt="johndoe"></span>
+          </div>
+        </nav>
+      </section>
+      <div class="content">
+        <div class="one-col-layout">
+          <div class="exception-heading">
+            <h1 class="b1 section-title">Exception List</h1>
+            <a href="#" type="button" class="btn btn-arrow btn-primary" data-bs-toggle="modal"
+              data-bs-target="#addKRA">+ Add New KRA <span class="icon-WhiteArrow"></span></a>
+              <!-- modal for new kra -->
+              <div class="modal fade " id="addKRA" data-bs-backdrop="static" data-bs-keyboard="false"
+                tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="d-flex d-flex justify-content-between">
+                      <div class="modal-header">
+                        <h5 class="modal-title b2" id="staticBackdropLabel">Add a New KRA</h5>
+                        <p class="modal-subtitle b4">You can added new KRAs for the specific role.</p>
+                      </div>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="make-inactive-form">
+                        <div class="form-floating">
+                          <select class="form-select" id="floatingSelectGrid"
+                            aria-label="Floating label select example">
+                            <option selected>Current Account Officer</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                          </select>
+                          <label for="floatingSelectGrid">Select appropriate reason</label>
+                        </div>
+                        <div class="form-floating">
+                          <textarea class="form-control textarea" placeholder="Leave a comment here"
+                            id="floatingTextarea">Write the kra description here</textarea>
+                          <label for="floatingTextarea">Add KRA Description</label>
+                        </div>
+                        <div class="popup-actions form-action">
+                       
+                             <button type="button" class="btn btn-arrow btn-primary" data-bs-toggle="modal"
+                               data-bs-target="#confirmAddKRA" data-bs-dismiss="modal">Save and Add New KRA<span
+                                 class="icon-WhiteArrow"></span></button>
+                             
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+          <div class="card exception-card">
+            <table class="table kra-table">
+              <thead>
+                <tr>
+                  <th scope="col section-title" colspan="2">Measurable KRAs</th>
+                <th scope="col" colspan="2"><button class="btn btn-outline-primary edit-kra">edit</button></th>
+                  <th scope="col" colspan="2"> Weightage</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="data-row">
+                  <td scope="row" colspan="2"><span>1</span>% Growth in average retail term deposits </td>
+                 <td colspan="2"></td>
+                  <td colspan="2"><input type="text" placeholder="8" readonly>
+                    <button class="btn close-btn"><span class="icon-remove"></span></button>
+                  </td>
+                </tr>
+                <tr class="data-row">
+                  <td scope="row" colspan="2"><span>2</span>Audit and Compliance score </td>
+                 <td colspan="2"></td>
+                  <td colspan="2"><input type="text" placeholder="6" readonly>
+                  <button class="btn close-btn"><span class="icon-remove"></span></button></td>
+                </tr>
+                <tr class="data-row">
+                  <td scope="row" colspan="2"><span>3</span>Customer Satisfaction Score </td>
+                 <td colspan="2"></td>
+                  <td colspan="2"><input type="text" placeholder="5" readonly>
+                  <button class="btn close-btn"><span class="icon-remove"></span></button></td>
+                </tr>
+                <tr class="data-row">
+                  <td scope="row" colspan="2"><span>4</span>% uptime in alternate delivery channels</td>
+                 <td colspan="2"></td>
+                  <td colspan="2"><input type="text" placeholder="5" readonly>
+                  <button class="btn close-btn"><span class="icon-remove"></span></button></td>
+                </tr>
+                <tr class="data-row">
+                  <td scope="row" colspan="2"><span>5</span>% Growth in Average Total SA base </td>
+                 <td colspan="2"></td>
+                  <td colspan="2"><input type="text" placeholder="4" readonly>
+                  <button class="btn close-btn"><span class="icon-remove"></span></button></td>
+                </tr>
+                <tr class="data-row">
+                  <td scope="row" colspan="2"><span>6</span>Achievement in Door Step Banking transactions </td>
+                 <td colspan="2"></td>
+                  <td colspan="2"><input type="text" placeholder="4" readonly><button class="btn close-btn"><span
+                        class="icon-remove"></span></button>
+                  </td>
+                  
+                </tr>
+                <tr class="data-row">
+                  <td scope="row" colspan="2"><span>7</span>No. of savings
+                    accounts canvassed vs target </td>
+                 <td colspan="2"></td>
+                  <td colspan="2"><input type="text" placeholder="6" readonly>
+                  <button class="btn close-btn"><span class="icon-remove"></span></button></td>
+                </tr>
+                <tr class="data-row">
+                  <td scope="row" colspan="2"><span>8</span>% Growth in average total Deposits </td>
+                 <td colspan="2"></td>
+                  <td colspan="2"><input type="text" placeholder="7" readonly>
+                  <button class="btn close-btn"><span class="icon-remove"></span></button></td>
+                </tr>
+                <tr class="data-row-total">
+                  <td scope="row" colspan="2">Total KRA Score</td>
+                 <td colspan="2"><span class="not-equal-to">Total KRA Weightage Is Not Equal To 70.</span></td>
+                  <td colspan="2"> <span class="total-value">40</span></td>
+                </tr>
+              
+              </tbody>
+            </table>
+            <div class="edit-kra-form">
+              <h5 class="form-title">Please mention the reason for the variant & making changes in KRA weightage in detail (
+                Mins 200 characters.)</h5>
+                <div class="form-floating">
+                  <div class="form-group">
+                    <textarea class="form-control textarea" placeholder="Add description"
+                      id="exampleFormControlTextarea1" rows="3"></textarea>
+                  </div>                  
+                </div>
+                <a href="#" type="button" class="w-100 btn btn-arrow  btn-primary" data-bs-toggle="modal"
+                  data-bs-target="#submitKRA">submit now <span class="icon-WhiteArrow"></span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- modal for asking add kra confirmation -->
+    <div class="modal fade " id="confirmAddKRA" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+      aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="d-flex d-flex justify-content-between">
+            <div class="modal-header">
+              <h5 class="modal-title b2" id="staticBackdropLabel">Role Submission</h5>
+              <p class="modal-subtitle b4">Confirmation</p>
+            </div>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="confirmation confirmation-received">
+              <img src="images/Completed-pana.png" alt="completed">
+              <h2 class="b1 confirmation-text">Are you sure you want to add kra</h2>
+              <p class="confirmation-subtext">% growth</p>
+
+              <div class="popup-actions">
+                <button type="button" class="btn btn-arrow btn-arrow--rotated btn-secondary"
+                  data-bs-dismiss="modal"><span class="icon-WhiteArrow"></span>
+                  No</button>
+                <button type="button" class="btn btn-arrow btn-primary" data-bs-toggle="modal"
+                  data-bs-target="#AddKRASucess" data-bs-dismiss="modal">Yes<span
+                    class="icon-WhiteArrow"></span></button>
+
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <!-- modal for added kra sucessfully msg -->
+    <div class="modal fade " id="AddKRASucess" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+    <div class="modal-content">
+    <div class="d-flex d-flex justify-content-between">
+      <div class="modal-header">
+        <h5 class="modal-title b2" id="staticBackdropLabel">Role Submission</h5>
+        <p class="modal-subtitle b4">Confirmation</p>
+      </div>
+      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    </div>
+    <div class="modal-body">
+      <div class="confirmation confirmation-received">
+        <img src="images/Completed-pana.png" alt="completed">
+        <h2 class="b1 confirmation-text">Sucessfully added kra</h2>
+        <p class="confirmation-subtext">You have successfully allocated the role mix to
+          your
+          team member.</p>
+
+        <div class="popup-actions">
+          
+          <button type="button" class="btn btn-arrow btn-primary" data-bs-toggle="modal" data-bs-target="#confirm"
+            data-bs-dismiss="modal">Ok<span class="icon-WhiteArrow"></span></button>
+
+        </div>
+      </div>
+
+    </div>
+
+    </div>
+    </div>
+    </div>
+<!-- modal for exception raised msg -->
+ <div class="modal fade " id="submitKRA" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+   aria-labelledby="staticBackdropLabel" aria-hidden="true">
+   <div class="modal-dialog">
+     <div class="modal-content">
+       <div class="d-flex d-flex justify-content-end">
+         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+       </div>
+       <div class="modal-body">
+         <div class="confirmation confirmation-received">
+           <img src="images/Completed-pana.png" alt="completed">
+           <h2 class="b1 confirmation-text">Exception raised</h2>
+           <p class="confirmation-subtext">Your reporting manager will revert to you shortly on the same exception
+             raised. Thanks for submitting it.</p>
+
+           <div class="popup-actions">
+
+             <button type="button" class="btn btn-arrow btn-primary" data-bs-toggle="modal" data-bs-target="#confirm"
+               data-bs-dismiss="modal" onclick="javascript:window.location.href='Role-clarity-2.html';">Ok<span
+                 class="icon-WhiteArrow"></span></button>
+
+           </div>
+         </div>
+
+       </div>
+
+     </div>
+   </div>
+ </div>
+    <script src="/node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="/node_modules/select2/dist/js/select2.min.js"></script>
+    <script src="/node_modules/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"></script>
+    <script src="js/apexcharts.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+
+</html>

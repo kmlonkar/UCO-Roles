@@ -1,4 +1,4 @@
-$(function(){
+$(function () {
   $('#datepicker1').datepicker();
   $('#datepicker2').datepicker();
   $('.date').datepicker();
@@ -8,13 +8,13 @@ $(function(){
   $('.search-input').focus(function () {
     $('.search-options').addClass('search-options--open');
     $('.search-results').addClass('search-results--open');
-    
-  })
-   $('.search-input').blur(function () {
-     $('.search-options').removeClass('search-options--open');
-     $('.search-results').removeClass('search-results--open');
 
-   })
+  })
+  $('.search-input').blur(function () {
+    $('.search-options').removeClass('search-options--open');
+    $('.search-results').removeClass('search-results--open');
+
+  })
   $('.navbar-toggler').click(function () {
     $('.sidebar').toggleClass('sidebar-mobile sidebar-mobile--open');
   })
@@ -24,8 +24,20 @@ $(function(){
   $('.dropdown').mouseleave(function () {
     $('.dropdown > .dropdown-menu.dropdown-menu--open').removeClass('dropdown-menu--open');
   });
+  $('.edit-kra').click(function () {
+    $('.kra-table').addClass('edit-table');
+    $('.kra-table input').prop("readonly", false);
+    console.log($('.edit-table input'));
+  })
+  $('.edit-table input').focus(function () {
+    alert('works')
+    $(this).attr("placeholder", "");
+  })
 
-});
-$(document).ready(function () {
-  $('.js-example-basic-single').select2();
+  // $('.edit-table input').each(function () {
+  //   var currentElement = $(this);
+  //   alert('works')
+  // });
+
+
 });

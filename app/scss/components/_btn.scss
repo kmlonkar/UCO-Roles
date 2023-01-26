@@ -41,6 +41,25 @@
                 }
         }
 }
+.btn-outline-dark{
+    color: $text-clr-black;
+    span {
+            &::before {
+                color: $text-clr-black;
+            }
+        }
+    &:focus,
+    &::hover{
+        color: $clr-white;
+        span {
+                &::before {
+                    color: $clr-white;
+                }
+            }
+    }
+   
+
+}
 .btn-danger{
     background-color: transparent;
     color: $clr-red;
@@ -69,15 +88,15 @@
         }
 }
 .btn-arrow{
-    &:hover,
-        &:focus {
-           span{
-            &::before{
+    // &:hover,
+    //     &:focus {
+    //        span{
+    //         &::before{
 
-                color: inherit;
-            }
-           }
-        }
+    //             color: inherit;
+    //         }
+    //        }
+    //     }
     span{
         margin-left:2rem;
     }

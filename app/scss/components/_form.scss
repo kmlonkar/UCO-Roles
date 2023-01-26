@@ -34,7 +34,7 @@ label {
     padding: 0;
     display: flex;
     margin-bottom: 1.5rem;
-
+    
     label {
         margin-left: 1rem;
 
@@ -48,5 +48,14 @@ label {
         box-shadow: 0 0 0 rgba(0, 0, 0, 0);
     }
 }
+.textarea{
+    &.form-control{
+        min-height:20rem;
+        background-color: $bg-clr-light-blue;
+        border: 0;
+        padding: 1.3rem 0.75rem;
+    }
+}
+
 
 

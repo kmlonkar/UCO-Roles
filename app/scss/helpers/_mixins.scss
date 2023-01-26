@@ -38,12 +38,13 @@ $breakpoints: (
   font-size: 1.3rem;
   font-family: $primary-font-bold;
   text-transform: capitalize;
-  border: 0 none;
+  text-align: left;
+  // border: 0 none;
   border-radius: 0;
-  &:hover,
-  &:focus{
-    color: initial;
-  }
+  // &:hover,
+  // &:focus{
+  //   color: initial;
+  // }
 }
 
 // Transition

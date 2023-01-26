@@ -1,0 +1,30 @@
+.exception-card{
+    display:flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    padding: 3.2rem 3.4rem;
+    box-shadow: 0px 3px 26px $common-box-shadow-2;
+}
+.exception-heading{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 1rem;
+}
+.edit-kra-form{
+    display: none
+}
+.edit-table{
+    width: 70%;
+   
+    &+.edit-kra-form{
+        display: block;
+        width: 30%;
+        padding-left: 5rem;
+        .form-title{
+            font-size:1.4rem;
+            font-family: $primary-font-semibold;
+            margin-bottom: 2rem;
+        }
+    }
+}
