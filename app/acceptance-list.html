@@ -84,9 +84,8 @@
       <div class="content">
         <div class="one-col-layout">
           <div class="exception-heading">
-            <h1 class="b1 section-title">Exception List</h1>
-            <a href="#" type="button" class="btn btn-arrow btn-primary" data-bs-toggle="modal"
-              data-bs-target="#addKRA">+ Add New KRA <span class="icon-WhiteArrow"></span></a>
+            <h1 class="b1 section-title">My Role Acceptance</h1>
+  
               <!-- modal for new kra -->
               <div class="modal fade " id="addKRA" data-bs-backdrop="static" data-bs-keyboard="false"
                 tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
@@ -132,87 +131,95 @@
                 </div>
               </div>
           </div>
-          <div class="card exception-card">
-            <table class="table kra-table">
-              <thead>
-                <tr>
-                  <th scope="col section-title" colspan="2">Measurable KRAs</th>
-                <th scope="col" colspan="2"><button class="btn btn-outline-primary edit-kra">edit</button></th>
-                  <th scope="col" colspan="2"> Weightage</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr class="data-row">
-                  <td scope="row" colspan="2"><span>1</span>% Growth in average retail term deposits </td>
-                 <td colspan="2"></td>
-                  <td colspan="2"><input type="text" placeholder="8" readonly>
-                    <button class="btn close-btn"><span class="icon-remove"></span></button>
-                  </td>
-                </tr>
-                <tr class="data-row">
-                  <td scope="row" colspan="2"><span>2</span>Audit and Compliance score </td>
-                 <td colspan="2"></td>
-                  <td colspan="2"><input type="text" placeholder="6" readonly>
-                  <button class="btn close-btn"><span class="icon-remove"></span></button></td>
-                </tr>
-                <tr class="data-row">
-                  <td scope="row" colspan="2"><span>3</span>Customer Satisfaction Score </td>
-                 <td colspan="2"></td>
-                  <td colspan="2"><input type="text" placeholder="5" readonly>
-                  <button class="btn close-btn"><span class="icon-remove"></span></button></td>
-                </tr>
-                <tr class="data-row">
-                  <td scope="row" colspan="2"><span>4</span>% uptime in alternate delivery channels</td>
-                 <td colspan="2"></td>
-                  <td colspan="2"><input type="text" placeholder="5" readonly>
-                  <button class="btn close-btn"><span class="icon-remove"></span></button></td>
-                </tr>
-                <tr class="data-row new-kra-added">
-                  <td scope="row" colspan="2"><span>5</span>% Growth in Average Total SA base </td>
-                 <td colspan="2"></td>
-                  <td colspan="2"><input type="text" placeholder="4" readonly>
-                  <button class="btn close-btn"><span class="icon-remove"></span></button></td>
-                </tr>
-                <tr class="data-row">
-                  <td scope="row" colspan="2"><span>6</span>Achievement in Door Step Banking transactions </td>
-                 <td colspan="2"></td>
-                  <td colspan="2"><input type="text" placeholder="4" readonly><button class="btn close-btn"><span
-                        class="icon-remove"></span></button>
-                  </td>
-                  
-                </tr>
-                <tr class="data-row">
-                  <td scope="row" colspan="2"><span>7</span>No. of savings
-                    accounts canvassed vs target </td>
-                 <td colspan="2"></td>
-                  <td colspan="2"><input type="text" placeholder="6" readonly>
-                  <button class="btn close-btn"><span class="icon-remove"></span></button></td>
-                </tr>
-                <tr class="data-row new-kra-added">
-                  <td scope="row" colspan="2"><span>8</span>% Growth in average total Deposits </td>
-                 <td colspan="2"></td>
-                  <td colspan="2"><input type="text" placeholder="7" readonly>
-                  <button class="btn close-btn"><span class="icon-remove"></span></button></td>
-                </tr>
-                <tr class="data-row-total">
-                  <td scope="row" colspan="2">Total KRA Score</td>
-                 <td colspan="2"><span class="not-equal-to">Total KRA Weightage Is Not Equal To 70.</span></td>
-                  <td colspan="2"> <span class="total-value">40</span></td>
-                </tr>
-              
-              </tbody>
-            </table>
-            <div class="edit-kra-form">
-              <h5 class="form-title">Please mention the reason for the variant & making changes in KRA weightage in
-                detail ( Min. 200 characters)</h5>
-                <div class="form-floating">
-                  <div class="form-group">
-                    <textarea class="form-control textarea" placeholder="Add description"
-                      id="exampleFormControlTextarea1" rows="3"></textarea>
-                  </div>                  
-                </div>
-                <a href="#" type="button" class="btn btn-arrow  btn-primary" data-bs-toggle="modal"
-                  data-bs-target="#submitKRA">submit now <span class="icon-WhiteArrow"></span></a>
+          <div class="role-acceptence-wrapper">
+            <div class="card table-wrap">
+              <table class="table kra-table">
+                <thead>
+                  <tr>
+                    <th scope="col section-title" colspan="2">KRA Description</th>
+                    <th scope="col" colspan="2"></th>
+                    <th scope="col" colspan="2"> Weightage</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="data-row">
+                    <td scope="row" colspan="2">% Growth in average retail term deposits </td>
+                   <td colspan="2"></td>
+                    <td colspan="2"><input type="text" placeholder="8" readonly>
+                      </button>
+                    </td>
+                  </tr>
+                  <tr class="data-row">
+                    <td scope="row" colspan="2">Audit and Compliance score </td>
+                   <td colspan="2"></td>
+                    <td colspan="2"><input type="text" placeholder="6" readonly>
+                    </button></td>
+                  </tr>
+                  <tr class="data-row">
+                    <td scope="row" colspan="2">Customer Satisfaction Score </td>
+                   <td colspan="2"></td>
+                    <td colspan="2"><input type="text" placeholder="5" readonly>
+                    </button></td>
+                  </tr>
+                  <tr class="data-row">
+                    <td scope="row" colspan="2">% uptime in alternate delivery channels</td>
+                   <td colspan="2"></td>
+                    <td colspan="2"><input type="text" placeholder="5" readonly>
+                    </button></td>
+                  </tr>
+                  <tr class="data-row">
+                    <td scope="row" colspan="2">% Growth in Average Total SA base </td>
+                   <td colspan="2"></td>
+                    <td colspan="2"><input type="text" placeholder="4" readonly>
+                    </button></td>
+                  </tr>
+                  <tr class="data-row">
+                    <td scope="row" colspan="2">Achievement in Door Step Banking transactions </td>
+                   <td colspan="2"></td>
+                    <td colspan="2"><input type="text" placeholder="4" readonly><button class="btn close-btn"><span
+                          class="icon-remove"></span></button>
+                    </td>
+            
+                  </tr>
+                  <tr class="data-row">
+                    <td scope="row" colspan="2">No. of savings
+                      accounts canvassed vs target </td>
+                   <td colspan="2"></td>
+                    <td colspan="2"><input type="text" placeholder="6" readonly>
+                    </button></td>
+                  </tr>
+                  <tr class="data-row">
+                    <td scope="row" colspan="2">% Growth in average total Deposits </td>
+                   <td colspan="2"></td>
+                    <td colspan="2"><input type="text" placeholder="7" readonly>
+                    </button></td>
+                  </tr>
+                  <tr class="data-row-total">
+                    <td scope="row" colspan="2">Total</td>
+                   <td colspan="2"></td>
+                    <td colspan="2"> <span class="total-value">70</span></td>
+                  </tr>
+            
+                </tbody>
+              </table>
+            </div>
+            <div class="card table-summary-wrap border-dark-top">
+               <div class="table-summary-header dotted-border">
+                 <div class="steps-wrapper">
+                   <h3 class="steps step-1">
+                   Branch Head - Retail
+                   </h3>
+                   <p class="steps step-2">Locker Officer</p>
+                   <p class="steps step-3">Locker Officer</p>
+                 </div>
+                 <div class="role-details">
+                    <p><span>Location -</span> Mali Ghat (CBS Code 1382)</p>
+                    <p><span>Role Start Date</span> -23-JAN-23</p>
+                 </div>
+               </div>
+               <div class="table-summary-graph dotted-border">
+                 <div id="chart"></div>
+               </div>
             </div>
           </div>
         </div>

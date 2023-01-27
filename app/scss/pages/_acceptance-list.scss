@@ -1,0 +1,91 @@
+.role-acceptence-wrapper{
+    display: flex;
+    justify-content: space-between;
+    .table-wrap{
+        width: 67%;
+    }
+    .table-summary-wrap{
+        width: 30%;
+        border-radius:0 ;
+        .table-summary-header{
+            padding-left: 3rem;
+            padding-bottom: 3rem;
+            // background-image: linear-gradient(to right, $grey 33%, rgba(255, 255, 255, 0) 0%);
+            // background-position: bottom;
+            // background-size: 3px 1px;
+            // background-repeat: repeat-x;
+            .role-details{
+                p{
+                    font-family: $primary-font-bold;
+                    font-size: 1.3rem;
+                    margin-bottom: 1.5rem;
+                    &:last-of-type{
+                        margin-bottom:0;
+                    }
+                }
+                span{
+                    font-family: $primary-font-light;
+                    font-size: 1.2rem;
+                }
+            }
+        }
+        .steps-wrapper{
+            .steps{
+                margin-bottom: 1.5rem;
+                position: relative;
+                font-family: $primary-font-bold;
+                &:before{
+                    content: "";
+                    position: absolute;
+                    height: 0.5rem;
+                    width: 0.5rem;
+                    border-radius: 1rem;
+                    background: $gray-300;
+                    left: -20px;
+                    top: 6px;
+                
+                }
+                &::after{
+                    content: "";
+                    position: absolute;
+                    height: 40px;
+                    width:1px;
+                    left: -18px;
+                    top: 7px;
+                    display: block;
+                    background-color: transparent;
+                    background-image: linear-gradient($gray-300 33%, rgba(255, 255, 255, 0) 0%);
+                    background-position: right;
+                    background-size: 1px 5px;
+                    background-repeat: repeat-y;
+                }
+                &:nth-child(3){
+                   &::after{
+                    content:'';
+                    display: none;
+                   }
+                }
+            }
+        }
+    }
+    table{
+        tbody{
+            tr{
+                td{
+                    &:first-of-type{
+                        padding-left:0
+                    }
+                }
+                &:last-of-type{
+                    td {
+                        &:first-of-type {
+                            padding-left: 0
+                        }
+                    }
+                }
+
+            }
+
+        }
+    }
+}

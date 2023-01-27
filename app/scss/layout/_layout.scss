@@ -48,6 +48,7 @@
         padding-left: calc(31rem + 3rem);
         overflow-y: hidden;
         height: calc(100vh - 7rem);
+        width: 100%;
         @media screen and (max-width:1200px){
             height: auto;
             overflow-y: auto;

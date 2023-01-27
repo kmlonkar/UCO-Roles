@@ -47,6 +47,18 @@
                 }
             }
         }
+        .flagged{
+            position: relative;
+            display: inline-block;
+            &::before {
+                    content: $icon-Flagged-for-Discussion;
+                    font-family: $icomoon;
+                    color: #f7a029;
+                    position: absolute;
+                    right: -4rem;
+                    top: 0px;
+            }
+        }
     }
 }
 

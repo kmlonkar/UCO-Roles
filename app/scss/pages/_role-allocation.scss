@@ -110,7 +110,16 @@
       color: #15734e;
     }
   }
+  &-accepted-no{
+    .profile-picture {
+        &::after {
+          content: $icon-Allocated-but-Not-Accepted;
+          // color:;
+        }
+      }
+  }
 }
+
 
 .accepted-no {
   .profile-picture {
@@ -347,6 +356,37 @@
     &:last-of-type {
       margin-bottom: 0;
 
+    }
+  }
+}
+
+.flagged-reasons {
+  .subsection-title {
+    text-transform: uppercase;
+    &+p{
+      font-size:1.5rem;
+    }
+  }
+
+  .conclusion {
+    &__section{
+      margin-top:1.5rem;
+      .small-text{
+        color: $primary-blue;
+        margin-bottom: 1.5rem;
+        font-size: 1.2rem;
+      }
+      .form-check{
+        input{
+          margin-top: 0.5rem;
+        }
+        label{
+          color: $text-clr-black;
+          font-size: 1.2rem;
+          line-height: 1.9rem;
+          font-family: $primary-font-regular;
+        }
+      }
     }
   }
 }

@@ -41,4 +41,28 @@ $(function () {
   // });
 
 
+  var options = {
+    series: [44, 55, 41, 17, 15],
+    labels: ['Business', 'Income', 'Audit & Compliance', 'Npa & Recovery', 'Digital Banking'],
+    chart: {
+      type: 'donut',
+    },
+    responsive: [{
+      breakpoint: 480,
+      options: {
+        chart: {
+          width: 200,
+          height: 400
+        },
+        legend: {
+          position: 'bottom'
+        }
+      }
+    }],
+
+    colors: ['#B41432', '#F7A029', '#452525', '#15734E', '#3BA34B'],
+  };
+
+  var chart = new ApexCharts(document.querySelector("#chart"), options);
+  chart.render();
 });
