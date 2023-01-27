@@ -92,15 +92,18 @@
                 tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
                 <div class="modal-dialog">
                   <div class="modal-content">
-                    <div class="d-flex d-flex justify-content-between">
-                      <div class="modal-header">
+                    <div class="row">
+                      <div class="modal-header col-11">
                         <h5 class="modal-title b2" id="staticBackdropLabel">Add a New KRA</h5>
                         <p class="modal-subtitle b4">You can added new KRAs for the specific role.</p>
                       </div>
-                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      <div class="col-1">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+
+                      </div>
                     </div>
                     <div class="modal-body">
-                      <div class="make-inactive-form">
+                      <div class="addnew-kra-form">
                         <div class="form-floating">
                           <select class="form-select" id="floatingSelectGrid"
                             aria-label="Floating label select example">
@@ -109,7 +112,7 @@
                             <option value="2">Two</option>
                             <option value="3">Three</option>
                           </select>
-                          <label for="floatingSelectGrid">Select appropriate reason</label>
+                          <label for="floatingSelectGrid">Add a KRA from the existing library</label>
                         </div>
                         <div class="form-floating">
                           <textarea class="form-control textarea" placeholder="Leave a comment here"
@@ -164,7 +167,7 @@
                   <td colspan="2"><input type="text" placeholder="5" readonly>
                   <button class="btn close-btn"><span class="icon-remove"></span></button></td>
                 </tr>
-                <tr class="data-row">
+                <tr class="data-row new-kra-added">
                   <td scope="row" colspan="2"><span>5</span>% Growth in Average Total SA base </td>
                  <td colspan="2"></td>
                   <td colspan="2"><input type="text" placeholder="4" readonly>
@@ -185,7 +188,7 @@
                   <td colspan="2"><input type="text" placeholder="6" readonly>
                   <button class="btn close-btn"><span class="icon-remove"></span></button></td>
                 </tr>
-                <tr class="data-row">
+                <tr class="data-row new-kra-added">
                   <td scope="row" colspan="2"><span>8</span>% Growth in average total Deposits </td>
                  <td colspan="2"></td>
                   <td colspan="2"><input type="text" placeholder="7" readonly>
@@ -200,15 +203,15 @@
               </tbody>
             </table>
             <div class="edit-kra-form">
-              <h5 class="form-title">Please mention the reason for the variant & making changes in KRA weightage in detail (
-                Mins 200 characters.)</h5>
+              <h5 class="form-title">Please mention the reason for the variant & making changes in KRA weightage in
+                detail ( Min. 200 characters)</h5>
                 <div class="form-floating">
                   <div class="form-group">
                     <textarea class="form-control textarea" placeholder="Add description"
                       id="exampleFormControlTextarea1" rows="3"></textarea>
                   </div>                  
                 </div>
-                <a href="#" type="button" class="w-100 btn btn-arrow  btn-primary" data-bs-toggle="modal"
+                <a href="#" type="button" class="btn btn-arrow  btn-primary" data-bs-toggle="modal"
                   data-bs-target="#submitKRA">submit now <span class="icon-WhiteArrow"></span></a>
             </div>
           </div>
@@ -216,22 +219,29 @@
       </div>
     </main>
     <!-- modal for asking add kra confirmation -->
-    <div class="modal fade " id="confirmAddKRA" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    <div class="modal fade add-kra-modal" id="confirmAddKRA" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
       aria-labelledby="staticBackdropLabel" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="d-flex d-flex justify-content-between">
-            <div class="modal-header">
-              <h5 class="modal-title b2" id="staticBackdropLabel">Role Submission</h5>
-              <p class="modal-subtitle b4">Confirmation</p>
+            <div class="row">
+              <div class="modal-header col-11">
+                
+                <h5 class="modal-title b2" id="staticBackdropLabel">Add a New KRA</h5>
+                <p class="modal-subtitle b4">You can added new KRAs for the specific role.</p>
+              </div>
+              <div class="col-1">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+
+              </div>
+
             </div>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">
             <div class="confirmation confirmation-received">
-              <img src="images/Completed-pana.png" alt="completed">
-              <h2 class="b1 confirmation-text">Are you sure you want to add kra</h2>
-              <p class="confirmation-subtext">% growth</p>
+              <img src="images/request-confirmation.svg" alt="completed">
+              <h2 class="b1 add-kra-text">Are you sure you want to submit the KRA</h2>
+              <p class="kra-subtext">%Growth in Digital Transactions</p>
 
               <div class="popup-actions">
                 <button type="button" class="btn btn-arrow btn-arrow--rotated btn-secondary"
@@ -250,29 +260,34 @@
       </div>
     </div>
     <!-- modal for added kra sucessfully msg -->
-    <div class="modal fade " id="AddKRASucess" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    <div class="modal fade add-kra-modal " id="AddKRASucess" data-bs-backdrop="static" data-bs-keyboard="false"
+      tabindex="-1"
     aria-labelledby="staticBackdropLabel" aria-hidden="true">
     <div class="modal-dialog">
     <div class="modal-content">
     <div class="d-flex d-flex justify-content-between">
-      <div class="modal-header">
-        <h5 class="modal-title b2" id="staticBackdropLabel">Role Submission</h5>
-        <p class="modal-subtitle b4">Confirmation</p>
+      <div class="row">
+        <div class="modal-header col-11">
+          <h5 class="modal-title b2" id="staticBackdropLabel">Add a New KRA</h5>
+          <p class="modal-subtitle b4">You can added new KRAs for the specific role.</p>
+        </div>
+        <div class="col-1">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+
+        </div>
+
       </div>
-      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
     </div>
     <div class="modal-body">
       <div class="confirmation confirmation-received">
         <img src="images/Completed-pana.png" alt="completed">
         <h2 class="b1 confirmation-text">Sucessfully added kra</h2>
-        <p class="confirmation-subtext">You have successfully allocated the role mix to
-          your
-          team member.</p>
+        <p class="confirmation-subtext">We have added a new KRA for the Role Mix. Thanks for submitting it.</p>
 
         <div class="popup-actions">
           
           <button type="button" class="btn btn-arrow btn-primary" data-bs-toggle="modal" data-bs-target="#confirm"
-            data-bs-dismiss="modal">Ok<span class="icon-WhiteArrow"></span></button>
+            data-bs-dismiss="modal">OK<span class="icon-WhiteArrow"></span></button>
 
         </div>
       </div>

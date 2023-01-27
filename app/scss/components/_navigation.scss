@@ -1,33 +1,40 @@
-.navigation{
- padding: 4.5rem 1.8rem;
- @media screen and (max-width:991px) {
-    padding: 2rem 1.8rem;
-    height: 100%;
- }
- &-list{
-    width: 10rem;
-    @media screen and (max-width:578px) {
-        width: 100%;
+.navigation {
+    padding: 4.5rem 1.8rem;
+
+    @media screen and (max-width:991px) {
+        padding: 2rem 1.8rem;
+        height: 100%;
     }
- }
-    &-list_item{
+
+    &-list {
+        width: 10rem;
+
+        @media screen and (max-width:578px) {
+            width: 100%;
+        }
+    }
+
+    &-list_item {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         margin-bottom: 1.8rem;
-        &.dropdown{
+
+        &.dropdown {
             position: relative;
         }
+
         @media screen and (max-width:578px) {
             flex-direction: row;
             justify-content: flex-start;
-            .navigation-list_item__logo{
+
+            .navigation-list_item__logo {
                 margin-right: 1.5rem;
             }
         }
 
-        &__logo{
+        &__logo {
             background-color: $primary-blue;
             width: 35px;
             height: 34px;
@@ -35,43 +42,51 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            margin-bottom:5px;
+            margin-bottom: 5px;
         }
-        &__link{
+
+        &__link {
             font-size: 1rem;
             color: $text-clr-blue;
             text-align: center;
-            font-family: $primary-font-medium;
+            font-family: $primary-font-regular;
             text-transform: capitalize;
         }
     }
-    .dropdown-menu{
+
+    .dropdown-menu {
         cursor: pointer;
-        &--open{
+
+        &--open {
             display: block;
             padding: 2rem 1.5rem;
             left: 100%;
             width: 200px;
             margin-top: 2rem;
             border-radius: 0 20px 20px 0;
-            >li{
+
+            >li {
                 margin: 2rem 0;
-            
-                &:last-of-type{
+
+                &:last-of-type {
                     margin: 2rem 0 0;
                 }
+
                 font-size: 1.4rem;
-                span{
+
+                span {
                     margin-right: 1.5rem;
-                    &::before{
-                        font-size:2rem;
+
+                    &::before {
+                        font-size: 2rem;
                     }
                 }
             }
         }
-        &__title{
+
+        &__title {
             border-bottom: 1px solid $grey;
             padding-bottom: 1.5rem;
         }
     }
- }
+}

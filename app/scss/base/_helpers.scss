@@ -45,7 +45,7 @@ ul {
 
 }
 .section-title {
-    color: $text-clr-secondary-blue;
+    color: #0C5F9D;
 }
 .bordered-box{
     border: 1px solid #0C51B0;
@@ -56,3 +56,23 @@ ul {
     font-family: $primary-font-regular;
     text-transform: capitalize;
 }
+ .role-actions {
+     text-align: end;
+
+     &>.btn {
+         min-width: 132px;
+         padding: 0.5rem 1.2rem;
+         text-align: center;
+
+         &:first-of-type {
+             margin-bottom: 0.5rem;
+         }
+     }
+    }
+    .comment-wrap{
+       text-align: start;
+       .btn-dark{
+        color: $text-clr-secondary-black;
+
+       }
+    }

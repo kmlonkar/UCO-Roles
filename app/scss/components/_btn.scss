@@ -20,6 +20,15 @@
         }
     }
 }
+.btn-outline-primary{
+   border: 1px solid $primary-blue;
+   color: $primary-blue;
+        &:hover,
+        &:focus {
+            background-color: $primary-blue;
+        }
+
+}
 .btn-secondary{
     &:hover,
     &:focus{
@@ -81,12 +90,26 @@
     padding-left:0;
     color: $primary-blue;
     text-decoration: none;
-        &:hover,
-        &:focus {
-           background-color: $primary-blue;
-            color: $clr-white;
-        }
+   
+        // &:hover,
+        // &:focus {
+        //    background-color: $primary-blue;
+        //     color: $clr-white;
+        // }
 }
+ .btn-link-underlined {
+    background: transparent;
+    text-decoration: underline;
+    border: 0 none;
+    @extend .btn-link;
+    &:hover, 
+    &:focus,
+    &:active {
+        border: 0;
+        background: transparent;
+
+    }
+ }
 .btn-arrow{
     // &:hover,
     //     &:focus {

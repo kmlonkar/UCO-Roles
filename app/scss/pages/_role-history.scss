@@ -1,28 +1,35 @@
-.role-history{
+.role-history {
     margin-left: -1rem;
     padding-left: 1.5rem;
     padding-top: 0.5rem;
     display: flex;
     flex-direction: column;
     align-items: center;
-    .assignment-input{
+
+    .assignment-input {
         align-items: flex-end;
-        p{
-            &:first-of-type{
-                color:#54586E;
-                font-family: $primary-font-semibold;
+
+        p {
+            &:first-of-type {
+                color: #54586E;
+                font-family: $primary-font-bold;
             }
         }
-        .start-date,.end-date{
+
+        .start-date,
+        .end-date {
             margin-top: 5px;
         }
     }
-    &>div[class^=card]{
+
+    &>div[class^=card] {
         margin-bottom: 1.5rem;
-        .saved{
+
+        .saved {
             position: relative;
             display: inline-block;
-            &::before{
+
+            &::before {
                 content: '';
                 background-color: darkgreen;
                 width: 1.2rem;
@@ -31,9 +38,10 @@
                 position: absolute;
                 right: -2rem;
                 top: 5px;
-            
+
             }
-            &--not{
+
+            &--not {
                 &::before {
                     background-color: $clr-red;
                 }
@@ -42,18 +50,19 @@
     }
 }
 
-.role-history-title{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: flex-start;
+.role-history-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
 
-  .btn-link {
-      padding: 0;
-      &:focus,
-      &:hover{
-        background-color: transparent;
-        color: initial;
-      }
-  }
+    .btn-link {
+        padding: 0;
+
+        &:focus,
+        &:hover {
+            background-color: transparent;
+            color: initial;
+        }
+    }
 }

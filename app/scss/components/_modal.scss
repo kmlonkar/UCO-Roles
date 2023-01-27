@@ -67,3 +67,17 @@
     }
     
 }
+.add-kra-modal{
+    .confirmation-received{
+        padding: 0;
+        .add-kra-text{
+            font-size: 1.4rem;
+            $font-family: $primary-font-regular;
+        }
+        .kra-subtext{
+            font-size: 1.8rem;
+            font-family: $primary-font-bold;
+            color: $text-clr-secondary-black;
+        }
+    }
+}

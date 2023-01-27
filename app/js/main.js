@@ -26,6 +26,7 @@ $(function () {
   });
   $('.edit-kra').click(function () {
     $('.kra-table').addClass('edit-table');
+    $('.exception-heading').toggleClass('edit-kra-heading');
     $('.kra-table input').prop("readonly", false);
     console.log($('.edit-table input'));
   })

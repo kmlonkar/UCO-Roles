@@ -1,10 +1,10 @@
 // Fonts
-$primary-font-regular: 'OpenSans-Regular', sans-serif;
-$primary-font-light: 'OpenSans-Light', sans-serif;
-$primary-font-medium: 'OpenSans-Medium', sans-serif;
-$primary-font-semibold: 'OpenSans-Semibold', sans-serif;
-$primary-font-bold: 'OpenSans-Bold', sans-serif;
-$primary-font-extrabold: 'OpenSans-ExtraBold', sans-serif;
+$primary-font-regular: 'Lato-Regular', sans-serif;
+$primary-font-light: 'Lato-Light', sans-serif;
+// $primary-font-medium: 'Lato-Medium', sans-serif;
+// $primary-font-semibold: 'Lato-Semibold', sans-serif;
+$primary-font-bold: 'Lato-Bold', sans-serif;
+$primary-font-extrabold: 'Lato-ExtraBold', sans-serif;
 
 // Color
 
@@ -13,6 +13,7 @@ $text-clr-secondary-blue :#0C5F9D;
 $text-clr-blue: #031D8B;
 $primary-blue: #0C56BB;
 $clr-white : #fff;
+$text-clr-secondary-black: #707070;
 $text-clr-black: #171717;
 $text-clr-dark-gray: #525252;
 $clr-red: #C93535;
@@ -21,6 +22,7 @@ $bg-clr-white: #fff;
 $bg-clr-grey: #EDF1F5;
 $bg-clr-blue: #0C56BB;
 $bg-clr-light-blue : #EFEFEF;
+$table-row-highlight: #0C51B00F;
 $text-clr-secondary-blue: #006AE1;
 //profile colors
 $profile-clr-1: #77A868;
@@ -32,7 +34,8 @@ $common-box-shadow: #00000029;
 $common-box-shadow-2: #0C51B00D;
 
 //border
-$grey: rgb(122, 119, 119,0.5);
+$grey: rgb(122, 119, 119, 0.5);
+$light-blue: #0C51B00F;
 
 // Container and Grid Spacing
 $container-width: 1170px;
@@ -63,4 +66,3 @@ $icon-targetsetting: '\e9a1';
 $icon-tools: '\ee9a2';
 $icon-WhiteArrow: '\e9a3';
 $icon-Yet-to-be-Allocated: '\e9a4';
-

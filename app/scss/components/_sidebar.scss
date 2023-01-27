@@ -1,5 +1,6 @@
 .sidebar{
     background-color: $bg-clr-white;
+    border-right: 1px solid $light-blue;
     position: fixed;
     height: 100%;
     z-index: 9;
@@ -9,7 +10,7 @@
         }
     }
    @media screen and (max-width:578px) {
-    left: -50%;
+    left: -100%;
     
    }
     &.sidebar-mobile{

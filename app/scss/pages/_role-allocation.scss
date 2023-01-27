@@ -1,28 +1,32 @@
 .role_allocation-summary {
-  &--details{
-    &>.card{
+  &--details {
+    &>.card {
       @media screen and (max-width:991px) {
-        width:50%;
+        width: 50%;
 
       }
+
       @media screen and (max-width: 768px) {
         width: 100%;
 
       }
     }
+
     @media screen and (max-width:991px) {
       display: flex;
-      width:100%;
+      width: 100%;
       margin-bottom: 1.5rem;
-      
+
     }
-    @media screen and (max-width:767px){
+
+    @media screen and (max-width:767px) {
       flex-wrap: wrap;
       margin-bottom: 0;
     }
   }
+
   border-bottom: 1px solid #000;
- 
+
 
   .card {
     border-radius: 10px;
@@ -41,6 +45,7 @@
 
       &:first-of-type {
         border-right: 1px solid $grey;
+
         @media screen and (max-width: 1200px) {
           border-bottom: 1px solid #eee;
           border-right: 0 none;
@@ -55,36 +60,42 @@
     }
   }
 }
+
 .allocation-category {
   &__list {
     padding: 1rem 0;
+
     @media screen and (max-width: 991px) {
-          width: 50%;
-          display: flex;
-          flex-direction: column;
-          align-items: flex-end;
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
     }
+
     @media screen and (max-width: 787px) {
       width: 100%;
       align-items: flex-start;
     }
   }
+
   &__item {
     display: flex;
     color: $text-clr-black;
     font-size: 1.4rem;
     margin-bottom: 0.8rem;
     align-items: center;
-    span.value{
+
+    span.value {
       margin-left: 1rem;
       font-family: $primary-font-bold;
     }
-    
-  
+
+
     p {
-      font-family: $primary-font-medium;
+      font-family: $primary-font-regular;
       margin-left: 1rem;
     }
+
     span[class^=icon] {
       margin-bottom: 1px;
     }
@@ -100,14 +111,16 @@
     }
   }
 }
+
 .accepted-no {
   .profile-picture {
     &::after {
       content: $icon-Allocated-but-Not-Accepted;
-    
+
     }
   }
 }
+
 .allocation-no {
   .profile-picture {
     &::after {
@@ -116,6 +129,7 @@
     }
   }
 }
+
 .flagged {
   .profile-picture {
     &::after {
@@ -130,17 +144,9 @@
     .card {
       .guide-lines {
         font-size: 1.4rem;
-        .role-actions{
-          text-align:center;
-          &>.btn{
-            min-width: 132px;
-            padding: 0.5rem 1.2rem;
-            text-align: center;
-            &:first-of-type{
-              margin-bottom: 0.5rem;
-            }
-          }
-        }
+
+       
+
         p:first-of-type {
           span {
             font-weight: 600;
@@ -150,20 +156,26 @@
     }
   }
 }
+
 .kra {
   display: flex;
   justify-content: space-between;
-  @media screen and (max-width: 1200px){
+
+  @media screen and (max-width: 1200px) {
     flex-wrap: wrap;
   }
-  & > div {
+
+  &>div {
     width: 53%;
+
     &:first-child {
       width: 47%;
       border-right: 1px solid $grey;
-      @media  screen and (max-width:1300px) {
-          width: 50%;
+
+      @media screen and (max-width:1300px) {
+        width: 50%;
       }
+
       @media screen and (max-width: 1200px) {
         width: 100%;
         margin-bottom: 1.5rem;
@@ -171,28 +183,36 @@
         border-right: 0;
       }
     }
+
     @media screen and (max-width:1300px) {
       width: 50%;
     }
+
     @media screen and (max-width:1200px) {
       width: 100%;
     }
   }
+
   &--add {
     padding-right: 1.8rem;
+
     @media screen and (max-width:1200px) {
-       padding-bottom: 1.5rem;
-      }
-      @media screen and (max-width:578px) {
-        padding-right: 0;
-      }
+      padding-bottom: 1.5rem;
+    }
+
+    @media screen and (max-width:578px) {
+      padding-right: 0;
+    }
   }
+
   &--view {
     padding-left: 1.8rem;
+
     @media screen and (max-width:1200px) {
-      padding-left: 0 ;
+      padding-left: 0;
     }
-    & > .row {
+
+    &>.row {
       div {
         &:last-of-type {
           display: flex;
@@ -200,62 +220,74 @@
         }
       }
     }
+
     .kra-list {
       padding-top: 1.5rem;
+
       .kra-list-item {
         margin-bottom: 1rem;
+
         &:last-of-type {
           margin-bottom: 0;
         }
-        &--edited{
-          
-          min-height: 50px;
-          margin-left: -1rem;
-          margin-right: -1rem;
-          box-sizing: content-box;
-          filter: drop-shadow(0px 3px 26px $common-box-shadow-2);
-          position: relative;
-          height: 1em;
-          padding: 1em;
-          color: #000;
-          font-size: 16px;
-          background-size: 51% 100%;
-          background-repeat: no-repeat;
-          background-image: radial-gradient(circle at 0 50%, rgba(255, 255, 224, 0) 0.4em, $clr-white 0.5em), radial-gradient(circle at 100% 50%, rgba(255, 255, 224, 0) 0.4em, $clr-white 0.5em);
-          background-position: top left, top right;
-          position: relative;
-          &::before{
-            content:"";
-            position: absolute;
-            width: calc(100% - (1.6rem * 2));
-            height: 1px;
-       
-            bottom: 50%;
-            background-image: linear-gradient(to right, black 33%, rgba(255, 255, 255, 0) 0%);
-            background-position: bottom;
-            background-size: 8px 1px;
-            background-repeat: repeat-x;
-            
-          }
-          .kra-detail{
+
+        &--edited {
+          background-color: $table-row-highlight;
+          border: 0.3px solid rgba($primary-blue,0.6);
+          border-radius: 3px;
+          padding: 1rem;
+          // min-height: 50px;
+          // margin-left: -1rem;
+          // margin-right: -1rem;
+          // box-sizing: content-box;
+          // filter: drop-shadow(0px 3px 26px $common-box-shadow-2);
+          // position: relative;
+          // height: 1em;
+          // padding: 1em;
+          // color: #000;
+          // font-size: 16px;
+          // background-size: 51% 100%;
+          // background-repeat: no-repeat;
+          // background-image: radial-gradient(circle at 0 50%, rgba(255, 255, 224, 0) 0.4em, $clr-white 0.5em), radial-gradient(circle at 100% 50%, rgba(255, 255, 224, 0) 0.4em, $clr-white 0.5em);
+          // background-position: top left, top right;
+          // position: relative;
+
+          // &::before {
+          //   content: "";
+          //   position: absolute;
+          //   width: calc(100% - (1.6rem * 2));
+          //   height: 1px;
+
+          //   bottom: 50%;
+          //   background-image: linear-gradient(to right, black 33%, rgba(255, 255, 255, 0) 0%);
+          //   background-position: bottom;
+          //   background-size: 8px 1px;
+          //   background-repeat: repeat-x;
+
+          // }
+
+          .kra-detail {
             p {
-                font-family: $primary-font-bold;
-              }
+              font-family: $primary-font-bold;
+            }
           }
         }
       }
     }
   }
+
   .kra-detail {
     font-size: 1.3rem;
     font-family: $primary-font-regular;
     display: flex;
     width: 100%;
     justify-content: space-between;
+
     .kra-value {
       font-family: $primary-font-bold;
     }
   }
+
   .kra-summary {
     font-family: $primary-font-bold;
     font-size: 1.6rem;
@@ -263,57 +295,57 @@
     margin-top: 0.5rem;
   }
 }
-.add-detail{
-  height:50vh;
+
+.add-detail {
+  height: 50vh;
   overflow-y: auto;
   margin-top: 1.5rem;
 }
+
 // .new-role-wrap {
 //   height:43vh;
 //   overflow-y: auto;
 // }
-// .kra-list-wrap{
-//   height: 42vh;
-//   overflow-y: auto;
-// }
+.kra-list-wrap{
+  margin-bottom: 1.5rem;
+}
 .new-role {
   margin-top: 1.5rem;
-  &:first-of-type{
+
+  &:first-of-type {
     margin-top: 0;
   }
+
   .assignment-duration {
     border: 1px dashed $grey;
     border-radius: 5px;
     padding: 0.9rem 1.2rem;
-   
-    .date{
-        position: relative;
-        font-family: $primary-font-bold;
-     
+
+    .date {
+      position: relative;
+      font-family: $primary-font-bold;
+
     }
   }
 }
+
 .role-duration {
   font-family: $primary-font-bold;
   margin-top: 1.1rem;
-  .row{
-    &>div{
-      &:first-child{
-        @media screen and (max-width:575px){
+
+  .row {
+    &>div {
+      &:first-child {
+        @media screen and (max-width:575px) {
           margin-bottom: 1.5rem;
-          
+
         }
       }
     }
   }
-  .datepicker{
-    &+label{
-      top:5px;
-    }
-  }
-  .form-floating{
-      &:last-of-type{
-        margin-bottom: 0;
+  .form-floating {
+    &:last-of-type {
+      margin-bottom: 0;
 
     }
   }
