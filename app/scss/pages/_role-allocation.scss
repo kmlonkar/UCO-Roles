@@ -235,7 +235,7 @@
 
       .kra-list-item {
         margin-bottom: 1rem;
-        padding: 0 6px 0 0;
+        // padding: 0 6px 0 0;
         &:last-of-type {
           margin-bottom: 0;
         }
@@ -245,8 +245,9 @@
             border-top: 0;
             border: 0.3px dashed $border-brown;
             border-radius: 5px;
-            padding: 1rem 0.3rem;
+            padding: 1rem 0.8rem;
             position: relative;
+            width: 102%;
             // min-height: 50px;
             p{
               // position: relative;

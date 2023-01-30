@@ -1,13 +1,21 @@
 // select2-selection__arrow
-.select2-container--default{
-    .select2-selection{
-        &--single{
+.modal {
+
+    .select2-container {
+        width: 100% !important;
+    }
+}
+
+.select2-container--default {
+    .select2-selection {
+        &--single {
             position: relative;
             background-color: $bg-clr-light-blue;
             border: 0;
             border-radius: 4px;
             min-height: 50px;
-            .select2-selection{
+
+            .select2-selection {
                 &__arrow {
                     top: 50%;
                     transform: translateY(-50%);
@@ -15,13 +23,24 @@
 
             }
         }
-        &__rendered{
-                color: #444;
-                line-height: 28px;
-                position: absolute;
-                top: 50%;
-                transform: translateY(-40%);
+
+        &__rendered {
+            color: #444;
+            line-height: 28px;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-40%);
         }
-       
+
+    }
+}
+
+.select2-results {
+    &__option {
+        &--highlighted {
+            background-color: $bg-clr-light-blue;
+            color: $text-clr-dark-gray;
+        }
+
     }
 }

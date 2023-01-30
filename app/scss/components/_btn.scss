@@ -1,20 +1,23 @@
-.btn{
+.btn {
     @include btn;
-    &:disabled{
+
+    &:disabled {
         opacity: 0.2;
     }
 }
-.btn-primary{
-    background-color:$primary-blue ;
+
+.btn-primary {
+    background-color: $primary-blue ;
     color: $clr-white;
     border: 1px solid $primary-blue;
-    
+
     &:hover,
-    &:focus{
-        background-color:transparent;
+    &:focus {
+        background-color: transparent;
         color: $primary-blue;
-        span{
-            &::before{
+
+        span {
+            &::before {
                 color: $primary-blue;
 
             }
@@ -22,97 +25,130 @@
         }
     }
 }
-.btn-outline-primary{
-   border: 1px solid $primary-blue;
-   color: $primary-blue;
-        &:hover,
-        &:focus {
-            background-color: $primary-blue;
+
+.btn-outline-primary {
+    border: 1px solid $primary-blue;
+
+    color: $primary-blue;
+
+    span {
+        &::before {
+            color: $primary-blue;
         }
 
-}
-.btn-secondary{
+    }
+
     &:hover,
-    &:focus{
+    &:focus {
+        background-color: $primary-blue;
+
+        span {
+            &::before {
+
+                color: $clr-white;
+            }
+        }
+    }
+
+}
+
+.btn-secondary {
+
+    &:hover,
+    &:focus {
         color: $clr-white;
     }
 }
-.btn-dark{
-        &:hover,
-        &:focus {
-            background-color: transparent;
-            border: 1px solid $text-clr-black;
-            color: $text-clr-black;
-            span {
-                    &::before {
-                        color: $text-clr-black;
-            
-                    }
-            
-                }
-        }
-}
-.btn-outline-dark{
-    color: $text-clr-black;
-    span {
+
+.btn-dark {
+
+    &:hover,
+    &:focus {
+        background-color: transparent;
+        border: 1px solid $text-clr-black;
+        color: $text-clr-black;
+
+        span {
             &::before {
                 color: $text-clr-black;
+
+            }
+
+        }
+    }
+}
+
+.btn-outline-dark {
+    color: $text-clr-black;
+
+    span {
+        &::before {
+            color: $text-clr-black;
+        }
+    }
+
+    &:focus,
+    &::hover {
+        color: $clr-white;
+
+        span {
+            &::before {
+                color: $clr-white;
             }
         }
-    &:focus,
-    &::hover{
-        color: $clr-white;
-        span {
-                &::before {
-                    color: $clr-white;
-                }
-            }
     }
-   
+
 
 }
-.btn-danger{
+
+.btn-danger {
     background-color: transparent;
     color: $clr-red;
     border: 1px solid $clr-red;
+
     &:hover,
     &:focus {
         background-color: $clr-red;
         color: $clr-white;
-        span{
+
+        span {
             &::before {
-            
+
                 color: $clr-white;
-                }
-            
+            }
+
         }
     }
 }
-.btn-link{
-    padding-left:0;
+
+.btn-link {
+    padding-left: 0;
     color: $primary-blue;
     text-decoration: none;
-   
-        // &:hover,
-        // &:focus {
-        //    background-color: $primary-blue;
-        //     color: $clr-white;
-        // }
+
+    // &:hover,
+    // &:focus {
+    //    background-color: $primary-blue;
+    //     color: $clr-white;
+    // }
 }
- .btn-link-underlined {
+
+.btn-link-underlined {
     background: transparent;
     text-decoration: underline;
     border: 0 none;
     @extend .btn-link;
-    &:hover, 
+
+    &:hover,
     &:focus,
     &:active {
         border: 0;
         background: transparent;
 
     }
- }
-.btn-arrow{
+}
+
+.btn-arrow {
     // &:hover,
     //     &:focus {
     //        span{
@@ -122,20 +158,22 @@
     //         }
     //        }
     //     }
-    span{
-        margin-left:2rem;
+    span {
+        margin-left: 2rem;
     }
 }
-.btn-arrow--rotated{
-    span{
+
+.btn-arrow--rotated {
+    span {
         transform: rotate(180deg);
         display: inline-block;
         margin-right: 15px;
         margin-left: 0;
     }
 }
-.btn-danger{
-    span{
+
+.btn-danger {
+    span {
         margin-left: 1rem;
     }
 }

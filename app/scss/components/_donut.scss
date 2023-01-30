@@ -1,8 +1,32 @@
-.summary-chart{
-    .apexcharts-legend{
-        &-series{
+.summary-chart {
+    .apexcharts-legend {
+        &-series {
             width: 45%;
             display: flex !important;
         }
+    }
+
+    .apexcharts-tooltip {
+
+        color: $text-clr-black;
+    }
+
+    .apexcharts-tooltip-y-group {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-family: $primary-font-regular;
+
+        span {
+            font-size: 1.4rem;
+            margin-left: 0;
+        }
+    }
+}
+
+.apexcharts-tooltip-series-group {
+    &.apexcharts-active {
+        background: $clr-white !important;
+        color: $text-clr-black !important;
     }
 }

@@ -1,6 +1,8 @@
 $(function () {
   $('#datepicker1').datepicker();
   $('#datepicker2').datepicker();
+  $('#datepicker3').datepicker();
+  $('#datepicker4').datepicker();
   $('.date').datepicker();
   $('#date-2').datepicker({
     format: "dd-M-yy"
@@ -28,12 +30,12 @@ $(function () {
     $('.kra-table').addClass('edit-table');
     $('.exception-heading').toggleClass('edit-kra-heading');
     $('.kra-table input').prop("readonly", false);
-    console.log($('.edit-table input'));
+    // console.log($('.edit-table input'));
   })
-  $('.edit-table input').focus(function () {
-    alert('works')
-    $(this).attr("placeholder", "");
-  })
+  // $('.edit-table input').focus(function () {
+  //   alert('works')
+  //   $(this).attr("placeholder", "");
+  // })
 
   // $('.edit-table input').each(function () {
   //   var currentElement = $(this);
@@ -42,7 +44,9 @@ $(function () {
 
   var options = {
     chart: {
-      type: "donut"
+      height: '300px',
+      type: "donut",
+
     },
     stroke: {
       width: 0
@@ -80,7 +84,7 @@ $(function () {
     plotOptions: {
       pie: {
         expandOnClick: true,
-         customScale: 1,
+        customScale: 1,
         donut: {
           size: '80%',
           labels: {
@@ -112,12 +116,15 @@ $(function () {
         }
       }
     },
-    
+
+
     series: [18, 13, 16, 8, 15],
     labels: ['Business', 'Income', 'Audit & Compliance', 'Npa & Recovery', 'Digital Banking'],
     colors: ['#B41432', '#F7A029', '#452525', '#15734E', '#3BA34B'],
   };
+  if (document.querySelector("#chart")) {
+    var chart = new ApexCharts(document.querySelector("#chart"), options);
+    chart.render();
 
-  var chart = new ApexCharts(document.querySelector("#chart"), options);
-  chart.render();
+  }
 });

@@ -104,15 +104,15 @@
                     </div>
                     <div class="modal-body">
                       <div class="addnew-kra-form">
-                        <div class="form-floating">
-                          <select class="form-select" id="floatingSelectGrid"
+                        <div class="form-floating ">
+                          <select class="form-select" id="addNewKra"
                             aria-label="Floating label select example">
-                            <option selected>Current Account Officer</option>
-                            <option value="1">One</option>
-                            <option value="2">Two</option>
-                            <option value="3">Three</option>
+                            <option selected></option>
+                            <option value="1">KRA 1</option>
+                            <option value="2">KRA 2</option>
+                            <option value="3">KRA 3</option>
                           </select>
-                          <label for="floatingSelectGrid">Add a KRA from the existing library</label>
+                          <label for="addNewKra">Add a KRA from the existing library</label>
                         </div>
                         <div class="form-floating">
                           <textarea class="form-control textarea" placeholder="Leave a comment here"
@@ -335,6 +335,9 @@
         <script>
           $(document).ready(function () {
             $('.js-example-basic-single').select2();
+            $('#addNewKra').select2({
+               dropdownParent: $('#addKRA')
+            });
           });
         </script>
   </body>

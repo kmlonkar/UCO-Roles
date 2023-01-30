@@ -1,40 +1,49 @@
-.role-acceptence-wrapper{
+.role-acceptence-wrapper {
     display: flex;
     justify-content: space-between;
-    .table-wrap{
+
+    .table-wrap {
         width: 67%;
+        padding: 1.5rem 3rem;
     }
-    .table-summary-wrap{
+
+    .table-summary-wrap {
         width: 30%;
-        border-radius:0 ;
-        .table-summary-header{
+        border-radius: 0;
+
+        .table-summary-header {
             padding-left: 3rem;
             padding-bottom: 3rem;
+
             // background-image: linear-gradient(to right, $grey 33%, rgba(255, 255, 255, 0) 0%);
             // background-position: bottom;
             // background-size: 3px 1px;
             // background-repeat: repeat-x;
-            .role-details{
-                p{
+            .role-details {
+                p {
                     font-family: $primary-font-bold;
                     font-size: 1.3rem;
                     margin-bottom: 1.5rem;
-                    &:last-of-type{
-                        margin-bottom:0;
+
+                    &:last-of-type {
+                        margin-bottom: 0;
                     }
                 }
-                span{
+
+                span {
                     font-family: $primary-font-light;
                     font-size: 1.2rem;
                 }
             }
         }
-        .steps-wrapper{
-            .steps{
+
+        .steps-wrapper {
+            .steps {
                 margin-bottom: 1.5rem;
                 position: relative;
                 font-family: $primary-font-bold;
-                &:before{
+
+                &:before {
                     content: "";
                     position: absolute;
                     height: 0.5rem;
@@ -43,13 +52,14 @@
                     background: $gray-300;
                     left: -20px;
                     top: 6px;
-                
+
                 }
-                &::after{
+
+                &::after {
                     content: "";
                     position: absolute;
                     height: 40px;
-                    width:1px;
+                    width: 1px;
                     left: -18px;
                     top: 7px;
                     display: block;
@@ -59,24 +69,41 @@
                     background-size: 1px 5px;
                     background-repeat: repeat-y;
                 }
-                &:nth-child(3){
-                   &::after{
-                    content:'';
-                    display: none;
-                   }
+
+                &:nth-child(3) {
+                    &::after {
+                        content: '';
+                        display: none;
+                    }
                 }
             }
         }
     }
-    table{
-        tbody{
-            tr{
-                td{
-                    &:first-of-type{
-                        padding-left:0
+
+    .actions {
+        padding: 2rem 0;
+        text-align: center;
+        .btn {
+            margin: 0 auto;
+            display: inline-block;
+            margin-bottom: 1.5rem;
+            width: 90%;
+            span{
+                float: right;
+            }
+        }
+    }
+
+    table {
+        tbody {
+            tr {
+                td {
+                    &:first-of-type {
+                        padding-left: 0
                     }
                 }
-                &:last-of-type{
+
+                &:last-of-type {
                     td {
                         &:first-of-type {
                             padding-left: 0
@@ -88,4 +115,10 @@
 
         }
     }
+}
+
+.table-summary-graph {
+    padding: 3rem 0;
+
+
 }

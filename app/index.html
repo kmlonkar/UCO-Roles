@@ -296,14 +296,14 @@
                                 </label>
                               </div>
                               <div class="form-floating">
-                                <select class="form-select js-example-basic-single" id="floatingSelectGrid"
+                                <select class="form-select " id="js-example-basic-single"
                                   aria-label="Floating label select example">
                                   <option selected>Current Account Officer</option>
                                   <option value="1">One</option>
                                   <option value="2">Two</option>
                                   <option value="3">Three</option>
                                 </select>
-                                <label for="floatingSelectGrid">Role 1</label>
+                                <label for="js-example-basic-single">Role 1</label>
                               </div>
 
                             </div>
@@ -476,64 +476,64 @@
                            <a href="#" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#makeInactive">Make
                              inactive </a>
 
-                           <!-- modal for making inactive -->
-                           <div class="modal fade " id="makeInactive" data-bs-backdrop="static" data-bs-keyboard="false"
-                             aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                             <div class="modal-dialog">
-                               <div class="modal-content">
-                                 <div class="d-flex d-flex justify-content-between">
-                                   <div class="modal-header">
-                                     <h5 class="modal-title b2" id="staticBackdropLabel">Make User Inactive</h5>
-                                     <p class="modal-subtitle b4">Confirmation</p>
-                                   </div>
-                                   <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                     aria-label="Close"></button>
-                                 </div>
-                                 <div class="modal-body">
-                                   <div class="make-inactive-form">
-                                 
-                                     <div class="form-floating">
-                                       <select class="form-select make-invalid-options"
-                                         id="floatingSelectGrid"
-                                         aria-label="Floating label select example">
-                                         <option selected>On Leave</option>
-                                         <option value="1">One</option>
-                                         <option value="2">Two</option>
-                                         <option value="3">Three</option>
-                                       </select>
-                                       <label for="floatingSelectGrid">Select appropriate reason</label>
-                                     </div>
-                                     <div class="role-duration">
-                                       <div class="row">
-                                         <div class="col-sm-6">
-                                           <div class="form-floating d-flex">
-                                             <input class="datepicker form-control border-2" id="datepicker1"
-                                               placeholder="DD/MM/YYYY">
-                                             <label for="datepicker1">Laeaving Date</label>
-                                           </div>
-                                         </div>
-                                         <div class="col-sm-6">
-                                           <div class="form-floating  d-flex">
-                                             <input class="datepicker form-control border-2" id="datepicker2"
-                                               placeholder="DD/MM/YYYY">
-                                             <label for="datepicker1">Return Date</label>
-                                           </div>
-                                         </div>
-                                       </div>
-
-
-                                     </div>
-                                     <div class="popup-actions form-action">
-                                       <a href="#" type="button" class="btn btn-arrow btn-primary"
-                                         data-bs-toggle="modal" data-bs-target="#staticBackdrop">Save and Submit <span
-                                           class="icon-WhiteArrow"></span></a>
-                                     </div>
-                                   </div>
-                                 </div>
-                               </div>
-                             </div>
-                           </div>
-                         </div>
+                            </div>
+                            <!-- modal for making inactive -->
+                            <div class="modal fade " id="makeInactive" data-bs-backdrop="static" data-bs-keyboard="false"
+                              aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                              <div class="modal-dialog">
+                                <div class="modal-content">
+                                  <div class="d-flex d-flex justify-content-between">
+                                    <div class="modal-header">
+                                      <h5 class="modal-title b2" id="staticBackdropLabel">Make User Inactive</h5>
+                                      <p class="modal-subtitle b4">Confirmation</p>
+                                    </div>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                      aria-label="Close"></button>
+                                  </div>
+                                  <div class="modal-body">
+                                    <div class="make-inactive-form">
+                                    
+                                      <div class="form-floating">
+                                        <select class="form-select  "
+                                          id="make-invalid-options"
+                                          aria-label="Floating label select example">
+                                          <option selected>On Leave</option>
+                                          <option value="1">One</option>
+                                          <option value="2">Two</option>
+                                          <option value="3">Three</option>
+                                        </select>
+                                        <label for="make-invalid-options">Select appropriate reason</label>
+                                      </div>
+                                      <div class="role-duration">
+                                        <div class="row">
+                                          <div class="col-sm-6">
+                                            <div class="form-floating d-flex">
+                                              <input class="datepicker form-control border-2" id="datepicker1"
+                                                placeholder="DD/MM/YYYY">
+                                              <label for="datepicker1">Laeaving Date</label>
+                                            </div>
+                                          </div>
+                                          <div class="col-sm-6">
+                                            <div class="form-floating  d-flex">
+                                              <input class="datepicker form-control border-2" id="datepicker2"
+                                                placeholder="DD/MM/YYYY">
+                                              <label for="datepicker1">Return Date</label>
+                                            </div>
+                                          </div>
+                                        </div>
+ 
+ 
+                                      </div>
+                                      <div class="popup-actions form-action">
+                                        <a href="#" type="button" class="btn btn-arrow btn-primary"
+                                          data-bs-toggle="modal" data-bs-target="#staticBackdrop">Save and Submit <span
+                                            class="icon-WhiteArrow"></span></a>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
                        </div>
                      </div>
                    </div>
@@ -604,8 +604,100 @@
                            <div class="col-6 b3"> Wgt</div>
                          </div>
                            <div class="comment-wrap  dotted-border--top">
-                             <a href="#" class="btn btn-link">view comments</a>
+                             <a href="#" class="btn btn-link" 
+                             data-bs-toggle="modal"                               data-bs-target="#comments">view comments</a>
                            </div>
+                             <!-- modal for making inactive -->
+                             <div class="modal fade view-comment" id="comments" data-bs-backdrop="static"
+                               data-bs-keyboard="false" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                               <div class="modal-dialog">
+                                 <div class="modal-content">
+                                   <div class="d-flex d-flex justify-content-between">
+                                     <div class="modal-header">
+                                       <h5 class="modal-title b2" id="staticBackdropLabel">View Comments</h5>                                    
+                                     </div>
+                                     <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                       aria-label="Close"></button>
+                                   </div>
+                                   <div class="modal-body">
+                                    <div class="border-bottom chat-wrapper">
+                                      <div class="comment-header">
+                                        <div class="user-details ">
+                                          <span>RS</span>
+                                          <div>
+                                            <h5 class="name">Ravi Sarman</h5>
+                                            <p>PF ID - #458890</p>
+                                          </div>
+                                        </div>
+                                        <div class="designation">
+                                          <span class="star"><img src="images/start.svg" alt="star"></span>
+                                          Operations Officer
+                                        </div>
+                                        <div class="timestamp">
+                                          <h6 class="date">27 Jan 2023</h6>
+                                          <p>Exception No: 12345</p>
+                                        </div>
+                                      </div>
+                                      <div class="comment-chain">
+                                        <p class="chain-title">Additional Roles</p>
+                                        <ul class="comment-chain-wrapper">
+                                            <li>Credit Officer</li>
+                                            <li>Locker Officer</li>
+                                            <li>Forex Officer</li>
+                                        </ul>
+                                      </div>
+                                        
+                                    </div>
+                                    <ul class="comment-history">
+                                      <li class="received-comments">
+                                        <div class="comment--left">
+                                          <p class="chat-summary">KRA Added</p>
+                                          <div class="chat">
+                                            <p>% Digitally active customers vs. targets</p>
+                                            <p>KRA Wgt. - 4</p>
+                                          </div>
+                                        </div>
+                                      </li>
+                                      <li class="sent-comments">
+                                        <div class="comment--right">
+                                           <div class="chat">
+                                            The official handles the digital awareness for the branch. Hence, the KRA is
+                                            suited to him.
+                                           </div>
+                                           <div class="chat-profile">
+                                            <p>Sonal Rajotia</p>
+                                            <img src="images/johnDoe.jpg" alt="">
+                                           </div>
+                                        </div>
+                                      </li>
+                                      <li class="received-comments">
+                                        <div class="comment--left">
+                                          <p class="chat-summary">KRA Added</p>
+                                          <div class="chat">
+                                            <p>Audit and Compliance score</p>
+                                            <p>KRA Wgt. - 6</p>
+                                            <p>% Growth in Average Standard Advances</p>
+                                            <p>KRA Wgt. - 4</p>
+                                          </div>
+                                        </div>
+                                      </li>
+                                      <li class="sent-comments">
+                                        <div class="comment--right">
+                                           <div class="chat">
+                                            The role is more inclined towards the deposits growth. Hence, KRA weightage
+                                            have been adjusted in the role.
+                                           </div>
+                                           <div class="chat-profile">
+                                            <p>Sonal Rajotia</p>
+                                            <img src="images/johnDoe.jpg" alt="">
+                                           </div>
+                                        </div>
+                                      </li>
+                                    </ul>
+                                   </div>
+                                 </div>
+                               </div>
+                             </div>
                          <div class="kra-list-wrap">
                            <ul class="kra-list dotted-border--top">
                              <li class="kra-list-item">
@@ -664,27 +756,7 @@
                              <p class="kra-value">70</p>
                            </div>
 
-                           <!-- <div class="kra-edit-logs">
-                            <div class="card--style-3">
-                              <div class="kra-edit-logs__title">
-                                <span>KRA Added :</span>
-                                <p class="kra-edited">% Growth In Digital Transactions</p>
-                              </div>
-                                <section class="kra-edit-logs__comments">
-                                  <span class="small-text">comments</span>
-                                  <p class="comment">NA</p>
-                                </section>
-                            </div>
-                            <div class="card--style-3">
-                              <div class="kra-edit-logs__title">
-                                <p class="kra-edited">KRA Weightage Edited</p>
-                              </div>
-                                <section class="kra-edit-logs__comments">
-                                  <span class="small-text">comments</span>
-                                  <p class="comment">NA</p>
-                                </section>
-                            </div>
-                          </div> -->
+                       
                          </div>
 
                        </div>
@@ -744,14 +816,14 @@
                                            <div class="form-floating d-flex">
                                              <input class="datepicker form-control border-2" id="datepicker1"
                                                placeholder="DD/MM/YYYY">
-                                             <label for="datepicker1">Leaving Date</label>
+                                             <label for="datepicker2">Leaving Date</label>
                                            </div>
                                          </div>
                                          <div class="col-sm-6">
                                            <div class="form-floating  d-flex">
                                              <input class="datepicker form-control border-2" id="datepicker2"
                                                placeholder="DD/MM/YYYY">
-                                             <label for="datepicker1">Return Date</label>
+                                             <label for="datepicker3">Return Date</label>
                                            </div>
                                          </div>
                                        </div>
@@ -872,8 +944,11 @@
     <script src="js/main.js"></script>
     <script>
       $(document).ready(function() {
-      $('.js-example-basic-single').select2();
-   
+      $('#js-example-basic-single').select2();
+      $('#make-invalid-options').select2({
+      dropdownParent: $('#makeInactive')
+      });
+        
       });
     </script>
   </body>
