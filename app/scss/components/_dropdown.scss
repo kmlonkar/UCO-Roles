@@ -1,4 +1,4 @@
-
+// select2-selection__arrow
 .select2-container--default{
     .select2-selection{
         &--single{
@@ -7,10 +7,13 @@
             border: 0;
             border-radius: 4px;
             min-height: 50px;
-        }
-        &__arrow {
-            top: 50%;
-        
+            .select2-selection{
+                &__arrow {
+                    top: 50%;
+                    transform: translateY(-50%);
+                }
+
+            }
         }
         &__rendered{
                 color: #444;

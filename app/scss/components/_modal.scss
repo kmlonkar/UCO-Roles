@@ -26,6 +26,11 @@
                 justify-content: flex-start;
             }
         }
+        .textarea{
+            label{
+                top: -1px;
+            }
+        }
     }
     &-dialog{
         margin:0;

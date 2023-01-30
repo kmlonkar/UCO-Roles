@@ -318,7 +318,7 @@
                             class="icon-WhiteArrow"></span></a>
                         <!-- Modal for asking confirmation-->
                         <div class="modal fade " id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
-                          tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                           aria-labelledby="staticBackdropLabel" aria-hidden="true">
                           <div class="modal-dialog">
                             <div class="modal-content">
                               <div class="d-flex d-flex justify-content-between">
@@ -357,7 +357,7 @@
                         </div>
                         <!-- modal for showing confirmation -->
                          <div class="modal fade " id="confirm" data-bs-backdrop="static" data-bs-keyboard="false"
-                           tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                            aria-labelledby="staticBackdropLabel" aria-hidden="true">
                            <div class="modal-dialog">
                              <div class="modal-content">
                                <div class="d-flex d-flex justify-content-between">
@@ -478,7 +478,7 @@
 
                            <!-- modal for making inactive -->
                            <div class="modal fade " id="makeInactive" data-bs-backdrop="static" data-bs-keyboard="false"
-                             tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                             aria-labelledby="staticBackdropLabel" aria-hidden="true">
                              <div class="modal-dialog">
                                <div class="modal-content">
                                  <div class="d-flex d-flex justify-content-between">
@@ -493,7 +493,8 @@
                                    <div class="make-inactive-form">
                                  
                                      <div class="form-floating">
-                                       <select class="form-select make-invalid-options" id="floatingSelectGrid"
+                                       <select class="form-select make-invalid-options"
+                                         id="floatingSelectGrid"
                                          aria-label="Floating label select example">
                                          <option selected>On Leave</option>
                                          <option value="1">One</option>
@@ -541,13 +542,13 @@
                      <div class=" kra">
                        <div class="kra--add">
                          <div class="role-history-title">
-                           <h3 class="b4"> Role History</h3>
+                           <h3 class="b2--lg"> Role History</h3>
                            <div class="btn btn-link">Add New Role +</div>
                          </div>
                          <div class="new-role-wrap role-history overflow-container">
 
                            <div class="card--style-2 card--style-2-focused">
-                             <h2 class="b2 saved saved--not">Current Account Officer</h2>
+                             <h2 class="b4--bold saved saved--not">Current Account Officer</h2>
                              <div class="card-body">
                                <div class="assignment-input mt-2">
                                  <div>
@@ -574,7 +575,7 @@
                              </div>
                            </div>
                            <div class="card--style-2">
-                             <h2 class="b2 saved">Advances Officer</h2>
+                             <h2 class="b4--bold saved">Advances Officer</h2>
                              <div class="card-body">
                                <div class="assignment-input mt-2">
                                  <div>
@@ -602,7 +603,10 @@
                            <div class="col-6 b3">KRA Description </div>
                            <div class="col-6 b3"> Wgt</div>
                          </div>
-                         <div class="kra-list-wrap overflow-container">
+                           <div class="comment-wrap  dotted-border--top">
+                             <a href="#" class="btn btn-link">view comments</a>
+                           </div>
+                         <div class="kra-list-wrap">
                            <ul class="kra-list dotted-border--top">
                              <li class="kra-list-item">
                                <div class="kra-detail">
@@ -647,15 +651,14 @@
                                </div>
                              </li>
                              <li class="kra-list-item kra-list-item--edited">
-                               <div class="kra-detail">
-                                 <p class="kra-param">% Growth in average retail term deposits
-                                 </p>
-                               </div>
+                                <div class="kra-detail">
+                                  <p class="kra-param">% Growth in average retail term deposits
+                                  </p>
+                                  <p class="kra-value">12</p>
+                                </div>
                              </li>
                            </ul>
-                           <div class="comment-wrap">
-                             <a href="#" class="btn btn-dark btn-link-underlined">view comments</a>
-                           </div>
+                         
                            <div class="kra-summary kra-detail">
                              <p class="kra-param">Total</p>
                              <p class="kra-value">70</p>
@@ -712,7 +715,7 @@
 
                            <!-- modal for making inactive -->
                            <div class="modal fade " id="makeInactive" data-bs-backdrop="static" data-bs-keyboard="false"
-                             tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                            aria-labelledby="staticBackdropLabel" aria-hidden="true">
                              <div class="modal-dialog">
                                <div class="modal-content">
                                  <div class="d-flex d-flex justify-content-between">
@@ -741,7 +744,7 @@
                                            <div class="form-floating d-flex">
                                              <input class="datepicker form-control border-2" id="datepicker1"
                                                placeholder="DD/MM/YYYY">
-                                             <label for="datepicker1">Laeaving Date</label>
+                                             <label for="datepicker1">Leaving Date</label>
                                            </div>
                                          </div>
                                          <div class="col-sm-6">
@@ -777,7 +780,7 @@
                          <div class="new-role-wrap role-history overflow-container">
 
                            <div class="card--style-2 card--style-2-focused">
-                             <h2 class="b2 flagged">Current Account Officer</h2>
+                             <h2 class="b4--bold flagged">Current Account Officer</h2>
                              <div class="card-body">
                                <div class="assignment-input mt-2">
                                  <div>
@@ -796,15 +799,15 @@
                                </div>
                              </div>
                              <div class="card-actions">
-                               <button type="button" class="btn btn-arrow btn-dark" disabled>Delete Role <span
+                               <button type="button" class="btn btn-arrow btn-dark">Delete Role <span
                                    class="icon-WhiteArrow"></span></button>
-                               <button type="button" class="btn btn-arrow btn-primary" disabled>Edit Role <span
+                               <button type="button" class="btn btn-arrow btn-primary">Edit Role <span
                                    class="icon-WhiteArrow"></span></button>
 
                              </div>
                            </div>
                            <div class="card--style-2">
-                             <h2 class="b2 saved">Advances Officer</h2>
+                             <h2 class="b4--bold saved">Advances Officer</h2>
                              <div class="card-body">
                                <div class="assignment-input mt-2">
                                  <div>

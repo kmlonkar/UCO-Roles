@@ -235,17 +235,59 @@
 
       .kra-list-item {
         margin-bottom: 1rem;
-
+        padding: 0 6px 0 0;
         &:last-of-type {
           margin-bottom: 0;
         }
 
         &--edited {
-          background-color: $table-row-highlight;
-          border: 0.3px solid rgba($primary-blue,0.6);
-          border-radius: 3px;
-          padding: 1rem;
-          // min-height: 50px;
+          background: rgba($table-row-highlight, 0.5);
+            border-top: 0;
+            border: 0.3px dashed $border-brown;
+            border-radius: 5px;
+            padding: 1rem 0.3rem;
+            position: relative;
+            // min-height: 50px;
+            p{
+              // position: relative;
+              color: $table-text-highlight;
+              &:last-child{
+                  &::before,
+                    &::after {
+                      content: '';
+                      display: block;
+                      position: absolute;
+                  
+                      width: 15px;
+                      height: 9px;
+                      // border-radius: 15px;
+                      z-index: 2;
+                      background-color: $clr-white;
+                  
+                    }
+                  
+                    &::before {
+                      top: -1px;
+                      right: 40px;
+                      border-radius: 0 0 15px 15px;
+                      border: 0.3px dashed $border-brown;
+                      border-top: 0;
+                      // clip-path: circle(66% at 100% 50%);
+                    }
+                  
+                    &::after {
+                      bottom: -1px;
+                      right: 40px;
+                      border-radius: 15px 15px 0 0;
+                      border: 0.3px dashed $border-brown;
+                      border-bottom: 0;
+                    }
+              }
+            }
+          // background-color: $table-row-highlight;
+          // border: 0.3px solid rgba($primary-blue,0.6);
+          // border-radius: 3px;
+          // padding: 1rem;
           // margin-left: -1rem;
           // margin-right: -1rem;
           // box-sizing: content-box;

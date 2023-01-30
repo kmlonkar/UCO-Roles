@@ -40,26 +40,81 @@ $(function () {
   //   alert('works')
   // });
 
-
   var options = {
-    series: [44, 55, 41, 17, 15],
-    labels: ['Business', 'Income', 'Audit & Compliance', 'Npa & Recovery', 'Digital Banking'],
     chart: {
-      type: 'donut',
+      type: "donut"
     },
-    responsive: [{
-      breakpoint: 480,
-      options: {
-        chart: {
-          width: 200,
-          height: 400
-        },
-        legend: {
-          position: 'bottom'
+    stroke: {
+      width: 0
+    },
+    dataLabels: {
+      enabled: false
+    },
+    legend: {
+      position: 'bottom',
+      horizontalAlign: 'left',
+      fontSize: '11px',
+      fontFamily: 'Lato-Regular, sans-serif',
+      fontWeight: 400,
+
+      labels: {
+        show: true,
+      },
+
+      markers: {
+        width: 17,
+        height: 17,
+        radius: 4,
+      },
+      itemMargin: {
+        horizontal: 5,
+        vertical: 5
+      },
+      onItemClick: {
+        toggleDataSeries: true
+      },
+      onItemHover: {
+        highlightDataSeries: true
+      },
+    },
+    plotOptions: {
+      pie: {
+        expandOnClick: true,
+         customScale: 1,
+        donut: {
+          size: '80%',
+          labels: {
+            show: true,
+            name: {
+              show: false,
+            },
+            value: {
+              show: true,
+              fontSize: '35px',
+              fontWeight: 'bold',
+              color: undefined,
+              offsetY: +10,
+              offsetX: +5,
+
+            },
+            total: {
+              show: true,
+              //  label: 'Total',
+              showAlways: true,
+              color: '#ffa500',
+              formatter: function (w) {
+                return w.globals.seriesTotals.reduce((a, b) => {
+                  return a + b
+                }, 0)
+              }
+            }
+          }
         }
       }
-    }],
-
+    },
+    
+    series: [18, 13, 16, 8, 15],
+    labels: ['Business', 'Income', 'Audit & Compliance', 'Npa & Recovery', 'Digital Banking'],
     colors: ['#B41432', '#F7A029', '#452525', '#15734E', '#3BA34B'],
   };
 

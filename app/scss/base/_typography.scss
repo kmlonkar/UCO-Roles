@@ -20,6 +20,10 @@ h6 {
     margin-bottom: 1rem;
     color: $text-clr-dark-gray;
 }
+.b2--lg{
+    @extend .b2;
+    font-size: 2rem;
+}
 .b3{
     font-size: 1.7rem;
     font-family: $primary-font-bold;
@@ -30,6 +34,10 @@ h6 {
     font-size: 1.6rem;
     font-family: $primary-font-extrabold;
     margin-bottom: 1.5rem;
+}
+.b4--bold{
+    @extend .b4;
+    font-family: $primary-font-bold;
 }
 .b1-lg{
     @extend .b1;

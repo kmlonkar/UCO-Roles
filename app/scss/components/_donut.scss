@@ -1,0 +1,8 @@
+.summary-chart{
+    .apexcharts-legend{
+        &-series{
+            width: 45%;
+            display: flex !important;
+        }
+    }
+}
