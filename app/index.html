@@ -277,14 +277,14 @@
                                 <div class="col-sm-6">
                                   <div class="date-wrap form-floating d-flex">
                                     <input type="text" class="datepicker form-control border-2" id="datepicker1"
-                                      value="--/--/----">
+                                      value="- - / - - /- - - -">
                                     <label for="datepicker1">Role Start Date</label>
                                   </div>
                                 </div>
                                 <div class="col-sm-6">
                                   <div class="date-wrap form-floating d-flex">
                                     <input type="text" class="datepicker form-control border-2" id="datepicker2"
-                                      value="--/--/----">
+                                      value="- - / - - / - - - -">
                                     <label for="datepicker2">Role End Date</label>
                                   </div>
                                 </div>
@@ -378,7 +378,7 @@
                                    <div class="popup-actions">
                                      
                                      <a type="button" class="btn btn-arrow btn-primary" data-bs-toggle="modal"
-                                       onclick="javascript:window.location.href='Role-clarity-2.html';"
+                                    
                                        data-bs-target="#confirm" data-bs-dismiss="modal">Ok<span
                                          class="icon-WhiteArrow"></span></a>
 
@@ -477,63 +477,7 @@
                              inactive </a>
 
                             </div>
-                            <!-- modal for making inactive -->
-                            <div class="modal fade " id="makeInactive" data-bs-backdrop="static" data-bs-keyboard="false"
-                              aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                              <div class="modal-dialog">
-                                <div class="modal-content">
-                                  <div class="d-flex d-flex justify-content-between">
-                                    <div class="modal-header">
-                                      <h5 class="modal-title b2" id="staticBackdropLabel">Make User Inactive</h5>
-                                      <p class="modal-subtitle b4">Confirmation</p>
-                                    </div>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                      aria-label="Close"></button>
-                                  </div>
-                                  <div class="modal-body">
-                                    <div class="make-inactive-form">
-                                    
-                                      <div class="form-floating">
-                                        <select class="form-select  "
-                                          id="make-invalid-options"
-                                          aria-label="Floating label select example">
-                                          <option selected>On Leave</option>
-                                          <option value="1">One</option>
-                                          <option value="2">Two</option>
-                                          <option value="3">Three</option>
-                                        </select>
-                                        <label for="make-invalid-options">Select appropriate reason</label>
-                                      </div>
-                                      <div class="role-duration">
-                                        <div class="row">
-                                          <div class="col-sm-6">
-                                            <div class="form-floating d-flex">
-                                              <input class="datepicker form-control border-2" id="datepicker1"
-                                                placeholder="DD/MM/YYYY">
-                                              <label for="datepicker1">Laeaving Date</label>
-                                            </div>
-                                          </div>
-                                          <div class="col-sm-6">
-                                            <div class="form-floating  d-flex">
-                                              <input class="datepicker form-control border-2" id="datepicker2"
-                                                placeholder="DD/MM/YYYY">
-                                              <label for="datepicker1">Return Date</label>
-                                            </div>
-                                          </div>
-                                        </div>
- 
- 
-                                      </div>
-                                      <div class="popup-actions form-action">
-                                        <a href="#" type="button" class="btn btn-arrow btn-primary"
-                                          data-bs-toggle="modal" data-bs-target="#staticBackdrop">Save and Submit <span
-                                            class="icon-WhiteArrow"></span></a>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
+                           
                        </div>
                      </div>
                    </div>
@@ -782,11 +726,11 @@
                            <p class="b2">Robin Devdas has raised a flag for discussion</p>
                          </div>
                          <div class="col-xl-4 role-actions mt-xl-0 mt-4">
-                           <a href="#" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#makeInactive">Make
+                           <a href="#" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#makeInactive2">Make
                              inactive </a>
 
                            <!-- modal for making inactive -->
-                           <div class="modal fade " id="makeInactive" data-bs-backdrop="static" data-bs-keyboard="false"
+                           <!-- <div class="modal fade " id="makeInactive" data-bs-backdrop="static" data-bs-keyboard="false"
                             aria-labelledby="staticBackdropLabel" aria-hidden="true">
                              <div class="modal-dialog">
                                <div class="modal-content">
@@ -839,7 +783,7 @@
                                  </div>
                                </div>
                              </div>
-                           </div>
+                           </div> -->
                          </div>
                        </div>
                      </div>
@@ -922,8 +866,7 @@
                               </label>
                             </div>
 
-                            <a href="#" type="button" class="btn btn-arrow btn-primary" data-bs-toggle="modal"
-                              data-bs-target="#staticBackdrop">Save Response<span class="icon-WhiteArrow"></span></a>
+                            <a href="#" type="button" class="btn btn-arrow btn-primary">Save Response<span class="icon-WhiteArrow"></span></a>
                           </div>
                        </div>
                      </div>
@@ -935,6 +878,108 @@
           </div>
         </div>
       </div>
+       <!-- modal for making inactive -->
+       <div class="modal fade " id="makeInactive" data-bs-backdrop="static" data-bs-keyboard="false"
+         aria-labelledby="staticBackdropLabel" aria-hidden="true">
+         <div class="modal-dialog">
+           <div class="modal-content">
+             <div class="d-flex d-flex justify-content-between">
+               <div class="modal-header">
+                 <h5 class="modal-title b2" id="staticBackdropLabel">Make User Inactive</h5>
+                 <p class="modal-subtitle b4">Confirmation</p>
+               </div>
+               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+             </div>
+             <div class="modal-body">
+               <div class="make-inactive-form">
+
+                 <div class="form-floating">
+                   <select class="form-select  " id="make-invalid-options" aria-label="Floating label select example">
+                     <option selected>On Leave</option>
+                     <option value="1">One</option>
+                     <option value="2">Two</option>
+                     <option value="3">Three</option>
+                   </select>
+                   <label for="make-invalid-options">Select appropriate reason</label>
+                 </div>
+                 <div class="role-duration">
+                   <div class="row">
+                     <div class="col-sm-6">
+                       <div class="form-floating d-flex">
+                         <input class="datepicker form-control border-2" id="datepicker1" placeholder="DD/MM/YYYY">
+                         <label for="datepicker1">Laeaving Date</label>
+                       </div>
+                     </div>
+                     <div class="col-sm-6">
+                       <div class="form-floating  d-flex">
+                         <input class="datepicker form-control border-2" id="datepicker2" placeholder="DD/MM/YYYY">
+                         <label for="datepicker1">Return Date</label>
+                       </div>
+                     </div>
+                   </div>
+
+
+                 </div>
+                 <div class="popup-actions form-action">
+                   <a href="#" type="button" class="btn btn-arrow btn-primary" data-bs-toggle="modal"
+                     data-bs-target="#staticBackdrop">Save and Submit <span class="icon-WhiteArrow"></span></a>
+                 </div>
+               </div>
+             </div>
+           </div>
+         </div>
+       </div>
+       <!-- modal for making inactive -->
+       <div class="modal fade " id="makeInactive2" data-bs-backdrop="static" data-bs-keyboard="false"
+         aria-labelledby="staticBackdropLabel" aria-hidden="true">
+         <div class="modal-dialog">
+           <div class="modal-content">
+             <div class="d-flex d-flex justify-content-between">
+               <div class="modal-header">
+                 <h5 class="modal-title b2" id="staticBackdropLabel">Make User Inactive</h5>
+                 <p class="modal-subtitle b4">Confirmation</p>
+               </div>
+               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+             </div>
+             <div class="modal-body">
+               <div class="make-inactive-form">
+
+                 <div class="form-floating">
+                   <select class="form-select  " id="make-invalid-options" aria-label="Floating label select example">
+                     <option selected>On Leave</option>
+                     <option value="1">One</option>
+                     <option value="2">Two</option>
+                     <option value="3">Three</option>
+                   </select>
+                   <label for="make-invalid-options">Select appropriate reason</label>
+                 </div>
+                 <div class="role-duration">
+                   <div class="row">
+                     <div class="col-sm-6">
+                       <div class="form-floating d-flex">
+                         <input class="datepicker form-control border-2" id="datepicker1" placeholder="DD/MM/YYYY">
+                         <label for="datepicker1">Laeaving Date</label>
+                       </div>
+                     </div>
+                     <div class="col-sm-6">
+                       <div class="form-floating  d-flex">
+                         <input class="datepicker form-control border-2" id="datepicker2" placeholder="DD/MM/YYYY">
+                         <label for="datepicker1">Return Date</label>
+                       </div>
+                     </div>
+                   </div>
+
+
+                 </div>
+                 <div class="popup-actions form-action">
+                   <a href="#" type="button" class="btn btn-arrow btn-primary" data-bs-toggle="modal"
+                     data-bs-target="#staticBackdrop">Save and Submit <span class="icon-WhiteArrow"></span></a>
+                 </div>
+               </div>
+             </div>
+           </div>
+         </div>
+       </div>
     </main>
     <script src="/node_modules/jquery/dist/jquery.min.js"></script>
     <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
