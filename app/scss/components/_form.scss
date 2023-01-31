@@ -109,3 +109,9 @@ label {
     }
 }
 
+.form-check-input{
+    background-color: $bg-clr-light-blue;
+    &:hover{
+        background-color: $bg-clr-blue;
+    }
+}

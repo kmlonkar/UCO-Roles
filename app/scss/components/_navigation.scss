@@ -1,13 +1,16 @@
 .navigation {
     padding: 4.5rem 1.8rem;
-
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
     @media screen and (max-width:991px) {
         padding: 2rem 1.8rem;
         height: 100%;
     }
 
     &-list {
-        width: 10rem;
+        width: 7rem;
 
         @media screen and (max-width:578px) {
             width: 100%;

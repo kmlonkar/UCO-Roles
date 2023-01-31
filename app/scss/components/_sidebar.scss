@@ -2,7 +2,7 @@
     background-color: $bg-clr-white;
     border-right: 1px solid $bg-clr-grey;
     position: fixed;
-    height: 100%;
+    height: calc(100% - 70px);
     z-index: 9;
     .self-profile{
         @media screen and (max-width:578px) {
