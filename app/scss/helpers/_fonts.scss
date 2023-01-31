@@ -54,3 +54,15 @@
   font-style: normal;
   font-display: swap;
 }
+@font-face {
+  font-family: 'Lato-Medium';
+  src: url('../fonts/Lato-Medium.eot');
+  src: url('../fonts/Lato-Medium.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Lato-Medium.woff2') format('woff2'),
+    url('../fonts/Lato-Medium.woff') format('woff'),
+    url('../fonts/Lato-Medium.ttf') format('truetype'),
+    url('../fonts/Lato-Medium.svg#Lato-Medium') format('svg');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}

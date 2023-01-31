@@ -110,13 +110,14 @@
       color: #15734e;
     }
   }
-  &-accepted-no{
+
+  &-accepted-no {
     .profile-picture {
-        &::after {
-          content: $icon-Allocated-but-Not-Accepted;
-          // color:;
-        }
+      &::after {
+        content: $icon-Allocated-but-Not-Accepted;
+        // color:;
       }
+    }
   }
 }
 
@@ -154,7 +155,7 @@
       .guide-lines {
         font-size: 1.4rem;
 
-       
+
 
         p:first-of-type {
           span {
@@ -235,6 +236,7 @@
 
       .kra-list-item {
         margin-bottom: 1rem;
+
         // padding: 0 6px 0 0;
         &:last-of-type {
           margin-bottom: 0;
@@ -242,49 +244,53 @@
 
         &--edited {
           background: rgba($table-row-highlight, 0.5);
-            border-top: 0;
-            border: 0.3px dashed $border-brown;
-            border-radius: 5px;
-            padding: 1rem 0.8rem;
-            position: relative;
-            width: 102%;
-            // min-height: 50px;
-            p{
-              // position: relative;
-              color: $table-text-highlight;
-              &:last-child{
-                  &::before,
-                    &::after {
-                      content: '';
-                      display: block;
-                      position: absolute;
-                  
-                      width: 15px;
-                      height: 9px;
-                      // border-radius: 15px;
-                      z-index: 2;
-                      background-color: $clr-white;
-                  
-                    }
-                  
-                    &::before {
-                      top: -1px;
-                      right: 40px;
-                      border-radius: 0 0 15px 15px;
-                      border: 0.3px dashed $border-brown;
-                      border-top: 0;
-                      // clip-path: circle(66% at 100% 50%);
-                    }
-                  
-                    &::after {
-                      bottom: -1px;
-                      right: 40px;
-                      border-radius: 15px 15px 0 0;
-                      border: 0.3px dashed $border-brown;
-                      border-bottom: 0;
-                    }
+          border-top: 0;
+          border: 0.3px dashed $border-brown;
+          border-radius: 5px;
+          padding: 1rem 0.8rem;
+          position: relative;
+          width: calc(100% + 10px);
+
+          // min-height: 50px;
+          p {
+            // position: relative;
+            color: $table-text-highlight;
+
+            &:last-child {
+
+              &::before,
+              &::after {
+                content: '';
+                display: block;
+                position: absolute;
+
+                width: 15px;
+                height: 9px;
+                // border-radius: 15px;
+                z-index: 2;
+                background-color: $clr-white;
+
+              }
+
+              &::before {
+                top: -1px;
+                right: 40px;
+                border-radius: 0 0 15px 15px;
+                border: 0.3px dashed $border-brown;
+                border-top: 0;
+                // clip-path: circle(66% at 100% 50%);
+              }
+
+              &::after {
+                bottom: -1px;
+                right: 40px;
+                border-radius: 15px 15px 0 0;
+                border: 0.3px dashed $border-brown;
+                border-bottom: 0;
               }
             }
+          }
+
           // background-color: $table-row-highlight;
           // border: 0.3px solid rgba($primary-blue,0.6);
           // border-radius: 3px;
@@ -358,9 +364,10 @@
 //   height:43vh;
 //   overflow-y: auto;
 // }
-.kra-list-wrap{
+.kra-list-wrap {
   margin-bottom: 1.5rem;
 }
+
 .new-role {
   margin-top: 1.5rem;
 
@@ -395,6 +402,7 @@
       }
     }
   }
+
   .form-floating {
     &:last-of-type {
       margin-bottom: 0;
@@ -406,24 +414,28 @@
 .flagged-reasons {
   .subsection-title {
     text-transform: uppercase;
-    &+p{
-      font-size:1.5rem;
+
+    &+p {
+      font-size: 1.5rem;
     }
   }
 
   .conclusion {
-    &__section{
-      margin-top:1.5rem;
-      .small-text{
+    &__section {
+      margin-top: 1.5rem;
+
+      .small-text {
         color: $primary-blue;
         margin-bottom: 1.5rem;
         font-size: 1.2rem;
       }
-      .form-check{
-        input{
+
+      .form-check {
+        input {
           margin-top: 0.5rem;
         }
-        label{
+
+        label {
           color: $text-clr-black;
           font-size: 1.2rem;
           line-height: 1.9rem;
