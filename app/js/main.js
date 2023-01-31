@@ -3,6 +3,8 @@ $(function () {
   $('#datepicker2').datepicker();
   $('#datepicker3').datepicker();
   $('#datepicker4').datepicker();
+  $('#datepicker5').datepicker();
+  $('#datepicker6').datepicker();
   $('.date').datepicker();
   $('#date-2').datepicker({
     format: "dd-M-yy"
