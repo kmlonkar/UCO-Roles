@@ -83,7 +83,7 @@
       </section>
       <div class="content">
         <div class="one-col-layout">
-          <div class="exception-heading">
+          <div class="exception-heading mb-0">
             <h1 class="b1 section-title">My Role Acceptance</h1>
   
               <!-- modal for new kra -->
@@ -224,13 +224,84 @@
                 <a href="#" type="button" class="btn btn-arrow btn-outline-primary" data-bs-toggle="modal"
                    data-bs-target="#staticBackdrop">Flag for Discussion<span class="icon-WhiteArrow"></span></a>
                 <a href="#" type="button" class="btn btn-arrow btn-primary" data-bs-toggle="modal"
-                   data-bs-target="#staticBackdrop">Accept Role & KRAs<span class="icon-WhiteArrow"></span></a>
+                   data-bs-target="#addrolemix">Accept Role & KRAs<span class="icon-WhiteArrow"></span></a>
                   </div>
             </div>
           </div>
         </div>
       </div>
     </main>
+    <!-- Modal for adding role mix-->
+    <div class="modal fade " id="addrolemix" data-bs-backdrop="static" data-bs-keyboard="false"
+      aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="d-flex d-flex justify-content-between">
+            <div class="modal-header">
+              <h5 class="modal-title b2" id="staticBackdropLabel">Accept Role Mix</h5>
+              <p class="modal-subtitle b4">Confirmation</p>
+            </div>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="modal-body">
+              <div class="confirmation">
+                <img src="images/Completed-pana.png" alt="completed">
+                <p class="b4 confirmation-text">Do you want to proceed with the role mix?</p>
+
+                <div class="popup-actions">
+                  <button type="button" class="btn btn-arrow btn-arrow--rotated btn-secondary"
+                    data-bs-dismiss="modal"><span class="icon-WhiteArrow"></span>
+                    No</button>
+                  <button type="button" class="btn btn-arrow btn-primary" data-bs-toggle="modal"
+                    data-bs-target="#confirmAddRoleMix" data-bs-dismiss="modal">Yes<span
+                      class="icon-WhiteArrow"></span></button>
+
+                </div>
+              </div>
+
+            </div>
+
+
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <!-- modal for sucessful role mix -->
+ 
+      <div class="modal fade " id="confirmAddRoleMix" data-bs-backdrop="static" data-bs-keyboard="false"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="d-flex d-flex justify-content-between">
+              <div class="modal-header">
+                <h5 class="modal-title b2" id="staticBackdropLabel">Role Submission</h5>
+                <p class="modal-subtitle b4">Confirmation</p>
+              </div>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="confirmation confirmation-received">
+                <img src="images/Completed-pana.png" alt="completed">
+                <h2 class="b1 confirmation-text">You are good to go</h2>
+                <p class="confirmation-subtext">We have added the new role mix to your profile. Thanks for accepting.
+                </p>
+
+                <div class="popup-actions">
+
+                  <a type="button" class="btn btn-arrow btn-primary" data-bs-toggle="modal" data-bs-target="#confirm"
+                    data-bs-dismiss="modal">Ok<span class="icon-WhiteArrow"></span></a>
+
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
     <!-- modal for asking add kra confirmation -->
     <div class="modal fade add-kra-modal" id="confirmAddKRA" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
       aria-labelledby="staticBackdropLabel" aria-hidden="true">
@@ -272,6 +343,7 @@
         </div>
       </div>
     </div>
+    
     <!-- modal for added kra sucessfully msg -->
     <div class="modal fade add-kra-modal " id="AddKRASucess" data-bs-backdrop="static" data-bs-keyboard="false"
       tabindex="-1"
@@ -294,7 +366,7 @@
     <div class="modal-body">
       <div class="confirmation confirmation-received">
         <img src="images/Completed-pana.png" alt="completed">
-        <h2 class="b1 confirmation-text">Sucessfully added kra</h2>
+        <h2 class="b4 confirmation-text">Sucessfully added kra</h2>
         <p class="confirmation-subtext">We have added a new KRA for the Role Mix. Thanks for submitting it.</p>
 
         <div class="popup-actions">
@@ -310,35 +382,35 @@
     </div>
     </div>
     </div>
-<!-- modal for exception raised msg -->
- <div class="modal fade add-kra-modal" id="submitKRA" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-   aria-labelledby="staticBackdropLabel" aria-hidden="true">
-   <div class="modal-dialog">
-     <div class="modal-content">
-       <div class="d-flex d-flex justify-content-end">
-         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-       </div>
-       <div class="modal-body">
-         <div class="confirmation confirmation-received">
-           <img src="images/Completed-pana.png" alt="completed">
-           <h2 class="b1 confirmation-text">Exception raised</h2>
-           <p class="confirmation-subtext">Your reporting manager will revert to you shortly on the same exception
-             raised. Thanks for submitting it.</p>
+    <!-- modal for exception raised msg -->
+    <div class="modal fade add-kra-modal" id="submitKRA" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="d-flex d-flex justify-content-end">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="confirmation confirmation-received">
+            <img src="images/Completed-pana.png" alt="completed">
+            <h2 class="b1 confirmation-text">Exception raised</h2>
+            <p class="confirmation-subtext">Your reporting manager will revert to you shortly on the same exception
+              raised. Thanks for submitting it.</p>
 
-           <div class="popup-actions">
+            <div class="popup-actions">
 
-             <button type="button" class="btn btn-arrow btn-primary" data-bs-toggle="modal" data-bs-target="#confirm"
-               data-bs-dismiss="modal">Ok<span
-                 class="icon-WhiteArrow"></span></button>
+              <button type="button" class="btn btn-arrow btn-primary" data-bs-toggle="modal" data-bs-target="#confirm"
+                data-bs-dismiss="modal">Ok<span
+                  class="icon-WhiteArrow"></span></button>
 
-           </div>
-         </div>
+            </div>
+          </div>
 
-       </div>
+        </div>
 
-     </div>
-   </div>
- </div>
+      </div>
+    </div>
+    </div>
     <script src="/node_modules/jquery/dist/jquery.min.js"></script>
     <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
     <script src="/node_modules/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"></script>
