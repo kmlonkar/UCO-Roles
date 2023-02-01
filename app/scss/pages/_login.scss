@@ -1,11 +1,12 @@
 .login-wrapper {
     background-image: url(../images/bg.png);
-    background-size: 100% 100%;
+    background-size: cover;
     padding: 8rem;
 
     .banner {
         display: flex;
         justify-content: space-between;
+        align-items: center;
 
         .welcome-msg {
             .logo {
@@ -137,7 +138,8 @@
                 font-size: 1.5rem;
                 width: 70%;
                 position: relative;
-                .refresh-icon{
+
+                .refresh-icon {
                     position: absolute;
                     top: 15px;
                     right: 18px;
