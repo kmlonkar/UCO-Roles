@@ -21,23 +21,27 @@
     background-color: $bg-clr-grey;
     padding: 1.3rem 1.5rem;
     border-radius: 0.5rem;
+    width: 100%;
+  
  &-focused{
     background: $bg-clr-white;
         box-shadow: 0 3px 9px 1px $common-box-shadow;
         border: 0 none;
         padding: 1.5rem;
         position: relative;
-        z-index: 9;
+        // z-index: 9;
         width: 100%;
         .total-duration{
             span{
-                background-color: $text-clr-dark-gray
+                &::before{
+                    background-color: $text-clr-dark-gray;
+                }
             }
         }
  }
-    .card-body{
-        padding: 0;
-    }
+    // .card-body{
+    //     padding: 0;
+    // }
 }
 .card--style-3{
     background-color:rgba($bg-clr-grey,0.6);

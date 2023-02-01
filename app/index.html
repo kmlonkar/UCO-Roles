@@ -25,7 +25,7 @@
             aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-         <span class="icon-logout"></span>
+          <span class="icon-logout"></span>
         </div>
       </div>
     </header>
@@ -124,35 +124,35 @@
             <div class="team-listing-wrapper">
               <h2 class="b2">My team members</h2>
               <div class="search">
-                  <input type="text" class="search-input" name="" placeholder="Search Employee Information" />
-                  <div class="search-results card">
-                    <div class="search-options  overflow-container">
-                        <div class="profile-picture--no">
-                            <div class="intro profile">
-                            <span class="profile-picture allocated--no">SM</span>
-                            <div class="member-details">
-                                <p class="member__name">Sonal Rajotia</p>
-                                <p class="member__designation"> Deputy Branch Manager</p>
-                                <p class="member__pf-id">PF ID - 22346</p>
-                            </div>
-                            <p class="profile__location">Mumbai</p>
-                            </div>
+                <input type="text" class="search-input" name="" placeholder="Search Employee Information" />
+                <div class="search-results card">
+                  <div class="search-options  overflow-container">
+                    <div class="profile-picture--no">
+                      <div class="intro profile">
+                        <span class="profile-picture allocated--no">SM</span>
+                        <div class="member-details">
+                          <p class="member__name">Sonal Rajotia</p>
+                          <p class="member__designation"> Deputy Branch Manager</p>
+                          <p class="member__pf-id">PF ID - 22346</p>
                         </div>
-                        <div class="profile-picture--no">
-                            <div class="intro profile">
-                            <span class="profile-picture allocated--no">SM</span>
-                            <div class="member-details">
-                                <p class="member__name">Sonal Rajotia</p>
-                                <p class="member__designation"> Deputy Branch Manager</p>
-                                <p class="member__pf-id">PF ID - 22346</p>
-                            </div>
-                            <p class="profile__location">Mumbai</p>
-                            </div>
+                        <p class="profile__location">Mumbai</p>
+                      </div>
+                    </div>
+                    <div class="profile-picture--no">
+                      <div class="intro profile">
+                        <span class="profile-picture allocated--no">SM</span>
+                        <div class="member-details">
+                          <p class="member__name">Sonal Rajotia</p>
+                          <p class="member__designation"> Deputy Branch Manager</p>
+                          <p class="member__pf-id">PF ID - 22346</p>
                         </div>
+                        <p class="profile__location">Mumbai</p>
+                      </div>
                     </div>
-                    <div class="search-summary">
-                        2 Employee Found
-                    </div>
+                  </div>
+                  <div class="search-summary">
+                    2 Employee Found
+                  </div>
                 </div>
               </div>
               <ul class="nav nav-tabs custom-tabs overflow-container" id="myTab" role="tablist">
@@ -172,9 +172,9 @@
                 <li class="nav-item profile-picture--yes allocation-yes-accepted-no" role="presentation">
                   <button class="nav-link profile" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile"
                     type="button" role="tab" aria-controls="profile" aria-selected="false">
-                     <span class="profile-picture"><img src="images/johnDoe.jpg" class="profile-picture"
-                         alt="johndoe"></span>
-                    
+                    <span class="profile-picture"><img src="images/johnDoe.jpg" class="profile-picture"
+                        alt="johndoe"></span>
+
                     <div class="member-details">
                       <p class="member__name">Mahesh Poojari</p>
                       <p class="member__designation">Current Account Officer</p>
@@ -230,13 +230,13 @@
                 <div class="card">
                   <div class="card-header">
                     <div class="profile-picture--no allocation-yes dotted-border">
-                        <div class="intro profile">
-                          <span class="profile-picture allocated--no">SM</span>
-                          <div class="member-details">
-                            <p class="member__name">Sonal Rajotia</p>
-                            <p class="member__designation"> Deputy Branch Manager</p>
-                          </div>
+                      <div class="intro profile">
+                        <span class="profile-picture allocated--no">SM</span>
+                        <div class="member-details">
+                          <p class="member__name">Sonal Rajotia</p>
+                          <p class="member__designation"> Deputy Branch Manager</p>
                         </div>
+                      </div>
                     </div>
                     <div class="guide-lines dotted-border">
                       <div class="row">
@@ -251,7 +251,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="add-detail overflow-container">
+                  <div class="add-detail">
                     <div class=" kra">
                       <div class="
                     kra--add">
@@ -259,16 +259,25 @@
                         <div class="new-role-wrap">
                           <div class="new-role">
                             <div class="assignment-duration">
-                              <label for="assignment floating-label">Assignment Start
-                                Date</label>
-                              <div class="assignment-input mt-2">
-                                <p class="start-date">14-JUL-21</p>
+
+                              <div class="assignment-input">
+                                <div>
+                                  <label for="assignment">Assignment Start
+                                    Date</label>
+                                  <p class="start-date">14-JUL-21</p>
+                                </div>
+
                                 <p class="total-duration">
                                   <span></span>
                                   1y 3m
                                   <span></span>
                                 </p>
-                                <p class="end-date">Till Present</p>
+                                <div>
+                                  <label for="assignment">Assignment Start
+                                    Date</label>
+                                  <p class="end-date">Till Present</p>
+                                </div>
+
                               </div>
 
                             </div>
@@ -295,30 +304,63 @@
                                   Current Role
                                 </label>
                               </div>
-                              <div class="form-floating">
-                                <select class="form-select " id="js-example-basic-single"
-                                  aria-label="Floating label select example">
-                                  <option selected>Current Account Officer</option>
-                                  <option value="1">One</option>
-                                  <option value="2">Two</option>
-                                  <option value="3">Three</option>
-                                </select>
-                                <label for="js-example-basic-single">Role 1</label>
-                              </div>
+
 
                             </div>
 
                           </div>
-                          <button href="#" class="btn btn-link">+add</button>
+                          <div class="roles">
+                            <div class="form-floating">
+                              <select class="form-select js-example-basic-single"
+                                aria-label="Floating label select example">
+                                <option selected>Current Account Officer</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                              </select>
+                              <label for="js-example-basic-single">Role 1</label>
+                            </div>
+                            <div class="form-floating">
+                              <select class="form-select js-example-basic-single"
+                                aria-label="Floating label select example">
+                                <option selected>Current Account Officer</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                              </select>
+                              <label for="js-example-basic-single">Role 1</label>
+                            </div>
+                            <div class="form-floating">
+                              <select class="form-select js-example-basic-single"
+                                aria-label="Floating label select example">
+                                <option selected>Current Account Officer</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                              </select>
+                              <label for="js-example-basic-single">Role 1</label>
+                            </div>
+                            <div class="form-floating">
+                              <select class="form-select js-example-basic-single"
+                                aria-label="Floating label select example">
+                                <option selected>Current Account Officer</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                              </select>
+                              <label for="js-example-basic-single">Role 1</label>
+                            </div>
+                            <button href="#" class="btn btn-link">+add</button>
+                          </div>
+
                         </div>
 
 
                         <a href="#" type="button" class="btn btn-arrow btn-primary" data-bs-toggle="modal"
-                          data-bs-target="#staticBackdrop">submit role <span
-                            class="icon-WhiteArrow"></span></a>
+                          data-bs-target="#staticBackdrop">submit role <span class="icon-WhiteArrow"></span></a>
                         <!-- Modal for asking confirmation-->
                         <div class="modal fade " id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
-                           aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                          aria-labelledby="staticBackdropLabel" aria-hidden="true">
                           <div class="modal-dialog">
                             <div class="modal-content">
                               <div class="d-flex d-flex justify-content-between">
@@ -330,10 +372,10 @@
                                   aria-label="Close"></button>
                               </div>
                               <div class="modal-body">
-                                 <div class="modal-body">
-                                   <div class="confirmation">
-                                     <img src="images/Completed-pana.png" alt="completed">
-                                       <p class="b4 confirmation-text">Do you want to proceed with the role mix?</p>
+                                <div class="modal-body">
+                                  <div class="confirmation">
+                                    <img src="images/Completed-pana.png" alt="completed">
+                                    <p class="b4 confirmation-text">Do you want to proceed with the role mix?</p>
 
                                     <div class="popup-actions">
                                       <button type="button" class="btn btn-arrow btn-arrow--rotated btn-secondary"
@@ -344,52 +386,51 @@
                                           class="icon-WhiteArrow"></span></button>
 
                                     </div>
-                                   </div>
+                                  </div>
 
-                                 </div>
+                                </div>
 
-                               
-                        
+
+
                               </div>
-                             
+
                             </div>
                           </div>
                         </div>
                         <!-- modal for showing confirmation -->
-                         <div class="modal fade " id="confirm" data-bs-backdrop="static" data-bs-keyboard="false"
-                            aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                           <div class="modal-dialog">
-                             <div class="modal-content">
-                               <div class="d-flex d-flex justify-content-between">
-                                 <div class="modal-header">
-                                   <h5 class="modal-title b2" id="staticBackdropLabel">Role Submission</h5>
-                                   <p class="modal-subtitle b4">Confirmation</p>
-                                 </div>
-                                 <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                   aria-label="Close"></button>
-                               </div>
-                               <div class="modal-body">
-                                 <div class="confirmation confirmation-received">
+                        <div class="modal fade " id="confirm" data-bs-backdrop="static" data-bs-keyboard="false"
+                          aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                          <div class="modal-dialog">
+                            <div class="modal-content">
+                              <div class="d-flex d-flex justify-content-between">
+                                <div class="modal-header">
+                                  <h5 class="modal-title b2" id="staticBackdropLabel">Role Submission</h5>
+                                  <p class="modal-subtitle b4">Confirmation</p>
+                                </div>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                  aria-label="Close"></button>
+                              </div>
+                              <div class="modal-body">
+                                <div class="confirmation confirmation-received">
                                   <img src="images/Completed-pana.png" alt="completed">
-                                   <h2 class="b1 confirmation-text">You are good to go</h2>
-                                   <p class="confirmation-subtext">You have successfully allocated the role mix to your
-                                     team member.</p>
+                                  <h2 class="b1 confirmation-text">You are good to go</h2>
+                                  <p class="confirmation-subtext">You have successfully allocated the role mix to your
+                                    team member.</p>
 
-                                   <div class="popup-actions">
-                                     
-                                     <a type="button" class="btn btn-arrow btn-primary" data-bs-toggle="modal"
-                                    
-                                       data-bs-target="#confirm" data-bs-dismiss="modal">Ok<span
-                                         class="icon-WhiteArrow"></span></a>
+                                  <div class="popup-actions">
 
-                                   </div>
-                                 </div>
+                                    <a type="button" class="btn btn-arrow btn-primary" data-bs-toggle="modal"
+                                      data-bs-target="#confirm" data-bs-dismiss="modal">Ok<span
+                                        class="icon-WhiteArrow"></span></a>
 
-                               </div>
+                                  </div>
+                                </div>
 
-                             </div>
-                           </div>
-                         </div>
+                              </div>
+
+                            </div>
+                          </div>
+                        </div>
                       </div>
                       <div class="kra--view">
                         <div class="row">
@@ -454,283 +495,300 @@
                 </div>
               </div>
               <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-                 <div class="card">
-                   <div class="card-header">
-                     <div class="profile-picture--no allocation-yes-accepted-no dotted-border">
-                       <div class="intro profile">
-                         <span class="profile-picture allocated--no">MP</span>
-                         <div class="member-details">
-                           <p class="member__name">Mahesh Poojari</p>
-                           <p class="member__designation">Current Account Officer Manager</p>
-                         </div>
-                       </div>
-                     </div>
-                     <div class="guide-lines">
-                       <div class="row">
-                         <div class="col-xl-8">
-                           <p>Please enter all roles performed by <span>Sonal Rajotia</span> in Branch
-                             Shirva (CBS
-                             Code 1322) since 1st April 2021</p>
-                         </div>
-                         <div class="col-xl-4 role-actions mt-xl-0 mt-4">
-                           <a href="#" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#makeInactive">Make
-                             inactive </a>
+                <div class="card">
+                  <div class="card-header">
+                    <div class="profile-picture--no allocation-yes-accepted-no dotted-border">
+                      <div class="intro profile">
+                        <span class="profile-picture allocated--no">MP</span>
+                        <div class="member-details">
+                          <p class="member__name">Mahesh Poojari</p>
+                          <p class="member__designation">Current Account Officer Manager</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="guide-lines">
+                      <div class="row">
+                        <div class="col-xl-8">
+                          <p>Please enter all roles performed by <span>Sonal Rajotia</span> in Branch
+                            Shirva (CBS
+                            Code 1322) since 1st April 2021</p>
+                        </div>
+                        <div class="col-xl-4 role-actions mt-xl-0 mt-4">
+                          <a href="#" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#makeInactive">Make
+                            inactive </a>
 
-                            </div>
-                           
-                       </div>
-                     </div>
-                   </div>
+                        </div>
 
-                   <div class="add-detail overflow-container">
-                     <div class=" kra">
-                       <div class="kra--add">
-                         <div class="role-history-title">
-                           <h3 class="b2--lg"> Role History</h3>
-                           <div class="btn btn-link">Add New Role +</div>
-                         </div>
-                         <div class="new-role-wrap role-history overflow-container">
+                      </div>
+                    </div>
+                  </div>
 
-                           <div class="card--style-2 card--style-2-focused">
-                             <h2 class="b4--bold saved saved--not">Current Account Officer</h2>
-                             <div class="card-body">
-                               <div class="assignment-input mt-2">
-                                 <div>
-                                   <p>Role Start Date</p>
-                                   <p class="start-date">23-JAN-23</p>
-                                 </div>
-                                 <p class="total-duration">
-                                   <span></span>
-                                   0y 0m
-                                   <span></span>
-                                 </p>
-                                 <div class="text-end">
-                                   <p>Role End Date</p>
-                                   <p class="end-date">Present</p>
-                                 </div>
-                               </div>
-                             </div>
-                             <div class="card-actions">
-                               <button type="button" class="btn btn-arrow btn-dark">Delete Role <span
-                                   class="icon-WhiteArrow"></span></button>
-                               <button type="button" class="btn btn-arrow btn-primary">Edit Role <span
-                                   class="icon-WhiteArrow"></span></button>
+                  <div class="add-detail">
+                    <div class=" kra">
+                      <div class="kra--add">
+                        <div class="role-history-title">
+                          <h3 class="b2--lg"> Role History</h3>
+                          <div class="btn btn-link">Add New Role +</div>
+                        </div>
+                        <div class="new-role-wrap role-history">
 
-                             </div>
-                           </div>
-                           <div class="card--style-2">
-                             <h2 class="b4--bold saved">Advances Officer</h2>
-                             <div class="card-body">
-                               <div class="assignment-input mt-2">
-                                 <div>
-                                   <p>Role Start Date</p>
-                                   <p class="start-date">14-JUL-21</p>
-                                 </div>
-                                 <p class="total-duration">
-                                   <span></span>
-                                   1y 3m
-                                   <span></span>
-                                 </p>
-                                 <div class="text-end">
-                                   <p>Role End Date</p>
-                                   <p class="end-date">23-JAN-23</p>
-                                 </div>
-                               </div>
-                             </div>
-
-                           </div>
-
-                         </div>
-                       </div>
-                       <div class="kra--view">
-                         <div class="row">
-                           <div class="col-6 b3">KRA Description </div>
-                           <div class="col-6 b3"> Wgt</div>
-                         </div>
-                           <div class="comment-wrap  dotted-border--top">
-                             <a href="#" class="btn btn-link" 
-                             data-bs-toggle="modal"                               data-bs-target="#comments">view comments</a>
-                           </div>
-                             <!-- modal for making inactive -->
-                             <div class="modal fade view-comment" id="comments" data-bs-backdrop="static"
-                               data-bs-keyboard="false" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                               <div class="modal-dialog">
-                                 <div class="modal-content">
-                                   <div class="d-flex d-flex justify-content-between">
-                                     <div class="modal-header">
-                                       <h5 class="modal-title b2" id="staticBackdropLabel">View Comments</h5>                                    
-                                     </div>
-                                     <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                       aria-label="Close"></button>
-                                   </div>
-                                   <div class="modal-body">
-                                    <div class="border-bottom chat-wrapper">
-                                      <div class="comment-header">
-                                        <div class="user-details ">
-                                          <span>RS</span>
-                                          <div>
-                                            <h5 class="name">Ravi Sarman</h5>
-                                            <p>PF ID - #458890</p>
-                                          </div>
-                                        </div>
-                                        <div class="designation">
-                                          <span class="star"><img src="images/start.svg" alt="star"></span>
-                                          Operations Officer
-                                        </div>
-                                        <div class="timestamp">
-                                          <h6 class="date">27 Jan 2023</h6>
-                                          <p>Exception No: 12345</p>
-                                        </div>
-                                      </div>
-                                      <div class="comment-chain">
-                                        <p class="chain-title">Additional Roles</p>
-                                        <ul class="comment-chain-wrapper">
-                                            <li>Credit Officer</li>
-                                            <li>Locker Officer</li>
-                                            <li>Forex Officer</li>
-                                        </ul>
-                                      </div>
-                                        
-                                    </div>
-                                    <ul class="comment-history">
-                                      <li class="received-comments">
-                                        <div class="comment--left">
-                                          <p class="chat-summary">KRA Added</p>
-                                          <div class="chat">
-                                            <p>% Digitally active customers vs. targets</p>
-                                            <p>KRA Wgt. - 4</p>
-                                          </div>
-                                        </div>
-                                      </li>
-                                      <li class="sent-comments">
-                                        <div class="comment--right">
-                                           <div class="chat">
-                                            The official handles the digital awareness for the branch. Hence, the KRA is
-                                            suited to him.
-                                           </div>
-                                           <div class="chat-profile">
-                                            <p>Sonal Rajotia</p>
-                                            <img src="images/johnDoe.jpg" alt="">
-                                           </div>
-                                        </div>
-                                      </li>
-                                      <li class="received-comments">
-                                        <div class="comment--left">
-                                          <p class="chat-summary">KRA Added</p>
-                                          <div class="chat">
-                                            <p>Audit and Compliance score</p>
-                                            <p>KRA Wgt. - 6</p>
-                                            <p>% Growth in Average Standard Advances</p>
-                                            <p>KRA Wgt. - 4</p>
-                                          </div>
-                                        </div>
-                                      </li>
-                                      <li class="sent-comments">
-                                        <div class="comment--right">
-                                           <div class="chat">
-                                            The role is more inclined towards the deposits growth. Hence, KRA weightage
-                                            have been adjusted in the role.
-                                           </div>
-                                           <div class="chat-profile">
-                                            <p>Sonal Rajotia</p>
-                                            <img src="images/johnDoe.jpg" alt="">
-                                           </div>
-                                        </div>
-                                      </li>
-                                    </ul>
-                                   </div>
-                                 </div>
-                               </div>
-                             </div>
-                         <div class="kra-list-wrap">
-                           <ul class="kra-list dotted-border--top">
-                             <li class="kra-list-item">
-                               <div class="kra-detail">
-                                 <p class="kra-param">% Growth in average retail term deposits
-                                 </p>
-                                 <p class="kra-value">12</p>
-                               </div>
-                             </li>
-                             <li class="kra-list-item">
-                               <div class="kra-detail">
-                                 <p class="kra-param">% Growth in average retail term deposits
-                                 </p>
-                                 <p class="kra-value">12</p>
-                               </div>
-                             </li>
-                             <li class="kra-list-item">
-                               <div class="kra-detail">
-                                 <p class="kra-param">% Growth in average retail term deposits
-                                 </p>
-                                 <p class="kra-value">12</p>
-                               </div>
-                             </li>
-                             <li class="kra-list-item">
-                               <div class="kra-detail">
-                                 <p class="kra-param">% Growth in average retail term deposits
-                                 </p>
-                                 <p class="kra-value">12</p>
-                               </div>
-                             </li>
-                             <li class="kra-list-item">
-                               <div class="kra-detail">
-                                 <p class="kra-param">% Growth in average retail term deposits
-                                 </p>
-                                 <p class="kra-value">12</p>
-                               </div>
-                             </li>
-                             <li class="kra-list-item">
-                               <div class="kra-detail">
-                                 <p class="kra-param">% Growth in average retail term deposits
-                                 </p>
-                                 <p class="kra-value">12</p>
-                               </div>
-                             </li>
-                             <li class="kra-list-item kra-list-item--edited">
-                                <div class="kra-detail">
-                                  <p class="kra-param">% Growth in average retail term deposits
+                          <div class="card--style-2 card--style-2-focused">
+                            <h2 class="b4--bold saved saved--not">Current Account Officer</h2>
+                            <div class="role-details-wrapper">
+                              <div class="addrole-details">
+                                <div class="assignment-input mt-2">
+                                  <div>
+                                    <p>Role Start Date</p>
+                                    <p class="start-date">23-JAN-23</p>
+                                  </div>
+                                  <p class="total-duration">
+                                    <span></span>
+                                    0y 0m
+                                    <span></span>
                                   </p>
-                                  <p class="kra-value">12</p>
+                                  <div class="text-end">
+                                    <p>Role End Date</p>
+                                    <p class="end-date">Present</p>
+                                  </div>
                                 </div>
-                             </li>
-                           </ul>
-                         
-                           <div class="kra-summary kra-detail">
-                             <p class="kra-param">Total</p>
-                             <p class="kra-value">70</p>
-                           </div>
+                                <div class="comment-chain">
+                                  <p class="chain-title">Additional Roles</p>
+                                  <ul class="comment-chain-wrapper">
+                                    <li>Credit Officer</li>
+                                    <li>Locker Officer</li>
+                                    <li>Forex Officer</li>
+                                  </ul>
+                                </div>
 
-                       
-                         </div>
+                              </div>
+                              <div class="role-actions-wrap">
+                                <button type="button" class="btn btn-arrow btn-dark">Delete Role <span
+                                    class="icon-WhiteArrow"></span></button>
+                                <button type="button" class="btn btn-arrow btn-primary">Edit Role <span
+                                    class="icon-WhiteArrow"></span></button>
 
-                       </div>
-                     </div>
-                   </div>
-                 </div>
+                              </div>
+                            </div>
+
+                          </div>
+                          <div class="card--style-2">
+                            <h2 class="b4--bold saved">Advances Officer</h2>
+                            <div class="role-details-wrapper">
+                              <div class="addrole-details">
+                                <div class="assignment-input mt-2">
+                                  <div>
+                                    <p>Role Start Date</p>
+                                    <p class="start-date">23-JAN-23</p>
+                                  </div>
+                                  <p class="total-duration">
+                                    <span></span>
+                                    0y 0m
+                                    <span></span>
+                                  </p>
+                                  <div class="text-end">
+                                    <p>Role End Date</p>
+                                    <p class="end-date">Present</p>
+                                  </div>
+                                </div>
+
+
+                              </div>
+                            
+                            </div>
+
+                          </div>
+
+                        </div>
+                      </div>
+                      <div class="kra--view">
+                        <div class="row">
+                          <div class="col-6 b3">KRA Description </div>
+                          <div class="col-6 b3"> Wgt</div>
+                        </div>
+                        <div class="comment-wrap  dotted-border--top">
+                          <a href="#" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#comments">view
+                            comments</a>
+                        </div>
+                        <!-- modal for making inactive -->
+                        <div class="modal fade view-comment" id="comments" data-bs-backdrop="static"
+                          data-bs-keyboard="false" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                          <div class="modal-dialog">
+                            <div class="modal-content">
+                              <div class="d-flex d-flex justify-content-between">
+                                <div class="modal-header">
+                                  <h5 class="modal-title b2" id="staticBackdropLabel">View Comments</h5>
+                                </div>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                  aria-label="Close"></button>
+                              </div>
+                              <div class="modal-body">
+                                <div class="border-bottom chat-wrapper">
+                                  <div class="comment-header">
+                                    <div class="user-details ">
+                                      <span>RS</span>
+                                      <div>
+                                        <h5 class="name">Ravi Sarman</h5>
+                                        <p>PF ID - #458890</p>
+                                      </div>
+                                    </div>
+                                    <div class="designation">
+                                      <span class="star"><img src="images/start.svg" alt="star"></span>
+                                      Operations Officer
+                                    </div>
+                                    <div class="timestamp">
+                                      <h6 class="date">27 Jan 2023</h6>
+                                      <p>Exception No: 12345</p>
+                                    </div>
+                                  </div>
+                                  <div class="comment-chain">
+                                    <p class="chain-title">Additional Roles</p>
+                                    <ul class="comment-chain-wrapper">
+                                      <li>Credit Officer</li>
+                                      <li>Locker Officer</li>
+                                      <li>Forex Officer</li>
+                                    </ul>
+                                  </div>
+
+                                </div>
+                                <ul class="comment-history">
+                                  <li class="received-comments">
+                                    <div class="comment--left">
+                                      <p class="chat-summary">KRA Added</p>
+                                      <div class="chat">
+                                        <p>% Digitally active customers vs. targets</p>
+                                        <p>KRA Wgt. - 4</p>
+                                      </div>
+                                    </div>
+                                  </li>
+                                  <li class="sent-comments">
+                                    <div class="comment--right">
+                                      <div class="chat">
+                                        The official handles the digital awareness for the branch. Hence, the KRA is
+                                        suited to him.
+                                      </div>
+                                      <div class="chat-profile">
+                                        <p>Sonal Rajotia</p>
+                                        <img src="images/johnDoe.jpg" alt="">
+                                      </div>
+                                    </div>
+                                  </li>
+                                  <li class="received-comments">
+                                    <div class="comment--left">
+                                      <p class="chat-summary">KRA Added</p>
+                                      <div class="chat">
+                                        <p>Audit and Compliance score</p>
+                                        <p>KRA Wgt. - 6</p>
+                                        <p>% Growth in Average Standard Advances</p>
+                                        <p>KRA Wgt. - 4</p>
+                                      </div>
+                                    </div>
+                                  </li>
+                                  <li class="sent-comments">
+                                    <div class="comment--right">
+                                      <div class="chat">
+                                        The role is more inclined towards the deposits growth. Hence, KRA weightage
+                                        have been adjusted in the role.
+                                      </div>
+                                      <div class="chat-profile">
+                                        <p>Sonal Rajotia</p>
+                                        <img src="images/johnDoe.jpg" alt="">
+                                      </div>
+                                    </div>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="kra-list-wrap">
+                          <ul class="kra-list dotted-border--top">
+                            <li class="kra-list-item">
+                              <div class="kra-detail">
+                                <p class="kra-param">% Growth in average retail term deposits
+                                </p>
+                                <p class="kra-value">12</p>
+                              </div>
+                            </li>
+                            <li class="kra-list-item">
+                              <div class="kra-detail">
+                                <p class="kra-param">% Growth in average retail term deposits
+                                </p>
+                                <p class="kra-value">12</p>
+                              </div>
+                            </li>
+                            <li class="kra-list-item">
+                              <div class="kra-detail">
+                                <p class="kra-param">% Growth in average retail term deposits
+                                </p>
+                                <p class="kra-value">12</p>
+                              </div>
+                            </li>
+                            <li class="kra-list-item">
+                              <div class="kra-detail">
+                                <p class="kra-param">% Growth in average retail term deposits
+                                </p>
+                                <p class="kra-value">12</p>
+                              </div>
+                            </li>
+                            <li class="kra-list-item">
+                              <div class="kra-detail">
+                                <p class="kra-param">% Growth in average retail term deposits
+                                </p>
+                                <p class="kra-value">12</p>
+                              </div>
+                            </li>
+                            <li class="kra-list-item">
+                              <div class="kra-detail">
+                                <p class="kra-param">% Growth in average retail term deposits
+                                </p>
+                                <p class="kra-value">12</p>
+                              </div>
+                            </li>
+                            <li class="kra-list-item kra-list-item--edited">
+                              <div class="kra-detail">
+                                <p class="kra-param">% Growth in average retail term deposits
+                                </p>
+                                <p class="kra-value">12</p>
+                              </div>
+                            </li>
+                          </ul>
+
+                          <div class="kra-summary kra-detail">
+                            <p class="kra-param">Total</p>
+                            <p class="kra-value">70</p>
+                          </div>
+
+
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
               <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="profile-tab">
-                 <div class="card">
-                   <div class="card-header">
-                     <div class="profile-picture--no flagged dotted-border">
-                       <div class="intro profile">
-                         <span class="profile-picture allocated--no">RD</span>
-                         <div class="member-details">
-                           <p class="member__name">Robin Devdas</p>
-                           <p class="member__designation">Savings Account Officer</p>
-                         </div>
-                       </div>
-                     </div>
-                     <div class="guide-lines dotted-border">
-                       <div class="row">
-                         <div class="col-xl-8">
-                           <p class="b2">Robin Devdas has raised a flag for discussion</p>
-                         </div>
-                         <div class="col-xl-4 role-actions mt-xl-0 mt-4">
-                           <a href="#" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#makeInactive2">Make
-                             inactive </a>
+                <div class="card">
+                  <div class="card-header">
+                    <div class="profile-picture--no flagged dotted-border">
+                      <div class="intro profile">
+                        <span class="profile-picture allocated--no">RD</span>
+                        <div class="member-details">
+                          <p class="member__name">Robin Devdas</p>
+                          <p class="member__designation">Savings Account Officer</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="guide-lines dotted-border">
+                      <div class="row">
+                        <div class="col-xl-8">
+                          <p class="b2">Robin Devdas has raised a flag for discussion</p>
+                        </div>
+                        <div class="col-xl-4 role-actions mt-xl-0 mt-4">
+                          <a href="#" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#makeInactive2">Make
+                            inactive </a>
 
-                           <!-- modal for making inactive -->
-                           <!-- <div class="modal fade " id="makeInactive" data-bs-backdrop="static" data-bs-keyboard="false"
+                          <!-- modal for making inactive -->
+                          <!-- <div class="modal fade " id="makeInactive" data-bs-backdrop="static" data-bs-keyboard="false"
                             aria-labelledby="staticBackdropLabel" aria-hidden="true">
                              <div class="modal-dialog">
                                <div class="modal-content">
@@ -784,217 +842,235 @@
                                </div>
                              </div>
                            </div> -->
-                         </div>
-                       </div>
-                     </div>
-                   </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
 
-                   <div class="add-detail overflow-container">
-                     <div class=" kra">
-                       <div class="kra--add">
-                        
-                         <div class="new-role-wrap role-history overflow-container">
+                  <div class="add-detail">
+                    <div class=" kra">
+                      <div class="kra--add">
 
-                           <div class="card--style-2 card--style-2-focused">
-                             <h2 class="b4--bold flagged">Current Account Officer</h2>
-                             <div class="card-body">
-                               <div class="assignment-input mt-2">
-                                 <div>
-                                   <p>Role Start Date</p>
-                                   <p class="start-date">23-JAN-23</p>
-                                 </div>
-                                 <p class="total-duration">
-                                   <span></span>
-                                   0y 0m
-                                   <span></span>
-                                 </p>
-                                 <div class="text-end">
-                                   <p>Role End Date</p>
-                                   <p class="end-date">Present</p>
-                                 </div>
-                               </div>
-                             </div>
-                             <div class="card-actions">
-                               <button type="button" class="btn btn-arrow btn-dark">Delete Role <span
-                                   class="icon-WhiteArrow"></span></button>
-                               <button type="button" class="btn btn-arrow btn-primary">Edit Role <span
-                                   class="icon-WhiteArrow"></span></button>
+                        <div class="new-role-wrap role-history">
+                          <div class="card--style-2 card--style-2-focused">
+                            <h2 class="b4--bold saved saved--not">Current Account Officer</h2>
+                            <div class="role-details-wrapper">
+                              <div class="addrole-details">
+                                <div class="assignment-input mt-2">
+                                  <div>
+                                    <p>Role Start Date</p>
+                                    <p class="start-date">23-JAN-23</p>
+                                  </div>
+                                  <p class="total-duration">
+                                    <span></span>
+                                    0y 0m
+                                    <span></span>
+                                  </p>
+                                  <div class="text-end">
+                                    <p>Role End Date</p>
+                                    <p class="end-date">Present</p>
+                                  </div>
+                                </div>
+                                <div class="comment-chain">
+                                  <p class="chain-title">Additional Roles</p>
+                                  <ul class="comment-chain-wrapper">
+                                    <li>Credit Officer</li>
+                                    <li>Locker Officer</li>
+                                    <li>Forex Officer</li>
+                                  </ul>
+                                </div>
 
-                             </div>
-                           </div>
-                           <div class="card--style-2">
-                             <h2 class="b4--bold saved">Advances Officer</h2>
-                             <div class="card-body">
-                               <div class="assignment-input mt-2">
-                                 <div>
-                                   <p>Role Start Date</p>
-                                   <p class="start-date">14-JUL-21</p>
-                                 </div>
-                                 <p class="total-duration">
-                                   <span></span>
-                                   1y 3m
-                                   <span></span>
-                                 </p>
-                                 <div class="text-end">
-                                   <p>Role End Date</p>
-                                   <p class="end-date">23-JAN-23</p>
-                                 </div>
-                               </div>
-                             </div>
+                              </div>
+                              <div class="role-actions-wrap">
+                                <button type="button" class="btn btn-arrow btn-dark">Delete Role <span
+                                    class="icon-WhiteArrow"></span></button>
+                                <button type="button" class="btn btn-arrow btn-primary">Edit Role <span
+                                    class="icon-WhiteArrow"></span></button>
 
-                           </div>
-
-                         </div>
-                       </div>
-                       <div class="kra--view flagged-reasons">
-                        <h4 class="b4 subsection-title">reason</h4>
-                          <p>More job roles have been allocated to me than I actually work on.</p>
-                          <div class="conclusion__section">
-                            <p class="small-text">conclusion: </p>
-                            <div class="form-check">
-                              <input class="form-check-input" type="checkbox" value="" id="conclusion2">
-                              <label class="form-check-label" for="conclusion2">
-                                No, a detailed discussion was carried out with the role acceptor and he/she agrees to
-                                the scope of the role mix allocated.
-                              </label>
-                            </div>
-                            <div class="form-check">
-                              <input class="form-check-input" type="checkbox" value="" id="conclusion3">
-                              <label class="form-check-label" for="conclusion3">
-                               Yes, the reason cited by the acceptor is valid & he/she is eligible to get a new role
-                               mix.
-                              </label>
+                              </div>
                             </div>
 
-                            <a href="#" type="button" class="btn btn-arrow btn-primary">Save Response<span class="icon-WhiteArrow"></span></a>
                           </div>
-                       </div>
-                     </div>
-                   </div>
-                 </div>
+                          <div class="card--style-2">
+                            <h2 class="b4--bold saved">Advances Officer</h2>
+                            <div class="role-details-wrapper">
+                              <div class="addrole-details">
+                                <div class="assignment-input mt-2">
+                                  <div>
+                                    <p>Role Start Date</p>
+                                    <p class="start-date">23-JAN-23</p>
+                                  </div>
+                                  <p class="total-duration">
+                                    <span></span>
+                                    0y 0m
+                                    <span></span>
+                                  </p>
+                                  <div class="text-end">
+                                    <p>Role End Date</p>
+                                    <p class="end-date">Present</p>
+                                  </div>
+                                </div>
+
+
+                              </div>
+                            
+                            </div>
+
+                          </div>
+
+                        </div>
+                      </div>
+                      <div class="kra--view flagged-reasons">
+                        <h4 class="b4 subsection-title">reason</h4>
+                        <p>More job roles have been allocated to me than I actually work on.</p>
+                        <div class="conclusion__section">
+                          <p class="small-text">conclusion: </p>
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="conclusion2">
+                            <label class="form-check-label" for="conclusion2">
+                              No, a detailed discussion was carried out with the role acceptor and he/she agrees to
+                              the scope of the role mix allocated.
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="conclusion3">
+                            <label class="form-check-label" for="conclusion3">
+                              Yes, the reason cited by the acceptor is valid & he/she is eligible to get a new role
+                              mix.
+                            </label>
+                          </div>
+
+                          <a href="#" type="button" class="btn btn-arrow btn-primary">Save Response<span
+                              class="icon-WhiteArrow"></span></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
-          
+
             </div>
           </div>
         </div>
       </div>
-       <!-- modal for making inactive -->
-       <div class="modal fade " id="makeInactive" data-bs-backdrop="static" data-bs-keyboard="false"
-         aria-labelledby="staticBackdropLabel" aria-hidden="true">
-         <div class="modal-dialog">
-           <div class="modal-content">
-             <div class="d-flex d-flex justify-content-between">
-               <div class="modal-header">
-                 <h5 class="modal-title b2" id="staticBackdropLabel">Make User Inactive</h5>
-                 <p class="modal-subtitle b4">Confirmation</p>
-               </div>
-               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-             </div>
-             <div class="modal-body">
-               <div class="make-inactive-form">
+      <!-- modal for making inactive -->
+      <div class="modal fade " id="makeInactive" data-bs-backdrop="static" data-bs-keyboard="false"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="d-flex d-flex justify-content-between">
+              <div class="modal-header">
+                <h5 class="modal-title b2" id="staticBackdropLabel">Make User Inactive</h5>
+                <p class="modal-subtitle b4">Confirmation</p>
+              </div>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="make-inactive-form">
 
-                 <div class="form-floating">
-                   <select class="form-select  " id="make-invalid-options" aria-label="Floating label select example">
-                     <option selected>On Leave</option>
-                     <option value="1">One</option>
-                     <option value="2">Two</option>
-                     <option value="3">Three</option>
-                   </select>
-                   <label for="make-invalid-options">Select appropriate reason</label>
-                 </div>
-                 <div class="role-duration">
-                   <div class="row">
-                     <div class="col-sm-6">
-                       <div class="form-floating d-flex">
-                         <input class="datepicker form-control border-2" id="datepicker3" value="- - / - - /- - - -">
-                         <label for="datepicker1">Laeaving Date</label>
-                       </div>
-                     </div>
-                     <div class="col-sm-6">
-                       <div class="form-floating  d-flex">
-                         <input class="datepicker form-control border-2" id="datepicker4" value="- - / - - /- - - -">
-                         <label for="datepicker1">Return Date</label>
-                       </div>
-                     </div>
-                   </div>
-
-
-                 </div>
-                 <div class="popup-actions form-action">
-                   <a href="#" type="button" class="btn btn-arrow btn-primary" data-bs-toggle="modal"
-                     data-bs-target="#staticBackdrop">Save and Submit <span class="icon-WhiteArrow"></span></a>
-                 </div>
-               </div>
-             </div>
-           </div>
-         </div>
-       </div>
-       <!-- modal for making inactive -->
-       <div class="modal fade " id="makeInactive2" data-bs-backdrop="static" data-bs-keyboard="false"
-         aria-labelledby="staticBackdropLabel" aria-hidden="true">
-         <div class="modal-dialog">
-           <div class="modal-content">
-             <div class="d-flex d-flex justify-content-between">
-               <div class="modal-header">
-                 <h5 class="modal-title b2" id="staticBackdropLabel">Make User Inactive</h5>
-                 <p class="modal-subtitle b4">Confirmation</p>
-               </div>
-               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-             </div>
-             <div class="modal-body">
-               <div class="make-inactive-form">
-
-                 <div class="form-floating">
-                   <select class="form-select  " id="make-invalid-options" aria-label="Floating label select example">
-                     <option selected>On Leave</option>
-                     <option value="1">One</option>
-                     <option value="2">Two</option>
-                     <option value="3">Three</option>
-                   </select>
-                   <label for="make-invalid-options">Select appropriate reason</label>
-                 </div>
-                 <div class="role-duration">
-                   <div class="row">
-                     <div class="col-sm-6">
-                       <div class="form-floating d-flex">
-                         <input class="datepicker form-control border-2" id="datepicker5" value="- - / - - /- - - -">
-                         <label for="datepicker1">Laeaving Date</label>
-                       </div>
-                     </div>
-                     <div class="col-sm-6">
-                       <div class="form-floating  d-flex">
-                         <input class="datepicker form-control border-2" id="datepicker6" value="- - / - - /- - - -">
-                         <label for="datepicker1">Return Date</label>
-                       </div>
-                     </div>
-                   </div>
+                <div class="form-floating">
+                  <select class="form-select  " id="make-invalid-options" aria-label="Floating label select example">
+                    <option selected>On Leave</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+                  <label for="make-invalid-options">Select appropriate reason</label>
+                </div>
+                <div class="role-duration">
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <div class="form-floating d-flex">
+                        <input class="datepicker form-control border-2" id="datepicker3" value="- - / - - /- - - -">
+                        <label for="datepicker1">Laeaving Date</label>
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="form-floating  d-flex">
+                        <input class="datepicker form-control border-2" id="datepicker4" value="- - / - - /- - - -">
+                        <label for="datepicker1">Return Date</label>
+                      </div>
+                    </div>
+                  </div>
 
 
-                 </div>
-                 <div class="popup-actions form-action">
-                   <a href="#" type="button" class="btn btn-arrow btn-primary" data-bs-toggle="modal"
-                     data-bs-target="#staticBackdrop">Save and Submit <span class="icon-WhiteArrow"></span></a>
-                 </div>
-               </div>
-             </div>
-           </div>
-         </div>
-       </div>
+                </div>
+                <div class="popup-actions form-action">
+                  <a href="#" type="button" class="btn btn-arrow btn-primary" data-bs-toggle="modal"
+                    data-bs-target="#staticBackdrop">Save and Submit <span class="icon-WhiteArrow"></span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- modal for making inactive -->
+      <div class="modal fade " id="makeInactive2" data-bs-backdrop="static" data-bs-keyboard="false"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="d-flex d-flex justify-content-between">
+              <div class="modal-header">
+                <h5 class="modal-title b2" id="staticBackdropLabel">Make User Inactive</h5>
+                <p class="modal-subtitle b4">Confirmation</p>
+              </div>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="make-inactive-form">
+
+                <div class="form-floating">
+                  <select class="form-select  " id="make-invalid-options" aria-label="Floating label select example">
+                    <option selected>On Leave</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+                  <label for="make-invalid-options">Select appropriate reason</label>
+                </div>
+                <div class="role-duration">
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <div class="form-floating d-flex">
+                        <input class="datepicker form-control border-2" id="datepicker5" value="- - / - - /- - - -">
+                        <label for="datepicker1">Laeaving Date</label>
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="form-floating  d-flex">
+                        <input class="datepicker form-control border-2" id="datepicker6" value="- - / - - /- - - -">
+                        <label for="datepicker1">Return Date</label>
+                      </div>
+                    </div>
+                  </div>
+
+
+                </div>
+                <div class="popup-actions form-action">
+                  <a href="#" type="button" class="btn btn-arrow btn-primary" data-bs-toggle="modal"
+                    data-bs-target="#staticBackdrop">Save and Submit <span class="icon-WhiteArrow"></span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
     <script src="/node_modules/jquery/dist/jquery.min.js"></script>
     <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
     <script src="/node_modules/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"></script>
-   <script src="/node_modules/select2/dist/js/select2.min.js"></script>
+    <script src="/node_modules/select2/dist/js/select2.min.js"></script>
     <script src="js/apexcharts.js"></script>
     <script src="js/main.js"></script>
     <script>
-      $(document).ready(function() {
-      $('#js-example-basic-single').select2();
-      $('#make-invalid-options').select2({
-      dropdownParent: $('#makeInactive')
+      $(document).ready(function () {
+        $('.js-example-basic-single').select2();
+        $('#make-invalid-options').select2({
+          dropdownParent: $('#makeInactive')
+        });
+
       });
-        
-      });
+
     </script>
   </body>
 

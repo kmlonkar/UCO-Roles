@@ -1,0 +1,191 @@
+.login-wrapper {
+    background-image: url(../images/bg.png);
+    background-size: 100% 100%;
+    padding: 8rem;
+
+    .banner {
+        display: flex;
+        justify-content: space-between;
+
+        .welcome-msg {
+            .logo {
+                min-height: 7.5rem;
+            }
+
+            &__text {
+                margin-top: 6.6rem;
+
+                h1 {
+                    font-size: 3.9rem;
+                    color: $primary-blue;
+                    font-family: $primary-font-bold;
+
+                    span {
+                        display: block;
+                        color: $clr-white;
+                        font-size: 4.2rem;
+                        font-family: $primary-font-extrabold;
+                        text-transform: capitalize;
+                        padding: 5px 10px;
+                        background-color: #031C85;
+                        width: fit-content;
+                        margin-bottom: 5px;
+
+                        &:first-of-type {
+                            background-color: $primary-blue;
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+.login {
+    background-color: $primary-blue;
+    color: $clr-white;
+    min-width: 43.6rem;
+    box-shadow: 0px 3px 79px $common-box-shadow;
+
+    &__header {
+        .title {
+            padding: 4.2rem 9.3rem;
+            font-size: 2.5rem;
+            font-family: $primary-font-bold;
+        }
+
+        .nav-tabs {
+            width: 100%;
+
+            .nav-item {
+                width: 50%;
+
+                .nav-link {
+                    width: 100%;
+                    border: 0;
+                    border-bottom: 1px solid $grey;
+                    color: rgba($clr-white, 0.5);
+                    font-size: 1.6rem;
+                    font-family: $primary-font-bold;
+
+                    &:hover,
+                    &:focus {
+                        border: 0;
+                        border-bottom: 0 none;
+                    }
+
+                    &.active {
+                        border: 0;
+                        border-bottom: 1px solid $clr-white;
+                        background: transparent;
+                        color: rgba($clr-white, 1);
+                    }
+                }
+            }
+        }
+
+    }
+
+    &__body {
+        padding: 5rem 3rem;
+    }
+
+    &-form {
+        .form-control {
+            min-height: 5.5rem;
+            background-color: rgba(#FFFFFF40, 0.3);
+            border: 1px solid rgba(#CBCBCB, 0.3);
+            border-radius: 3px;
+            color: $clr-white;
+            font-size: 1.5rem;
+            padding: 1.6rem 2rem;
+            margin-bottom: 2rem;
+
+            &::placeholder {
+                color: $clr-white;
+            }
+
+            &:focus {
+                background-color: rgba(#FFFFFF40, 0.3);
+                color: $clr-white;
+            }
+        }
+
+        .captcha {
+            display: flex;
+            justify-content: space-between;
+            color: $clr-white;
+
+            .captcha-text {
+                background-color: rgba($text-clr-black, 0.3);
+                border: 1px dashed rgba(#FFFFFFDE, 0.3);
+                padding: 1.2rem 2.2rem;
+
+                font-size: 1.5rem;
+                width: 70%;
+            }
+
+            .form-floating {
+                width: 22%;
+                margin-bottom: 0;
+
+                label {
+                    color: $clr-white;
+                    font-size: 1.2rem;
+                    top: -7px;
+                    left: 7px;
+                }
+
+                .form-control {
+                    height: 100%;
+                    margin-bottom: 0;
+                    color: rgba($clr-white, 0.6);
+                    padding: 2.6rem 2rem 1.6rem 2rem;
+
+                    &:focus {
+                        padding: 2.6rem 2rem 1.6rem 2rem;
+
+                        &~label {
+                            transform: none;
+                        }
+                    }
+                }
+            }
+        }
+
+        .otp {
+            &-input {
+                width: 70%;
+
+                .form-floating {
+                    width: 100%;
+                }
+            }
+
+            &-text {
+                width: 22%;
+                color: rgba($clr-white, 0.4);
+                font-size: 1.5rem;
+
+                span {
+                    color: $clr-white;
+                }
+            }
+        }
+
+        .form-actions {
+            text-align: center;
+            margin-top: 2.5rem;
+
+            .btn-submit {
+                background-color: #F3F034;
+                padding: 1.5rem 4rem;
+                color: $primary-blue;
+                font-size: 1.7rem;
+                font-family: $primary-font-bold;
+            }
+        }
+    }
+}

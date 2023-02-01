@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>My Roles</title>
+  </head>
+
+  <body>
+
+    <main class="login-wrapper">
+      <div class="banner">
+        <div class="welcome-msg">
+          <img class="logo" src="images/UCO_logo.svg" alt="">
+          <div class="welcome-msg__text">
+              <h1>Welcome To
+              <span>UCO BANK</span>
+              <span> EMPLOYEE ENGINE</span>
+              </h1>
+
+          </div>
+        </div>
+        <div class="login-widget">
+          <div class="login">
+            <div class="login__header">
+                <h2 class="title">Login with credentials</h2>
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="domain-tab" data-bs-toggle="tab" data-bs-target="#home"
+                      type="button" role="tab" aria-controls="home" aria-selected="true">
+                      Domain Login
+                    </button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="otp-tab" data-bs-toggle="tab" data-bs-target="#profile"
+                      type="button" role="tab" aria-controls="profile" aria-selected="false">
+                      OTP Login
+                    </button>
+                  </li>
+                </ul>
+            </div>
+            <div class="login__body">
+                <div class="tab-content" id="myTabContent">
+                  <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="domain-tab">
+                    <form method="post" class="login-form">
+                      <div class="form-group">
+                        <input type="text" name="LGform1_user" class="form-control" placeholder="Employee ID" 
+                          />
+                      </div>
+                      <div class="form-group">
+                        <input type="password" name="LGform1_pwd" class="form-control" placeholder="Password"
+                         />
+                      </div>
+                      <div class="captcha">
+                        <div class="captcha-text">Add together 8 and 1</div>
+                        <div class="form-floating">
+                          <input type="text" class="form-control" id="floatingPassword" placeholder="XX">
+                          <label for="floatingPassword">Captcha</label>
+                        </div>
+                        
+                      </div>
+                      <div class="form-group form-actions">
+                        <input type="submit" name="LGform1" class="btn btn-submit" value="Login Now" />
+                        
+                      </div>
+                    </form>
+                  </div>
+                  <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="otp-tab">
+                    <form method="post" class="login-form">
+                      <div class="form-group">
+                        <input type="text" name="LGform1_user" class="form-control" placeholder="Employee ID" />
+                      </div>
+                      <div class="captcha otp">
+                        <div class="otp-input">
+                          <div class="form-group">
+                            <input type="text" name="LGform1_user" class="form-control" placeholder="OTP" />
+                          </div>
+                        </div>
+                        <div class="otp-text">Re-send OTP
+                          <span>In 22 secs</span>
+                        </div>
+
+                      </div>
+                      <div class="captcha otp">
+                        <div class="captcha-text otp-text">Add together 8 and 1</div>
+                        <div class="form-floating">
+                          <input type="text" class="form-control" id="floatingPassword" placeholder="XX">
+                          <label for="floatingPassword">Captcha</label>
+                        </div>
+
+                      </div>
+                      <div class="form-group form-actions">
+                        <input type="submit" name="LGform1" class="btn btn-submit" value="Login Now" />
+
+                      </div>
+                    </form>
+                  </div>
+                </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="/node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="/node_modules/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"></script>
+    <script src="/node_modules/select2/dist/js/select2.min.js"></script>
+    <script src="js/apexcharts.js"></script>
+    <script src="js/main.js"></script>
+
+  </body>
+
+</html>

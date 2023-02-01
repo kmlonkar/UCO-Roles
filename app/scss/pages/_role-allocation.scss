@@ -169,6 +169,7 @@
 
 .kra {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 
   @media screen and (max-width: 1200px) {
@@ -176,11 +177,11 @@
   }
 
   &>div {
-    width: 53%;
+    width: 100%;
 
     &:first-child {
-      width: 47%;
-      border-right: 1px solid $grey;
+      width: 100%;
+      // border-right: 1px solid $grey;
 
       @media screen and (max-width:1300px) {
         width: 50%;
@@ -204,7 +205,7 @@
   }
 
   &--add {
-    padding-right: 1.8rem;
+    // padding-right: 1.8rem;
 
     @media screen and (max-width:1200px) {
       padding-bottom: 1.5rem;
@@ -216,8 +217,8 @@
   }
 
   &--view {
-    padding-left: 1.8rem;
-
+    // padding-left: 1.8rem;
+    margin-top: 1.5rem;
     @media screen and (max-width:1200px) {
       padding-left: 0;
     }
@@ -355,20 +356,42 @@
 }
 
 .add-detail {
-  height: 55vh;
-  overflow-y: auto;
+  // height: 55vh;
+  // overflow-y: auto;
   margin-top: 1.5rem;
 }
 
-// .new-role-wrap {
-//   height:43vh;
-//   overflow-y: auto;
-// }
+.new-role-wrap {
+  .roles {
+    display: flex;
+    flex-wrap: wrap;
+
+    .form-floating {
+      width: 30%;
+      .select2-container{
+        width: 100% !important;
+      }
+      margin-right: 1rem;
+
+      .select2-selection--single {
+        background-color: $table-row-highlight;
+      }
+
+      label {
+        color: $table-text-highlight;
+      }
+    }
+
+  }
+}
+
 .kra-list-wrap {
   margin-bottom: 1.5rem;
+
 }
 
 .new-role {
+  width: 60%;
   margin-top: 1.5rem;
 
   &:first-of-type {

@@ -1,6 +1,6 @@
 .role-history {
-    margin-left: -1rem;
-    padding-left: 1.5rem;
+    // margin-left: -1rem;
+    // padding-left: 1.5rem;
     padding-top: 0.5rem;
     display: flex;
     flex-direction: column;
@@ -76,5 +76,28 @@
             background-color: transparent;
             color: initial;
         }
+    }
+}
+.role-details-wrapper{
+    display: flex;
+    justify-content: space-between;
+    .comment-chain {
+        background-color: rgba($bg-clr-grey, 0.5);
+        padding: 1rem;
+        margin-bottom: 0;
+    }
+    .role-actions-wrap{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        .btn{
+            margin-bottom: 1.5rem;
+            &:last-of-type{
+                margin-bottom: 0;
+            }
+        }
+    }
+    .addrole-details{
+        width: 60%;
     }
 }
