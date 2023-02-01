@@ -14,11 +14,6 @@
 
             }
 
-
-
-
-
-
             &__text {
                 margin-top: 6.6rem;
 
@@ -100,6 +95,16 @@
     }
 
     &-form {
+        .form-group {
+            position: relative;
+        }
+
+        .form-icon {
+            position: absolute;
+            top: 15px;
+            right: 18px;
+        }
+
         .form-control {
             min-height: 5.5rem;
             background-color: rgba(#FFFFFF40, 0.3);
@@ -129,9 +134,15 @@
                 background-color: rgba($text-clr-black, 0.3);
                 border: 1px dashed rgba(#FFFFFFDE, 0.3);
                 padding: 1.2rem 2.2rem;
-
                 font-size: 1.5rem;
                 width: 70%;
+                position: relative;
+                .refresh-icon{
+                    position: absolute;
+                    top: 15px;
+                    right: 18px;
+                }
+
             }
 
             .form-floating {
