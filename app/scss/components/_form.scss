@@ -9,16 +9,19 @@
                 font-size: 1.1rem;
             }
         }
-        &:not(:placeholder-shown){
-            &~label{
+
+        &:not(:placeholder-shown) {
+            &~label {
                 opacity: 1;
-                    font-size: 1.1rem;
+                font-size: 1.1rem;
             }
         }
     }
-    &>.form-select{
+
+    &>.form-select {
         background-image: url(../images/dropdown.svg);
-        &~label{
+
+        &~label {
             opacity: 1;
             font-size: 1.1rem;
         }
@@ -49,7 +52,7 @@ label {
     padding: 0;
     display: flex;
     margin-bottom: 1.5rem;
-    
+
     label {
         margin-left: 1rem;
 
@@ -62,32 +65,38 @@ label {
         border-radius: 0;
         box-shadow: 0 0 0 rgba(0, 0, 0, 0);
         flex: none;
-        &:checked{
+
+        &:checked {
             background-color: $primary-blue;
             border: 1px solid $primary-blue;
         }
     }
 }
-.textarea{
-    &.form-control{
+
+.textarea {
+    &.form-control {
         font-size: 1.4rem;
-        min-height:20rem;
+        min-height: 20rem;
         background-color: $bg-clr-light-blue;
         border: 0;
         padding-top: 1.5rem !important;
         padding-left: 1.75rem;
-        &::placeholder{
+
+        &::placeholder {
             font-size: 1.4rem;
         }
-        &+label{
+
+        &+label {
             left: calc(16.5px - 7.5px);
             top: 5px;
         }
     }
 }
-.date-wrap{
+
+.date-wrap {
     position: relative;
-    &:before{
+
+    &:before {
         content: '\e902';
         color: #707070;
         font-family: $icomoon;
@@ -100,18 +109,26 @@ label {
         transform: translateY(-50%);
     }
 }
-.addnew-kra-form{
-    .form-select{
+
+.addnew-kra-form {
+    .form-select {
         padding: 15px 17px;
-        &+label{
+
+        &+label {
             left: 10px;
         }
     }
 }
 
-.form-check-input{
+.form-check-input {
     background-color: $bg-clr-light-blue;
-    &:hover{
+
+    &:hover {
         background-color: $bg-clr-blue;
     }
+}
+
+.form-actions {
+    display: flex;
+    justify-content: space-between;
 }

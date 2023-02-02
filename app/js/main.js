@@ -34,15 +34,9 @@ $(function () {
     $('.kra-table input').prop("readonly", false);
     // console.log($('.edit-table input'));
   })
-  // $('.edit-table input').focus(function () {
-  //   alert('works')
-  //   $(this).attr("placeholder", "");
-  // })
-
-  // $('.edit-table input').each(function () {
-  //   var currentElement = $(this);
-  //   alert('works')
-  // });
+  $('.accordion-button').click(function () {
+    $(this).parent('.accordion-header').parent('.accordion-item').toggleClass('accordion-item-open');
+  })
 
   var options = {
     chart: {

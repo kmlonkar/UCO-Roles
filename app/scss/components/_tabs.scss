@@ -1,0 +1,41 @@
+.status-tabs {
+    display: flex;
+
+    .nav-link {
+        &.active {
+            background: transparent;
+            border: 0;
+        }
+    }
+
+    .state {
+        .nav-link {
+            position: relative;
+            padding-left: 20px;
+
+            &::before {
+
+                content: "";
+                position: absolute;
+                width: 1.5rem;
+                height: 1.5rem;
+                border-radius: 0.1rem;
+
+                left: 0;
+                top: 8px;
+            }
+        }
+    }
+
+    .pending {
+        .nav-link {
+            &::before {
+                background: $primary-blue;
+            }
+
+
+
+
+        }
+    }
+}

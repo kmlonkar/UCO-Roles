@@ -71,7 +71,7 @@
         font-size: 1.3rem;
       }
 
-      &:nth-of-type(2) {
+      &:nth-of-type(2){
         font-family: $primary-font-regular;
         font-size: 1rem;
       }
@@ -163,7 +163,7 @@
       top: 1px;
       position: absolute;
       color: #707070;
-      z-index: 6;
+      z-index: 0;
     }
   }
 

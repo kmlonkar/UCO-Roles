@@ -81,11 +81,7 @@
 .role-details-wrapper{
     display: flex;
     justify-content: space-between;
-    .comment-chain {
-        background-color: rgba($bg-clr-grey, 0.5);
-        padding: 1rem;
-        margin-bottom: 0;
-    }
+    
     .role-actions-wrap{
         display: flex;
         flex-direction: column;
@@ -100,4 +96,9 @@
     .addrole-details{
         width: 60%;
     }
+}
+.comment-chain-style-2 {
+    background-color: rgba($bg-clr-grey, 0.5);
+    padding: 1rem;
+    margin-bottom: 0;
 }

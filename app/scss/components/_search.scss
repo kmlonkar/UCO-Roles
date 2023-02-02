@@ -1,100 +1,112 @@
-
-.search{
+.search {
     position: relative;
-    .card{
+
+    .card {
         padding: 1rem;
     }
+
     .search-input {
+        border: 1px solid #ccc;
+        background-image: url('../images/Search.svg');
+        background-repeat: no-repeat;
+        outline: none;
+        background-size: 1.7rem;
+        background-position: 1.3rem;
+        border-radius: 5rem;
+        width: 4.5rem;
+        height: 4.5rem;
+        padding: 1.2rem 1rem 1.5rem 3.5rem;
+        transition: all 0.5s;
+        position: relative;
+        overflow: hidden;
+        margin-bottom: 1rem;
+
+        input {
+            background: transparent;
             border: 1px solid #ccc;
-            background-image: url('../images/Search.svg');
-            background-repeat: no-repeat;
             outline: none;
-            background-size: 1.7rem;
-            background-position: 1.3rem;
-            border-radius: 5rem;
-            width: 4.5rem;
-            height: 4.5rem;
-            padding: 1.2rem 1rem 1.5rem 3.5rem;
-            transition: all 0.5s;
-            position: relative;
-            overflow: hidden;
-            margin-bottom: 1rem;
-    
-            input {
-                background: transparent;
-                border: 1px solid #ccc;
-                outline: none;
-                position: absolute;
-                width: 300px;
-                height: 50px;
-                left: 0%;
-                padding: 10px;
-              
-            }
-    
-            &:focus {
-                background-image: none;
-                width: 100%;
-                padding: 1.5rem;
-            }
+            position: absolute;
+            width: 300px;
+            height: 50px;
+            left: 0%;
+            padding: 10px;
+
         }
-    .search-results{
+
+        &:focus {
+            background-image: none;
+            width: 100%;
+            padding: 1.5rem;
+        }
+    }
+
+    .search-results {
         // height: 0;
         background: $clr-white;
         position: absolute;
-        padding:0;
+        padding: 0;
         overflow: hidden;
         z-index: 5;
         top: 4.5rem;
-        .profile{
-            &__location{
+
+        .profile {
+            &__location {
                 margin-left: 0.5rem;
                 font-size: 1.2rem;
             }
         }
-        .member-details{
-                margin-left: 1rem;
-                .member__name{
-                    font-size: 1.4rem;
-                }
-                .member__designation{
-                    font-size: 1.1rem;
-                }
-                .member__pf-id{
-                    color: $primary-blue;
-                }
+
+        .member-details {
+            margin-left: 1rem;
+
+            .member__name {
+                font-size: 1.4rem;
             }
-        
-        
-            &.search-results--open{
+
+            .member__designation,
+            .member__location {
+                font-size: 1.1rem;
+            }
+
+            .member__pf-id {
+                color: $primary-blue;
+            }
+        }
+
+
+        &.search-results--open {
             //    min-height: 20vh;
-                opacity: 1;
-                transition: min-height 2s;
-                padding: 1.5rem 1rem;
-            }
-        }
-        .search-options{
-    
-            height: 0;
-            overflow-y: auto;
-            [class^="profile-picture"] {
-                padding: 1.5rem 0;
-                border-bottom: 1px solid $grey;
-                
-            }
-        }
-        .search-options--open{
-            min-height: 20vh;
+            opacity: 1;
             transition: min-height 2s;
-            &+.search-summary{
-                min-height: auto;
-                margin-bottom: 1rem;
-                padding-top: 1rem;
-            }
-        }
-        .search-summary{
-            height: 0;
-      
+            padding: 1.5rem 1rem;
         }
     }
 
+    .search-options {
+
+        height: 0;
+        overflow-y: auto;
+
+        [class^="profile-picture"] {
+            padding: 1.5rem 0;
+            border-bottom: 1px solid $grey;
+
+        }
+    }
+
+    .search-options--open {
+        min-height: 20vh;
+        transition: min-height 2s;
+
+        &+.search-summary {
+            min-height: auto;
+            margin-bottom: 1rem;
+            padding-top: 1rem;
+        }
+    }
+
+    .search-summary {
+        height: 0;
+
+    }
+}

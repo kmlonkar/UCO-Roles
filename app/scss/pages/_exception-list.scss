@@ -11,7 +11,8 @@
     justify-content: space-between;
     align-items: flex-start;
     margin-bottom: 1rem;
-    &.edit-kra-heading{
+
+    &.edit-kra-heading {
         width: 70%;
     }
 }
@@ -33,5 +34,109 @@
             font-family: $primary-font-bold;
             margin-bottom: 2rem;
         }
+    }
+}
+
+.exception-list-summary {
+    border-bottom: 0;
+
+    .members-details {
+        flex-direction: column;
+
+        .value {
+            margin-right: 0;
+        }
+    }
+
+    .approval-status-summary {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        &>p {
+            position: relative;
+            border-bottom: 1px dotted $grey;
+            padding: 0.5rem 0;
+            margin-left: 1.5rem;
+
+            &:last-of-type {
+                border-bottom: 0;
+            }
+        }
+
+        .value {
+            position: absolute;
+            right: 0;
+            font-family: $primary-font-bold;
+        }
+
+        .accepted-value {
+            color: $graph-clr-light-green;
+
+        }
+
+        .rejected-value {
+            color: $clr-red;
+        }
+    }
+
+}
+
+
+.exception-list {
+    margin-top: 2.5rem;
+
+    .comment-header {
+        width: 80%;
+        z-index: 0;
+    }
+
+    .accordion {
+        .accordion-items-title {
+            width: 80%;
+            display: flex;
+            justify-content: space-between;
+            font-family: $primary-font-bold;
+        }
+    }
+
+    
+}
+
+.exception-list-wrap {
+
+
+    .profile {
+        justify-content: space-between;
+
+        .exception-count {
+            text-align: end;
+
+            p {
+                font-family: $primary-font-bold;
+                font-size: 1.2rem;
+            }
+
+            span {
+                color: $primary-blue;
+            }
+        }
+    }
+
+    .kra-result-wrapper {
+        display: flex;
+        justify-content: space-between;
+
+        .kra--view {
+            width: 65%;
+            padding-right: 30px;
+            border-right: 1px solid rgba($grey, 0.3);
+            margin-top: 0;
+        }
+
+        .kra--add-comment {
+            width: 30%;
+        }
+
     }
 }

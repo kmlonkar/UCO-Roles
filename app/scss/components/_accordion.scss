@@ -1,0 +1,35 @@
+.exception-list {
+    .accordion {
+        &-item {
+            margin-bottom: 1rem;
+            border: 0.3px solid rgba($grey, 0.3);
+            border-radius: 5px;
+
+            &:last-of-type {
+                margin-bottom: 0;
+            }
+
+
+        }
+
+        .accordion-item-open {
+            border: 0;
+            box-shadow: 0px 3px 16px #0000000F;;
+        }
+
+        &-button {
+            background-color: $clr-white;
+
+            &.collapsed {
+                background-color: $bg-accordion-header;
+                border-bottom: 0;
+            }
+
+            &:not(.collapsed) {
+                box-shadow: 0 0 0 transparent;
+                color: inherit;
+                z-index: $text-clr-black;
+            }
+        }
+    }
+}
