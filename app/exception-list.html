@@ -25,7 +25,7 @@
             aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-         <span class="icon-logout"></span>
+          <span class="icon-logout"></span>
         </div>
       </div>
     </header>
@@ -87,148 +87,147 @@
             <h1 class="b1 section-title">Exception List</h1>
             <a href="#" type="button" class="btn btn-arrow btn-primary" data-bs-toggle="modal"
               data-bs-target="#addKRA">+ Add New KRA <span class="icon-WhiteArrow"></span></a>
-              <!-- modal for new kra -->
-              <div class="modal fade " id="addKRA" data-bs-backdrop="static" data-bs-keyboard="false"
-                tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                  <div class="modal-content">
-                    <div class="row">
-                      <div class="modal-header col-11">
-                        <h5 class="modal-title b2" id="staticBackdropLabel">Add a New KRA</h5>
-                        <p class="modal-subtitle b4">You can added new KRAs for the specific role.</p>
-                      </div>
-                      <div class="col-1">
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-
-                      </div>
+            <!-- modal for new kra -->
+            <div class="modal fade " id="addKRA" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+              aria-labelledby="staticBackdropLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="row">
+                    <div class="modal-header col-11">
+                      <h5 class="modal-title b2" id="staticBackdropLabel">Add a New KRA</h5>
+                      <p class="modal-subtitle b5">You can added new KRAs for the specific role.</p>
                     </div>
-                    <div class="modal-body">
-                      <div class="addnew-kra-form">
-                        <div class="form-floating ">
-                          <select class="form-select" id="addNewKra"
-                            aria-label="Floating label select example">
-                            <option selected></option>
-                            <option value="1">KRA 1</option>
-                            <option value="2">KRA 2</option>
-                            <option value="3">KRA 3</option>
-                          </select>
-                          <label for="addNewKra">Add a KRA from the existing library</label>
-                        </div>
-                        <div class="form-floating">
-                          <textarea class="form-control textarea" placeholder="Leave a comment here"
-                            id="floatingTextarea">Write the kra description here</textarea>
-                          <label for="floatingTextarea">Add KRA Description</label>
-                        </div>
-                        <div class="popup-actions form-action">
-                       
-                             <button type="button" class="btn btn-arrow btn-primary" data-bs-toggle="modal"
-                               data-bs-target="#confirmAddKRA" data-bs-dismiss="modal">Save and Add New KRA<span
-                                 class="icon-WhiteArrow"></span></button>
-                             
-                        </div>
+                    <div class="col-1">
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+
+                    </div>
+                  </div>
+                  <div class="modal-body">
+                    <div class="addnew-kra-form">
+                      <div class="form-floating ">
+                        <select class="form-select" id="addNewKra" aria-label="Floating label select example">
+                          <option selected></option>
+                          <option value="1">KRA 1</option>
+                          <option value="2">KRA 2</option>
+                          <option value="3">KRA 3</option>
+                        </select>
+                        <label for="addNewKra">Add a KRA from the existing library</label>
+                      </div>
+                      <div class="form-floating">
+                        <textarea class="form-control textarea" placeholder="Leave a comment here"
+                          id="floatingTextarea">Write the kra description here</textarea>
+                        <label for="floatingTextarea">Add KRA Description</label>
+                      </div>
+                      <div class="popup-actions form-action">
+
+                        <button type="button" class="btn btn-arrow btn-primary" data-bs-toggle="modal"
+                          data-bs-target="#confirmAddKRA" data-bs-dismiss="modal">Save and Add New KRA<span
+                            class="icon-WhiteArrow"></span></button>
+
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
+            </div>
           </div>
           <div class="card exception-card">
             <table class="table kra-table">
               <thead>
                 <tr>
                   <th scope="col section-title" colspan="2">Measurable KRAs</th>
-                <th scope="col" colspan="2"><button class="btn btn-outline-primary edit-kra">edit</button></th>
+                  <th scope="col" colspan="2"><button class="btn btn-outline-primary edit-kra">edit</button></th>
                   <th scope="col" colspan="2"> Weightage</th>
                 </tr>
               </thead>
               <tbody>
                 <tr class="data-row">
                   <td scope="row" colspan="2"><span>1</span>% Growth in average retail term deposits </td>
-                 <td colspan="2"></td>
+                  <td colspan="2"></td>
                   <td colspan="2"><input type="text" placeholder="8" readonly>
                     <button class="btn close-btn"><span class="icon-remove"></span></button>
                   </td>
                 </tr>
                 <tr class="data-row">
                   <td scope="row" colspan="2"><span>2</span>Audit and Compliance score </td>
-                 <td colspan="2"></td>
+                  <td colspan="2"></td>
                   <td colspan="2"><input type="text" placeholder="6" readonly>
-                  <button class="btn close-btn"><span class="icon-remove"></span></button></td>
+                    <button class="btn close-btn"><span class="icon-remove"></span></button></td>
                 </tr>
                 <tr class="data-row">
                   <td scope="row" colspan="2"><span>3</span>Customer Satisfaction Score </td>
-                 <td colspan="2"></td>
+                  <td colspan="2"></td>
                   <td colspan="2"><input type="text" placeholder="5" readonly>
-                  <button class="btn close-btn"><span class="icon-remove"></span></button></td>
+                    <button class="btn close-btn"><span class="icon-remove"></span></button></td>
                 </tr>
                 <tr class="data-row">
                   <td scope="row" colspan="2"><span>4</span>% uptime in alternate delivery channels</td>
-                 <td colspan="2"></td>
+                  <td colspan="2"></td>
                   <td colspan="2"><input type="text" placeholder="5" readonly>
-                  <button class="btn close-btn"><span class="icon-remove"></span></button></td>
+                    <button class="btn close-btn"><span class="icon-remove"></span></button></td>
                 </tr>
                 <tr class="data-row">
                   <td scope="row" colspan="2"><span>5</span>% Growth in Average Total SA base </td>
-                 <td colspan="2"></td>
+                  <td colspan="2"></td>
                   <td colspan="2"><input type="text" placeholder="4" readonly>
-                  <button class="btn close-btn"><span class="icon-remove"></span></button></td>
+                    <button class="btn close-btn"><span class="icon-remove"></span></button></td>
                 </tr>
                 <tr class="data-row">
                   <td scope="row" colspan="2"><span>6</span>Achievement in Door Step Banking transactions </td>
-                 <td colspan="2"></td>
+                  <td colspan="2"></td>
                   <td colspan="2"><input type="text" placeholder="4" readonly><button class="btn close-btn"><span
                         class="icon-remove"></span></button>
                   </td>
-                  
+
                 </tr>
                 <tr class="data-row">
                   <td scope="row" colspan="2"><span>7</span>No. of savings
                     accounts canvassed vs target </td>
-                 <td colspan="2"></td>
+                  <td colspan="2"></td>
                   <td colspan="2"><input type="text" placeholder="6" readonly>
-                  <button class="btn close-btn"><span class="icon-remove"></span></button></td>
+                    <button class="btn close-btn"><span class="icon-remove"></span></button></td>
                 </tr>
                 <tr class="data-row new-kra-added">
                   <td scope="row" colspan="2"><span>8</span>% Growth in average total Deposits </td>
-                 <td colspan="2"></td>
+                  <td colspan="2"></td>
                   <td colspan="2"><input type="text" placeholder="7" readonly>
-                  <button class="btn close-btn"><span class="icon-remove"></span></button></td>
+                    <button class="btn close-btn"><span class="icon-remove"></span></button></td>
                 </tr>
                 <tr class="data-row-total">
                   <td scope="row" colspan="2">Total KRA Score</td>
-                 <td colspan="2"><span class="not-equal-to">Total KRA Weightage Is Not Equal To 70.</span></td>
+                  <td colspan="2"><span class="not-equal-to">Total KRA Weightage Is Not Equal To 70.</span></td>
                   <td colspan="2"> <span class="total-value">40</span></td>
                 </tr>
-              
+
               </tbody>
             </table>
             <div class="edit-kra-form">
               <h5 class="form-title">Please mention the reason for the variant & making changes in KRA weightage in
                 detail ( Min. 200 characters)</h5>
-                <div class="form-floating">
-                  <div class="form-group">
-                    <textarea class="form-control textarea" placeholder="Add comment"
-                      id="exampleFormControlTextarea1" rows="3"></textarea>
-                  </div>                  
+              <div class="form-floating">
+                <div class="form-group">
+                  <textarea class="form-control textarea" placeholder="Add comment" id="exampleFormControlTextarea1"
+                    rows="3"></textarea>
                 </div>
-                <a href="#" type="button" class="btn btn-arrow  btn-primary" data-bs-toggle="modal"
-                  data-bs-target="#submitKRA">submit now <span class="icon-WhiteArrow"></span></a>
+              </div>
+              <a href="#" type="button" class="btn btn-arrow  btn-primary" data-bs-toggle="modal"
+                data-bs-target="#submitKRA">submit now <span class="icon-WhiteArrow"></span></a>
             </div>
           </div>
         </div>
       </div>
     </main>
     <!-- modal for asking add kra confirmation -->
-    <div class="modal fade add-kra-modal" id="confirmAddKRA" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-      aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal fade add-kra-modal" id="confirmAddKRA" data-bs-backdrop="static" data-bs-keyboard="false"
+      tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="d-flex d-flex justify-content-between">
             <div class="row">
               <div class="modal-header col-11">
-                
+
                 <h5 class="modal-title b2" id="staticBackdropLabel">Add a New KRA</h5>
-                <p class="modal-subtitle b4">You can added new KRAs for the specific role.</p>
+                <p class="modal-subtitle b5">You can added new KRAs for the specific role.</p>
               </div>
               <div class="col-1">
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -261,85 +260,84 @@
     </div>
     <!-- modal for added kra sucessfully msg -->
     <div class="modal fade add-kra-modal " id="AddKRASucess" data-bs-backdrop="static" data-bs-keyboard="false"
-      tabindex="-1"
-    aria-labelledby="staticBackdropLabel" aria-hidden="true">
-    <div class="modal-dialog">
-    <div class="modal-content">
-    <div class="d-flex d-flex justify-content-between">
-      <div class="row">
-        <div class="modal-header col-11">
-          <h5 class="modal-title b2" id="staticBackdropLabel">Add a New KRA</h5>
-          <p class="modal-subtitle b4">You can added new KRAs for the specific role.</p>
-        </div>
-        <div class="col-1">
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="d-flex d-flex justify-content-between">
+            <div class="row">
+              <div class="modal-header col-11">
+                <h5 class="modal-title b2" id="staticBackdropLabel">Add a New KRA</h5>
+                <p class="modal-subtitle b4">You can added new KRAs for the specific role.</p>
+              </div>
+              <div class="col-1">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+
+              </div>
+
+            </div>
+          </div>
+          <div class="modal-body">
+            <div class="confirmation confirmation-received">
+              <img src="images/Completed-pana.png" alt="completed">
+              <h2 class="b1 confirmation-text">Sucessfully added kra</h2>
+              <p class="confirmation-subtext">We have added a new KRA for the Role Mix. Thanks for submitting it.</p>
+
+              <div class="popup-actions">
+
+                <button type="button" class="btn btn-arrow btn-primary" data-bs-toggle="modal" data-bs-target="#confirm"
+                  data-bs-dismiss="modal">OK<span class="icon-WhiteArrow"></span></button>
+
+              </div>
+            </div>
+
+          </div>
 
         </div>
-
       </div>
     </div>
-    <div class="modal-body">
-      <div class="confirmation confirmation-received">
-        <img src="images/Completed-pana.png" alt="completed">
-        <h2 class="b1 confirmation-text">Sucessfully added kra</h2>
-        <p class="confirmation-subtext">We have added a new KRA for the Role Mix. Thanks for submitting it.</p>
+    <!-- modal for exception raised msg -->
+    <div class="modal fade add-kra-modal" id="submitKRA" data-bs-backdrop="static" data-bs-keyboard="false"
+      tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="d-flex d-flex justify-content-end">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="confirmation confirmation-received">
+              <img src="images/Completed-pana.png" alt="completed">
+              <h2 class="b1 confirmation-text">Exception raised</h2>
+              <p class="confirmation-subtext">Your reporting manager will revert to you shortly on the same exception
+                raised. Thanks for submitting it.</p>
 
-        <div class="popup-actions">
-          
-          <button type="button" class="btn btn-arrow btn-primary" data-bs-toggle="modal" data-bs-target="#confirm"
-            data-bs-dismiss="modal">OK<span class="icon-WhiteArrow"></span></button>
+              <div class="popup-actions">
+
+                <button type="button" class="btn btn-arrow btn-primary" data-bs-toggle="modal" data-bs-target="#confirm"
+                  data-bs-dismiss="modal">Ok<span class="icon-WhiteArrow"></span></button>
+
+              </div>
+            </div>
+
+          </div>
 
         </div>
       </div>
-
     </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/bootstrap-datepicker.min.js"></script>
+    <script src="js/select2.min.js"></script>
+    <script src="js/apexcharts.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+      $(document).ready(function () {
+        $('.js-example-basic-single').select2();
+        $('#addNewKra').select2({
+          dropdownParent: $('#addKRA')
+        });
+      });
 
-    </div>
-    </div>
-    </div>
-<!-- modal for exception raised msg -->
- <div class="modal fade add-kra-modal" id="submitKRA" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-   aria-labelledby="staticBackdropLabel" aria-hidden="true">
-   <div class="modal-dialog">
-     <div class="modal-content">
-       <div class="d-flex d-flex justify-content-end">
-         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-       </div>
-       <div class="modal-body">
-         <div class="confirmation confirmation-received">
-           <img src="images/Completed-pana.png" alt="completed">
-           <h2 class="b1 confirmation-text">Exception raised</h2>
-           <p class="confirmation-subtext">Your reporting manager will revert to you shortly on the same exception
-             raised. Thanks for submitting it.</p>
-
-           <div class="popup-actions">
-
-             <button type="button" class="btn btn-arrow btn-primary" data-bs-toggle="modal" data-bs-target="#confirm"
-               data-bs-dismiss="modal">Ok<span
-                 class="icon-WhiteArrow"></span></button>
-
-           </div>
-         </div>
-
-       </div>
-
-     </div>
-   </div>
- </div>
-  <script src="js/jquery.min.js"></script>
-  <script src="js/bootstrap.bundle.js"></script>
-  <script src="js/bootstrap-datepicker.min.js"></script>
-  <script src="js/select2.min.js"></script>
-  <script src="js/apexcharts.js"></script>
-  <script src="js/main.js"></script>
-        <script>
-          $(document).ready(function () {
-            $('.js-example-basic-single').select2();
-            $('#addNewKra').select2({
-               dropdownParent: $('#addKRA')
-            });
-          });
-        </script>
+    </script>
   </body>
 
 </html>

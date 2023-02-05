@@ -139,6 +139,10 @@
                 width: 70%;
                 position: relative;
 
+                p {
+                    width: 40%;
+                }
+
                 .refresh-icon {
                     position: absolute;
                     top: 15px;
@@ -202,7 +206,7 @@
             .btn-submit {
                 background-color: #F3F034;
                 padding: 1.5rem 4rem;
-                color: $primary-blue;
+                color: #031C85;
                 font-size: 1.7rem;
                 font-family: $primary-font-bold;
             }

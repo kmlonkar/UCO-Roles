@@ -14,22 +14,85 @@
 
         .accordion-item-open {
             border: 0;
-            box-shadow: 0px 3px 16px #0000000F;;
+            box-shadow: 0 0 0 transparent;
+
         }
 
         &-button {
             background-color: $clr-white;
+            z-index: 0;
+            align-items: baseline;
+
+            &:focus {
+                box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+            }
+
+            .comment-chain {
+                display: flex;
+            }
 
             &.collapsed {
                 background-color: $bg-accordion-header;
                 border-bottom: 0;
+
+
+
+                .comment-chain {
+                    display: none;
+                }
             }
 
             &:not(.collapsed) {
-                box-shadow: 0 0 0 transparent;
+                // box-shadow: 0 0 0 transparent;
+                box-shadow: 0px 3px 16px #0000000F;
                 color: inherit;
-                z-index: $text-clr-black;
+                padding-top: 18px;
+
+                .comment-header {
+                    margin-bottom: 1.5rem;
+                }
+            }
+        }
+
+        &-body {
+            margin-top: 1.5rem;
+            box-shadow: 0px 3px 16px #0000000F;
+        }
+    }
+}
+
+.exception-list {
+
+    .rejected {
+        border: 0 none;
+
+        .accordion-button {
+            &.collapsed {
+                background-color: #FFEDED;
+                border: 0 none;
+
+                .designation {
+                    background-color: $clr-white;
+                }
+
             }
         }
     }
+
+    .accepted {
+        border: 0 none;
+
+        .accordion-button {
+            &.collapsed {
+                background-color: #DAF8ED;
+                border: 0 none;
+
+                .designation {
+                    background-color: $clr-white;
+                }
+
+            }
+        }
+    }
+
 }

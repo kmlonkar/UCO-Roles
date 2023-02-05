@@ -219,6 +219,7 @@
   &--view {
     // padding-left: 1.8rem;
     margin-top: 1.5rem;
+
     @media screen and (max-width:1200px) {
       padding-left: 0;
     }
@@ -352,6 +353,10 @@
     font-size: 1.6rem;
     color: $text-clr-secondary-blue;
     margin-top: 0.5rem;
+
+    &.flagged-total {
+      color: $text-clr-black;
+    }
   }
 }
 
@@ -368,9 +373,11 @@
 
     .form-floating {
       width: 30%;
-      .select2-container{
+
+      .select2-container {
         width: 100% !important;
       }
+
       margin-right: 1rem;
 
       .select2-selection--single {
@@ -438,10 +445,17 @@
   .subsection-title {
     text-transform: uppercase;
 
+    .form-check-input {}
+
+    .textarea {
+      color: rgba($text-clr-black, 0.5)
+    }
+
     &+p {
       font-size: 1.5rem;
     }
   }
+
 
   .conclusion {
     &__section {
@@ -467,4 +481,9 @@
       }
     }
   }
+}
+
+.view-comments {
+  height: 15px;
+
 }

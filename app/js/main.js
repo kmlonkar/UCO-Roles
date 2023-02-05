@@ -5,7 +5,7 @@ $(function () {
   $('#datepicker4').datepicker();
   $('#datepicker5').datepicker();
   $('#datepicker6').datepicker();
-  $('.date').datepicker();
+  // $('.date').datepicker();
   $('#date-2').datepicker({
     format: "dd-M-yy"
   });
@@ -37,6 +37,15 @@ $(function () {
   $('.accordion-button').click(function () {
     $(this).parent('.accordion-header').parent('.accordion-item').toggleClass('accordion-item-open');
   })
+
+  $(".flagged-reasons .textarea").hide();
+  $(".flagged-reasons input[id=other]").click(function () {
+    if ($(this).is(":checked")) {
+      $(".flagged-reasons .textarea").show(300);
+    } else {
+      $(".flagged-reasons .textarea").hide(200);
+    }
+  });
 
   var options = {
     chart: {

@@ -1,10 +1,37 @@
 .status-tabs {
     display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    margin-bottom: 1.5rem;
+
+    .nav-item {
+
+        position: relative;
+
+        &::before {
+            content: '';
+            height: 20px;
+            width: 1px;
+            background: rgba($grey, 0.5);
+            position: absolute;
+            right: 0;
+            top: 4px;
+        }
+
+        &:last-of-type {
+            &::before {
+                content: "";
+                display: none;
+            }
+        }
+    }
 
     .nav-link {
+        color: $text-clr-black;
+
         &.active {
             background: transparent;
-            border: 0;
+
         }
     }
 
@@ -12,15 +39,30 @@
         .nav-link {
             position: relative;
             padding-left: 20px;
+            font-size: 1.2rem;
+            text-transform: capitalize;
+
+            &.active {
+                position: relative;
+
+                &::after {
+                    content: " ";
+                    width: 90%;
+                    height: 2px;
+                    // background-color: $primary-blue;
+                    position: absolute;
+                    left: 0;
+                    bottom: 0;
+                }
+            }
 
             &::before {
 
                 content: "";
                 position: absolute;
-                width: 1.5rem;
-                height: 1.5rem;
+                width: 1.2rem;
+                height: 1.2rem;
                 border-radius: 0.1rem;
-
                 left: 0;
                 top: 8px;
             }
@@ -29,13 +71,61 @@
 
     .pending {
         .nav-link {
+            &.active {
+
+                &::after {
+                    content: " ";
+
+                    background-color: $primary-blue;
+
+                }
+            }
+
             &::before {
                 background: $primary-blue;
             }
 
+        }
+    }
 
+    .approved {
+        .nav-link {
+            &.active {
+                &::after {
+                    content: " ";
+                    background-color: $graph-clr-light-green;
 
+                }
+            }
+
+            &::before {
+                background: $graph-clr-light-green;
+            }
 
         }
+    }
+
+    .rejected {
+        .nav-link {
+            &.active {
+                &::after {
+                    content: " ";
+
+                    background-color: $clr-red;
+
+                }
+            }
+
+            &::before {
+                background: $clr-red;
+            }
+
+        }
+    }
+}
+
+.nav {
+    .member__location {
+        font-size: 1rem;
     }
 }

@@ -23,7 +23,7 @@
 
         &~label {
             opacity: 1;
-            font-size: 1.1rem;
+            font-size: 1.3rem;
         }
     }
 
@@ -44,7 +44,7 @@
 
 label {
     color: $primary-blue;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     font-family: $primary-font-bold;
 }
 
@@ -80,14 +80,14 @@ label {
         background-color: $bg-clr-light-blue;
         border: 0;
         padding-top: 1.5rem !important;
-        padding-left: 1.75rem;
+        // padding-left: 1.75rem;
 
         &::placeholder {
             font-size: 1.4rem;
         }
 
         &+label {
-            left: calc(16.5px - 7.5px);
+            // left: calc(16.5px - 7.5px);
             top: 5px;
         }
     }
@@ -95,6 +95,10 @@ label {
 
 .date-wrap {
     position: relative;
+
+    label {
+        font-size: 1.3rem !important;
+    }
 
     &:before {
         content: '\e902';
@@ -128,7 +132,24 @@ label {
     }
 }
 
+.login {
+    .form-actions {
+        justify-content: center;
+    }
+}
+
 .form-actions {
     display: flex;
     justify-content: space-between;
+}
+
+.addnew-kra-form {
+    label {
+        top: 0 !important;
+        font-size: 1.3rem !important;
+    }
+
+    // .textarea {
+    //     padding-left: 1.5rem !important;
+    // }
 }

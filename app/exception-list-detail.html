@@ -95,8 +95,13 @@
                     </div>
                     <div class="col-12 col-xl-7 approval-status-summary">
 
-                      <p>Approved<span class="value accepted-value">05</span></p>
-                      <p>Rejected<span class="value rejected-value">05</span></p>
+                      <div class="d-flex justify-content-between">
+                        <p>Approved</p><span class="value accepted-value">05</span>
+                      </div>
+
+                      <div class="d-flex justify-content-between">
+                        <p>Rejected</p><span class="value rejected-value">05</span>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -140,8 +145,8 @@
               <!-- status tabs -->
               <ul class="nav nav-tabs status-tabs" id="myTabCategory" role="tablist">
                 <li class="nav-item state pending" role="presentation">
-                  <button class="nav-link state active" id="page1" data-bs-toggle="tab" data-bs-target="#home" type="button"
-                    role="tab" aria-controls="home" aria-selected="true">
+                  <button class="nav-link state active" id="page1" data-bs-toggle="tab" data-bs-target="#home1"
+                    type="button" role="tab" aria-controls="home" aria-selected="true">
                     pending
 
                   </button>
@@ -153,160 +158,157 @@
                   </button>
                 </li>
                 <li class="nav-item state rejected" role="presentation">
-                  <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact"
-                    type="button" role="tab" aria-controls="contact" aria-selected="false">
+                  <button class="nav-link" id="page3" data-bs-toggle="tab" data-bs-target="#home3" type="button"
+                    role="tab" aria-controls="contact" aria-selected="false">
                     Rejected
                   </button>
                 </li>
 
 
               </ul>
-              <div class="tab-content" id="myTabContent">
-                <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="page1">
+              <div class="tab-content exception-member-list" id="myTabContent">
+                <div class="tab-pane fade show active" id="home1" role="tabpanel" aria-labelledby="page1">
 
-                  <ul class="nav nav-tabs custom-tabs overflow-container" id="myTab" role="tablist">
-                    <li class="nav-item team-list-item profile-picture--no allocation-yes" role="presentation">
+                  <ul class="nav nav-tabs pending-list" id="myTab" role="tablist">
+                    <li class="nav-item team-list-item profile-picture--no" role="presentation">
                       <button class="nav-link profile active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home"
                         type="button" role="tab" aria-controls="home" aria-selected="true">
-                        <span class="profile-picture">SM</span>
-
-                        <div class="member-details">
-                          <p class="member__name">Sonal Rajotia</p>
-                          <p class="member__designation"> Deputy Branch Manager</p>
-                          <p class="member__location">Mali Ghat (CBS Code 1382)</p>
+                        <div class="d-flex">
+                          <span class="profile-picture">SM</span>
+                          <div class="member-details">
+                            <p class="member__name">Sonal Rajotia</p>
+                            <p class="member__designation"> Deputy Branch Manager</p>
+                            <p class="member__location">Mali Ghat (CBS Code 1382)</p>
+                          </div>
                         </div>
-
+                        <span class="exception-count">2</span>
 
                       </button>
                     </li>
-                    <li class="nav-item profile-picture--yes allocation-yes-accepted-no" role="presentation">
+                    <li class="nav-item profile-picture--yes" role="presentation">
                       <button class="nav-link profile" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile"
                         type="button" role="tab" aria-controls="profile" aria-selected="false">
-                        <span class="profile-picture"><img src="images/johnDoe.jpg" class="profile-picture"
-                            alt="johndoe"></span>
+                        <div class="d-flex">
+                          <span class="profile-picture"><img src="images/johnDoe.jpg" class="profile-picture"
+                              alt="johndoe"></span>
+                          <div class="member-details">
+                            <p class="member__name">Mahesh Poojari</p>
+                            <p class="member__designation">Current Account Officer</p>
+                            <p class="member__location">Mali Ghat (CBS Code 1382)</p>
+                          </div>
+                        </div>
+                        <span class="exception-count">2</span>
+                      </button>
+                    </li>
+                    <li class="nav-item profile-picture--no " role="presentation">
+                      <button class="nav-link profile" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact"
+                        type="button" role="tab" aria-controls="contact" aria-selected="false">
+                        <div class="d-flex">
+                          <span class="profile-picture">RD</span>
+                          <div class="member-details">
+                            <p class="member__name">Robin Devdas</p>
+                            <p class="member__designation"> Savings Account Officer</p>
+                            <p class="member__location">Mali Ghat (CBS Code 1382)</p>
+                          </div>
+                        </div>
+                        <span class="exception-count">2</span>
+                      </button>
+                    </li>
 
-                        <div class="member-details">
-                          <p class="member__name">Mahesh Poojari</p>
-                          <p class="member__designation">Current Account Officer</p>
-                          <p class="member__location">Mali Ghat (CBS Code 1382)</p>
+                  </ul>
+                </div>
+                <div class="tab-pane fade" id="home2" role="tabpanel" aria-labelledby="page2">
+                  <ul class="nav nav-tabs approved-list" id="myTab" role="tablist">
+                    <li class="nav-item team-list-item profile-picture--no" role="presentation">
+                      <button class="nav-link profile active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home"
+                        type="button" role="tab" aria-controls="home" aria-selected="true">
+                        <div class="d-flex">
+                          <span class="profile-picture">SM</span>
+                          <div class="member-details">
+                            <p class="member__name">Sonal Rajotia</p>
+                            <p class="member__designation"> Deputy Branch Manager</p>
+                            <p class="member__location">Mali Ghat (CBS Code 1382)</p>
+                          </div>
+                        </div>
+                        <span class="exception-count">2</span>
+
                       </button>
                     </li>
-                    <li class="nav-item profile-picture--no flagged" role="presentation">
-                      <button class="nav-link profile" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact"
-                        type="button" role="tab" aria-controls="contact" aria-selected="false">
-                        <span class="profile-picture">RD</span>
-                        <div class="member-details">
-                          <p class="member__name">Robin Devdas</p>
-                          <p class="member__designation"> Savings Account Officer</p>
-                          <p class="member__location">Mali Ghat (CBS Code 1382)</p>
+                    <li class="nav-item profile-picture--yes" role="presentation">
+                      <button class="nav-link profile" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile"
+                        type="button" role="tab" aria-controls="profile" aria-selected="false">
+                        <div class="d-flex">
+                          <span class="profile-picture"><img src="images/johnDoe.jpg" class="profile-picture"
+                              alt="johndoe"></span>
+                          <div class="member-details">
+                            <p class="member__name">Mahesh Poojari</p>
+                            <p class="member__designation">Current Account Officer</p>
+                            <p class="member__location">Mali Ghat (CBS Code 1382)</p>
+                          </div>
                         </div>
+                        <span class="exception-count">2</span>
                       </button>
                     </li>
-                    <li class="nav-item profile-picture--no flagged" role="presentation">
+                    <li class="nav-item profile-picture--no " role="presentation">
                       <button class="nav-link profile" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact"
                         type="button" role="tab" aria-controls="contact" aria-selected="false">
-                        <span class="profile-picture">SM</span>
-                        <div class="member-details">
-                          <p class="member__name">Sonal Rajotia</p>
-                          <p class="member__designation"> Deputy Branch Manager</p>
-                          <p class="member__location">Mali Ghat (CBS Code 1382)</p>
+                        <div class="d-flex">
+                          <span class="profile-picture">RD</span>
+                          <div class="member-details">
+                            <p class="member__name">Robin Devdas</p>
+                            <p class="member__designation"> Savings Account Officer</p>
+                            <p class="member__location">Mali Ghat (CBS Code 1382)</p>
+                          </div>
                         </div>
-                      </button>
-                    </li>
-                    <li class="nav-item profile-picture--no allocation-yes" role="presentation">
-                      <button class="nav-link profile" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact"
-                        type="button" role="tab" aria-controls="contact" aria-selected="false">
-                        <span class="profile-picture">SM</span>
-                        <div class="member-details">
-                          <p class="member__name">Sonal Rajotia</p>
-                          <p class="member__designation"> Deputy Branch Manager</p>
-                          <p class="member__location">Mali Ghat (CBS Code 1382)</p>
-                        </div>
-                      </button>
-                    </li>
-                    <li class="nav-item profile-picture--no allocation-no" role="presentation">
-                      <button class="nav-link profile" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact"
-                        type="button" role="tab" aria-controls="contact" aria-selected="false">
-                        <span class="profile-picture allocated--">SM</span>
-                        <div class="member-details">
-                          <p class="member__name">Sonal Rajotia</p>
-                          <p class="member__designation"> Deputy Branch Manager</p>
-                          <p class="member__location">Mali Ghat (CBS Code 1382)</p>
-                        </div>
+                        <span class="exception-count">2</span>
                       </button>
                     </li>
                   </ul>
                 </div>
-                <div class="tab-pane fade" id="home2" role="tabpanel" aria-labelledby="page2">
-                  <ul class="nav nav-tabs custom-tabs overflow-container" id="myTab" role="tablist">
-                    <li class="nav-item team-list-item profile-picture--no allocation-yes" role="presentation">
+                <div class="tab-pane fade" id="home3" role="tabpanel" aria-labelledby="page2">
+                  <ul class="nav nav-tabs rejected-list" id="myTab" role="tablist">
+                    <li class="nav-item team-list-item profile-picture--no" role="presentation">
                       <button class="nav-link profile active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home"
                         type="button" role="tab" aria-controls="home" aria-selected="true">
-                        <span class="profile-picture">SM</span>
-
-                        <div class="member-details">
-                          <p class="member__name">Sonal Rajotia</p>
-                          <p class="member__designation"> Deputy Branch Manager</p>
-                          <p class="member__location">Mali Ghat (CBS Code 1382)</p>
+                        <div class="d-flex">
+                          <span class="profile-picture">SM</span>
+                          <div class="member-details">
+                            <p class="member__name">Sonal Rajotia</p>
+                            <p class="member__designation"> Deputy Branch Manager</p>
+                            <p class="member__location">Mali Ghat (CBS Code 1382)</p>
+                          </div>
                         </div>
-
+                        <span class="exception-count">2</span>
 
                       </button>
                     </li>
-                    <li class="nav-item profile-picture--yes allocation-yes-accepted-no" role="presentation">
+                    <li class="nav-item profile-picture--yes" role="presentation">
                       <button class="nav-link profile" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile"
                         type="button" role="tab" aria-controls="profile" aria-selected="false">
-                        <span class="profile-picture"><img src="images/johnDoe.jpg" class="profile-picture"
-                            alt="johndoe"></span>
-
-                        <div class="member-details">
-                          <p class="member__name">Mahesh Poojari</p>
-                          <p class="member__designation">Current Account Officer</p>
-                          <p class="member__location">Mali Ghat (CBS Code 1382)</p>
+                        <div class="d-flex">
+                          <span class="profile-picture"><img src="images/johnDoe.jpg" class="profile-picture"
+                              alt="johndoe"></span>
+                          <div class="member-details">
+                            <p class="member__name">Mahesh Poojari</p>
+                            <p class="member__designation">Current Account Officer</p>
+                            <p class="member__location">Mali Ghat (CBS Code 1382)</p>
+                          </div>
+                        </div>
+                        <span class="exception-count">2</span>
                       </button>
                     </li>
-                    <li class="nav-item profile-picture--no flagged" role="presentation">
+                    <li class="nav-item profile-picture--no " role="presentation">
                       <button class="nav-link profile" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact"
                         type="button" role="tab" aria-controls="contact" aria-selected="false">
-                        <span class="profile-picture">RD</span>
-                        <div class="member-details">
-                          <p class="member__name">Robin Devdas</p>
-                          <p class="member__designation"> Savings Account Officer</p>
-                          <p class="member__location">Mali Ghat (CBS Code 1382)</p>
+                        <div class="d-flex">
+                          <span class="profile-picture">RD</span>
+                          <div class="member-details">
+                            <p class="member__name">Robin Devdas</p>
+                            <p class="member__designation"> Savings Account Officer</p>
+                            <p class="member__location">Mali Ghat (CBS Code 1382)</p>
+                          </div>
                         </div>
-                      </button>
-                    </li>
-                    <li class="nav-item profile-picture--no flagged" role="presentation">
-                      <button class="nav-link profile" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact"
-                        type="button" role="tab" aria-controls="contact" aria-selected="false">
-                        <span class="profile-picture">SM</span>
-                        <div class="member-details">
-                          <p class="member__name">Sonal Rajotia</p>
-                          <p class="member__designation"> Deputy Branch Manager</p>
-                          <p class="member__location">Mali Ghat (CBS Code 1382)</p>
-                        </div>
-                      </button>
-                    </li>
-                    <li class="nav-item profile-picture--no allocation-yes" role="presentation">
-                      <button class="nav-link profile" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact"
-                        type="button" role="tab" aria-controls="contact" aria-selected="false">
-                        <span class="profile-picture">SM</span>
-                        <div class="member-details">
-                          <p class="member__name">Sonal Rajotia</p>
-                          <p class="member__designation"> Deputy Branch Manager</p>
-                          <p class="member__location">Mali Ghat (CBS Code 1382)</p>
-                        </div>
-                      </button>
-                    </li>
-                    <li class="nav-item profile-picture--no allocation-no" role="presentation">
-                      <button class="nav-link profile" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact"
-                        type="button" role="tab" aria-controls="contact" aria-selected="false">
-                        <span class="profile-picture allocated--">SM</span>
-                        <div class="member-details">
-                          <p class="member__name">Sonal Rajotia</p>
-                          <p class="member__designation"> Deputy Branch Manager</p>
-                          <p class="member__location">Mali Ghat (CBS Code 1382)</p>
-                        </div>
+                        <span class="exception-count">2</span>
                       </button>
                     </li>
                   </ul>
@@ -316,28 +318,10 @@
             </div>
           </div>
           <div class="team-listing--add-role fixed-section two-col-layout--right exception-list-wrap">
-            <div class="tab-content" id="myTabContent">
+            <div class="tab-content" id="myTabContent2">
               <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
                 <div class="card">
-                  <div class="card-header">
-                    <div class="profile-picture--no  dotted-border">
-                      <div class="intro profile">
-                        <div class="d-flex">
-                          <span class="profile-picture allocated--no">SM</span>
-                          <div class="member-details">
-                            <p class="member__name">Sonal Rajotia</p>
-                            <p class="member__designation"> Deputy Branch Manager</p>
-                            <p class="member__location">Mali Ghat (CBS Code 1382)</p>
-                          </div>
-                        </div>
-                        <div class="exception-count">
-                          <span class="b1-lg">02</span>
-                          <p># of exception</p>
-                        </div>
-                      </div>
-                    </div>
 
-                  </div>
                   <div>
                     <div class="exception-list kra">
                       <div class="accordion" id="accordionExample">
@@ -350,21 +334,31 @@
                           <h2 class="accordion-header" id="headingOne">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                               data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                              <div class="comment-header">
-                                <div class="user-details ">
-                                  <span>RS</span>
-                                  <div>
-                                    <h5 class="name">Ravi Sarman</h5>
-                                    <p>PF ID - #458890</p>
+                              <div class="w-100 d-flex flex-column">
+                                <div class="comment-header">
+                                  <div class="user-details ">
+                                    <span>RS</span>
+                                    <div>
+                                      <h5 class="name">Ravi Sarman</h5>
+                                      <p>PF ID - #458890</p>
+                                    </div>
+                                  </div>
+                                  <div class="designation">
+                                    <span class="star"><img src="images/start.svg" alt="star"></span>
+                                    Operations Officer
+                                  </div>
+                                  <div class="timestamp">
+                                    <h6 class="date">27 Jan 2023</h6>
+                                    <p>Exception No: 12345</p>
                                   </div>
                                 </div>
-                                <div class="designation">
-                                  <span class="star"><img src="images/start.svg" alt="star"></span>
-                                  Operations Officer
-                                </div>
-                                <div class="timestamp">
-                                  <h6 class="date">27 Jan 2023</h6>
-                                  <p>Exception No: 12345</p>
+                                <div class="comment-chain comment-chain-style-2">
+                                  <p class="chain-title">Additional Roles</p>
+                                  <ul class="comment-chain-wrapper">
+                                    <li>Credit Officer</li>
+                                    <li>Locker Officer</li>
+                                    <li>Forex Officer</li>
+                                  </ul>
                                 </div>
                               </div>
                             </button>
@@ -372,14 +366,7 @@
                           <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
                             data-bs-parent="#accordionExample">
                             <div class="accordion-body">
-                              <div class="comment-chain comment-chain-style-2">
-                                <p class="chain-title">Additional Roles</p>
-                                <ul class="comment-chain-wrapper">
-                                  <li>Credit Officer</li>
-                                  <li>Locker Officer</li>
-                                  <li>Forex Officer</li>
-                                </ul>
-                              </div>
+
                               <div class="kra-result-wrapper">
                                 <div class="kra--view">
                                   <div class="row">
@@ -440,7 +427,8 @@
                                             <li class="sent-comments">
                                               <div class="comment--right">
                                                 <div class="chat">
-                                                  The official handles the digital awareness for the branch. Hence, the
+                                                  The official handles the digital awareness for the branch. Hence,
+                                                  the
                                                   KRA
                                                   is
                                                   suited to him.
@@ -544,7 +532,8 @@
                                       part of this exception work flow</h5>
                                     <div class="comment-wrap">
                                       <a href="#" class="btn btn-link" data-bs-toggle="modal"
-                                        data-bs-target="#comments">Previous Comments
+                                        data-bs-target="#comments"><img class="view-comments"
+                                          src="images/comments.svg">Previous Comments
                                       </a>
                                     </div>
 
@@ -557,10 +546,10 @@
                                     </div>
                                     <div class="form-actions">
                                       <a href="#" type="button" class="btn btn-arrow btn-outline-dark"
-                                        data-bs-toggle="modal" data-bs-target="#submitKRA">Reject <span
+                                        data-bs-toggle="modal" data-bs-target="#rejectException">Reject <span
                                           class="icon-WhiteArrow"></span></a>
                                       <a href="#" type="button" class="btn btn-arrow  btn-primary"
-                                        data-bs-toggle="modal" data-bs-target="#submitKRA">Accept<span
+                                        data-bs-toggle="modal" data-bs-target="#acceptException">Accept<span
                                           class="icon-WhiteArrow"></span></a>
                                     </div>
                                   </div>
@@ -570,25 +559,35 @@
                           </div>
                         </div>
 
-                        <div class="accordion-item">
+                        <div class="accordion-item rejected">
                           <h2 class="accordion-header" id="headingTwo">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            <button class="accordion-button collapsed " type="button" data-bs-toggle="collapse"
                               data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                              <div class="comment-header">
-                                <div class="user-details ">
-                                  <span>RS</span>
-                                  <div>
-                                    <h5 class="name">Ravi Sarman</h5>
-                                    <p>PF ID - #458890</p>
+                              <div class="w-100 d-flex flex-column">
+                                <div class="comment-header">
+                                  <div class="user-details ">
+                                    <span>RS</span>
+                                    <div>
+                                      <h5 class="name">Ravi Sarman</h5>
+                                      <p>PF ID - #458890</p>
+                                    </div>
+                                  </div>
+                                  <div class="designation">
+                                    <span class="star"><img src="images/start.svg" alt="star"></span>
+                                    Operations Officer
+                                  </div>
+                                  <div class="timestamp">
+                                    <h6 class="date">27 Jan 2023</h6>
+                                    <p>Exception No: 12345</p>
                                   </div>
                                 </div>
-                                <div class="designation">
-                                  <span class="star"><img src="images/start.svg" alt="star"></span>
-                                  Operations Officer
-                                </div>
-                                <div class="timestamp">
-                                  <h6 class="date">27 Jan 2023</h6>
-                                  <p>Exception No: 12345</p>
+                                <div class="comment-chain comment-chain-style-2">
+                                  <p class="chain-title">Additional Roles</p>
+                                  <ul class="comment-chain-wrapper">
+                                    <li>Credit Officer</li>
+                                    <li>Locker Officer</li>
+                                    <li>Forex Officer</li>
+                                  </ul>
                                 </div>
                               </div>
                             </button>
@@ -596,12 +595,195 @@
                           <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
                             data-bs-parent="#accordionExample">
                             <div class="accordion-body">
-                              <strong>This is the second item's accordion body.</strong> It is hidden by default, until
-                              the collapse plugin adds the appropriate classes that we use to style each element. These
-                              classes control the overall appearance, as well as the showing and hiding via CSS
-                              transitions. You can modify any of this with custom CSS or overriding our default
-                              variables. It's also worth noting that just about any HTML can go within the
-                              <code>.accordion-body</code>, though the transition does limit overflow.
+
+                              <div class="kra-result-wrapper">
+                                <div class="kra--view">
+                                  <div class="row">
+                                    <div class="col-6 b3">KRA Description </div>
+                                    <div class="col-6 b3"> Wgt</div>
+                                  </div>
+                                  <!-- modal for making inactive -->
+                                  <div class="modal fade view-comment" id="comments" data-bs-backdrop="static"
+                                    data-bs-keyboard="false" aria-labelledby="staticBackdropLabel"
+                                    style="display: none;" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                      <div class="modal-content">
+                                        <div class="d-flex d-flex justify-content-between">
+                                          <div class="modal-header">
+                                            <h5 class="modal-title b2" id="staticBackdropLabel">View Comments</h5>
+                                          </div>
+                                          <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                          <div class="border-bottom chat-wrapper">
+                                            <div class="comment-header">
+                                              <div class="user-details ">
+                                                <span>RS</span>
+                                                <div>
+                                                  <h5 class="name">Ravi Sarman</h5>
+                                                  <p>PF ID - #458890</p>
+                                                </div>
+                                              </div>
+                                              <div class="designation">
+                                                <span class="star"><img src="images/start.svg" alt="star"></span>
+                                                Operations Officer
+                                              </div>
+                                              <div class="timestamp">
+                                                <h6 class="date">27 Jan 2023</h6>
+                                                <p>Exception No: 12345</p>
+                                              </div>
+                                            </div>
+                                            <div class="comment-chain comment-chain-style-2">
+                                              <p class="chain-title">Additional Roles</p>
+                                              <ul class="comment-chain-wrapper">
+                                                <li>Credit Officer</li>
+                                                <li>Locker Officer</li>
+                                                <li>Forex Officer</li>
+                                              </ul>
+                                            </div>
+                                          </div>
+                                          <ul class="comment-history">
+                                            <li class="received-comments">
+                                              <div class="comment--left">
+                                                <p class="chat-summary">KRA Added</p>
+                                                <div class="chat">
+                                                  <p>% Digitally active customers vs. targets</p>
+                                                  <p>KRA Wgt. - 4</p>
+                                                </div>
+                                              </div>
+                                            </li>
+                                            <li class="sent-comments">
+                                              <div class="comment--right">
+                                                <div class="chat">
+                                                  The official handles the digital awareness for the branch. Hence,
+                                                  the
+                                                  KRA
+                                                  is
+                                                  suited to him.
+                                                </div>
+                                                <div class="chat-profile">
+                                                  <p>Sonal Rajotia</p>
+                                                  <img src="images/johnDoe.jpg" alt="">
+                                                </div>
+                                              </div>
+                                            </li>
+                                            <li class="received-comments">
+                                              <div class="comment--left">
+                                                <p class="chat-summary">KRA Added</p>
+                                                <div class="chat">
+                                                  <p>Audit and Compliance score</p>
+                                                  <p>KRA Wgt. - 6</p>
+                                                  <p>% Growth in Average Standard Advances</p>
+                                                  <p>KRA Wgt. - 4</p>
+                                                </div>
+                                              </div>
+                                            </li>
+                                            <li class="sent-comments">
+                                              <div class="comment--right">
+                                                <div class="chat">
+                                                  The role is more inclined towards the deposits growth. Hence, KRA
+                                                  weightage
+                                                  have been adjusted in the role.
+                                                </div>
+                                                <div class="chat-profile">
+                                                  <p>Sonal Rajotia</p>
+                                                  <img src="images/johnDoe.jpg" alt="">
+                                                </div>
+                                              </div>
+                                            </li>
+                                          </ul>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="kra-list-wrap">
+                                    <ul class="kra-list dotted-border--top">
+                                      <li class="kra-list-item">
+                                        <div class="kra-detail">
+                                          <p class="kra-param">% Growth in average retail term deposits
+                                          </p>
+                                          <p class="kra-value">12</p>
+                                        </div>
+                                      </li>
+                                      <li class="kra-list-item">
+                                        <div class="kra-detail">
+                                          <p class="kra-param">% Growth in average retail term deposits
+                                          </p>
+                                          <p class="kra-value">12</p>
+                                        </div>
+                                      </li>
+                                      <li class="kra-list-item">
+                                        <div class="kra-detail">
+                                          <p class="kra-param">% Growth in average retail term deposits
+                                          </p>
+                                          <p class="kra-value">12</p>
+                                        </div>
+                                      </li>
+                                      <li class="kra-list-item">
+                                        <div class="kra-detail">
+                                          <p class="kra-param">% Growth in average retail term deposits
+                                          </p>
+                                          <p class="kra-value">12</p>
+                                        </div>
+                                      </li>
+                                      <li class="kra-list-item">
+                                        <div class="kra-detail">
+                                          <p class="kra-param">% Growth in average retail term deposits
+                                          </p>
+                                          <p class="kra-value">12</p>
+                                        </div>
+                                      </li>
+                                      <li class="kra-list-item">
+                                        <div class="kra-detail">
+                                          <p class="kra-param">% Growth in average retail term deposits
+                                          </p>
+                                          <p class="kra-value">12</p>
+                                        </div>
+                                      </li>
+                                      <li class="kra-list-item kra-list-item--edited">
+                                        <div class="kra-detail">
+                                          <p class="kra-param">% Growth in average retail term deposits
+                                          </p>
+                                          <p class="kra-value">12</p>
+                                        </div>
+                                      </li>
+                                    </ul>
+                                    <div class="kra-summary kra-detail">
+                                      <p class="kra-param">Total</p>
+                                      <p class="kra-value">70</p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="kra--add-comment">
+                                  <div class="response-form">
+                                    <h5 class="form-title">Add response for accepting or rejecting KRSs finalized as
+                                      part of this exception work flow</h5>
+                                    <div class="comment-wrap">
+                                      <a href="#" class="btn btn-link" data-bs-toggle="modal"
+                                        data-bs-target="#comments"><img class="view-comments" src="images/comments.svg">
+                                        Previous Comments
+                                      </a>
+                                    </div>
+
+
+                                    <div class="form-floating">
+                                      <div class="form-group">
+                                        <textarea class="form-control textarea" placeholder="Add comment"
+                                          id="exampleFormControlTextarea1" rows="3"></textarea>
+                                      </div>
+                                    </div>
+                                    <div class="form-actions">
+                                      <a href="#" type="button" class="btn btn-arrow btn-outline-dark"
+                                        data-bs-toggle="modal" data-bs-target="#rejectException">Reject <span
+                                          class="icon-WhiteArrow"></span></a>
+                                      <a href="#" type="button" class="btn btn-arrow  btn-primary"
+                                        data-bs-toggle="modal" data-bs-target="#acceptException">Accept<span
+                                          class="icon-WhiteArrow"></span></a>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
                             </div>
                           </div>
                         </div>
@@ -610,383 +792,151 @@
                     </div>
                   </div>
                 </div>
-                <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-                  <div class="card">
-                    <div class="card-header">
-                      <div class="dotted-border">
-                        <div class="intro profile">
-                          <div>
-                            <span class="profile-picture">MP</span>
-                            <div class="member-details">
-                              <p class="member__name">Mahesh Poojari</p>
-                              <p class="member__designation">Current Account Officer Manager</p>
-                            </div>
+              </div>
+              <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                <div class="card">
+                  <div class="card-header">
+                    <div class="dotted-border">
+                      <div class="intro profile">
+                        <div>
+                          <span class="profile-picture">MP</span>
+                          <div class="member-details">
+                            <p class="member__name">Mahesh Poojari</p>
+                            <p class="member__designation">Current Account Officer Manager</p>
                           </div>
-
                         </div>
-                      </div>
-                      <div class="guide-lines">
-                        <div class="row">
-                          <div class="col-xl-8">
-                            <p>Please enter all roles performed by <span>Sonal Rajotia</span> in Branch
-                              Shirva (CBS
-                              Code 1322) since 1st April 2021</p>
-                          </div>
-                          <div class="col-xl-4 role-actions mt-xl-0 mt-4">
-                            <a href="#" class="btn btn-danger" data-bs-toggle="modal"
-                              data-bs-target="#makeInactive">Make
-                              inactive </a>
 
-                          </div>
-
-                        </div>
                       </div>
                     </div>
-
-                    <div class="add-detail">
-                      <div class=" kra">
-                        <div class="kra--add">
-                          <div class="role-history-title">
-                            <h3 class="b2--lg"> Role History</h3>
-                            <div class="btn btn-link">Add New Role +</div>
-                          </div>
-                          <div class="new-role-wrap role-history">
-
-                            <div class="card--style-2 card--style-2-focused">
-                              <h2 class="b4--bold saved saved--not">Current Account Officer</h2>
-                              <div class="role-details-wrapper">
-                                <div class="addrole-details">
-                                  <div class="assignment-input mt-2">
-                                    <div>
-                                      <p>Role Start Date</p>
-                                      <p class="start-date">23-JAN-23</p>
-                                    </div>
-                                    <p class="total-duration">
-                                      <span></span>
-                                      0y 0m
-                                      <span></span>
-                                    </p>
-                                    <div class="text-end">
-                                      <p>Role End Date</p>
-                                      <p class="end-date">Present</p>
-                                    </div>
-                                  </div>
-                                  <div class="comment-chain comment-chain-style-2">
-                                    <p class="chain-title">Additional Roles</p>
-                                    <ul class="comment-chain-wrapper">
-                                      <li>Credit Officer</li>
-                                      <li>Locker Officer</li>
-                                      <li>Forex Officer</li>
-                                    </ul>
-                                  </div>
-
-                                </div>
-                                <div class="role-actions-wrap">
-                                  <button type="button" class="btn btn-arrow btn-dark">Delete Role <span
-                                      class="icon-WhiteArrow"></span></button>
-                                  <button type="button" class="btn btn-arrow btn-primary">Edit Role <span
-                                      class="icon-WhiteArrow"></span></button>
-
-                                </div>
-                              </div>
-
-                            </div>
-                            <div class="card--style-2">
-                              <h2 class="b4--bold saved">Advances Officer</h2>
-                              <div class="role-details-wrapper">
-                                <div class="addrole-details">
-                                  <div class="assignment-input mt-2">
-                                    <div>
-                                      <p>Role Start Date</p>
-                                      <p class="start-date">23-JAN-23</p>
-                                    </div>
-                                    <p class="total-duration">
-                                      <span></span>
-                                      0y 0m
-                                      <span></span>
-                                    </p>
-                                    <div class="text-end">
-                                      <p>Role End Date</p>
-                                      <p class="end-date">Present</p>
-                                    </div>
-                                  </div>
-
-
-                                </div>
-
-                              </div>
-
-                            </div>
-
-                          </div>
+                    <div class="guide-lines">
+                      <div class="row">
+                        <div class="col-xl-8">
+                          <p>Please enter all roles performed by <span>Sonal Rajotia</span> in Branch
+                            Shirva (CBS
+                            Code 1322) since 1st April 2021</p>
                         </div>
-                        <div class="kra--view">
-                          <div class="row">
-                            <div class="col-6 b3">KRA Description </div>
-                            <div class="col-6 b3"> Wgt</div>
-                          </div>
+                        <div class="col-xl-4 role-actions mt-xl-0 mt-4">
+                          <a href="#" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#makeInactive">Make
+                            inactive </a>
 
-                          <!-- modal for making inactive -->
-                          <div class="modal fade view-comment" id="comments" data-bs-backdrop="static"
-                            data-bs-keyboard="false" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                            <div class="modal-dialog">
-                              <div class="modal-content">
-                                <div class="d-flex d-flex justify-content-between">
-                                  <div class="modal-header">
-                                    <h5 class="modal-title b2" id="staticBackdropLabel">View Comments</h5>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="add-detail">
+                    <div class=" kra">
+                      <div class="kra--add">
+                        <div class="role-history-title">
+                          <h3 class="b2--lg"> Role History</h3>
+                          <div class="btn btn-link">Add New Role +</div>
+                        </div>
+                        <div class="new-role-wrap role-history">
+
+                          <div class="card--style-2 card--style-2-focused">
+                            <h2 class="b4--bold saved saved--not">Current Account Officer</h2>
+                            <div class="role-details-wrapper">
+                              <div class="addrole-details">
+                                <div class="assignment-input mt-2">
+                                  <div>
+                                    <p>Role Start Date</p>
+                                    <p class="start-date">23-JAN-23</p>
                                   </div>
-                                  <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                    aria-label="Close"></button>
+                                  <p class="total-duration">
+                                    <span></span>
+                                    0y 0m
+                                    <span></span>
+                                  </p>
+                                  <div class="text-end">
+                                    <p>Role End Date</p>
+                                    <p class="end-date">Present</p>
+                                  </div>
                                 </div>
-                                <div class="modal-body">
-                                  <div class="border-bottom chat-wrapper">
-                                    <div class="comment-header">
-                                      <div class="user-details ">
-                                        <span>RS</span>
-                                        <div>
-                                          <h5 class="name">Ravi Sarman</h5>
-                                          <p>PF ID - #458890</p>
-                                        </div>
-                                      </div>
-                                      <div class="designation">
-                                        <span class="star"><img src="images/start.svg" alt="star"></span>
-                                        Operations Officer
-                                      </div>
-                                      <div class="timestamp">
-                                        <h6 class="date">27 Jan 2023</h6>
-                                        <p>Exception No: 12345</p>
-                                      </div>
-                                    </div>
-                                    <div class="comment-chain comment-chain-style-2">
-                                      <p class="chain-title">Additional Roles</p>
-                                      <ul class="comment-chain-wrapper">
-                                        <li>Credit Officer</li>
-                                        <li>Locker Officer</li>
-                                        <li>Forex Officer</li>
-                                      </ul>
-                                    </div>
-
-                                  </div>
-                                  <ul class="comment-history">
-                                    <li class="received-comments">
-                                      <div class="comment--left">
-                                        <p class="chat-summary">KRA Added</p>
-                                        <div class="chat">
-                                          <p>% Digitally active customers vs. targets</p>
-                                          <p>KRA Wgt. - 4</p>
-                                        </div>
-                                      </div>
-                                    </li>
-                                    <li class="sent-comments">
-                                      <div class="comment--right">
-                                        <div class="chat">
-                                          The official handles the digital awareness for the branch. Hence, the KRA is
-                                          suited to him.
-                                        </div>
-                                        <div class="chat-profile">
-                                          <p>Sonal Rajotia</p>
-                                          <img src="images/johnDoe.jpg" alt="">
-                                        </div>
-                                      </div>
-                                    </li>
-                                    <li class="received-comments">
-                                      <div class="comment--left">
-                                        <p class="chat-summary">KRA Added</p>
-                                        <div class="chat">
-                                          <p>Audit and Compliance score</p>
-                                          <p>KRA Wgt. - 6</p>
-                                          <p>% Growth in Average Standard Advances</p>
-                                          <p>KRA Wgt. - 4</p>
-                                        </div>
-                                      </div>
-                                    </li>
-                                    <li class="sent-comments">
-                                      <div class="comment--right">
-                                        <div class="chat">
-                                          The role is more inclined towards the deposits growth. Hence, KRA weightage
-                                          have been adjusted in the role.
-                                        </div>
-                                        <div class="chat-profile">
-                                          <p>Sonal Rajotia</p>
-                                          <img src="images/johnDoe.jpg" alt="">
-                                        </div>
-                                      </div>
-                                    </li>
+                                <div class="comment-chain comment-chain-style-2">
+                                  <p class="chain-title">Additional Roles</p>
+                                  <ul class="comment-chain-wrapper">
+                                    <li>Credit Officer</li>
+                                    <li>Locker Officer</li>
+                                    <li>Forex Officer</li>
                                   </ul>
                                 </div>
+
+                              </div>
+                              <div class="role-actions-wrap">
+                                <button type="button" class="btn btn-arrow btn-dark">Delete Role <span
+                                    class="icon-WhiteArrow"></span></button>
+                                <button type="button" class="btn btn-arrow btn-primary">Edit Role <span
+                                    class="icon-WhiteArrow"></span></button>
+
                               </div>
                             </div>
-                          </div>
-                          <div class="kra-list-wrap">
-                            <ul class="kra-list dotted-border--top">
-                              <li class="kra-list-item">
-                                <div class="kra-detail">
-                                  <p class="kra-param">% Growth in average retail term deposits
-                                  </p>
-                                  <p class="kra-value">12</p>
-                                </div>
-                              </li>
-                              <li class="kra-list-item">
-                                <div class="kra-detail">
-                                  <p class="kra-param">% Growth in average retail term deposits
-                                  </p>
-                                  <p class="kra-value">12</p>
-                                </div>
-                              </li>
-                              <li class="kra-list-item">
-                                <div class="kra-detail">
-                                  <p class="kra-param">% Growth in average retail term deposits
-                                  </p>
-                                  <p class="kra-value">12</p>
-                                </div>
-                              </li>
-                              <li class="kra-list-item">
-                                <div class="kra-detail">
-                                  <p class="kra-param">% Growth in average retail term deposits
-                                  </p>
-                                  <p class="kra-value">12</p>
-                                </div>
-                              </li>
-                              <li class="kra-list-item">
-                                <div class="kra-detail">
-                                  <p class="kra-param">% Growth in average retail term deposits
-                                  </p>
-                                  <p class="kra-value">12</p>
-                                </div>
-                              </li>
-                              <li class="kra-list-item">
-                                <div class="kra-detail">
-                                  <p class="kra-param">% Growth in average retail term deposits
-                                  </p>
-                                  <p class="kra-value">12</p>
-                                </div>
-                              </li>
-                              <li class="kra-list-item kra-list-item--edited">
-                                <div class="kra-detail">
-                                  <p class="kra-param">% Growth in average retail term deposits
-                                  </p>
-                                  <p class="kra-value">12</p>
-                                </div>
-                              </li>
-                            </ul>
 
-                            <div class="kra-summary kra-detail">
-                              <p class="kra-param">Total</p>
-                              <p class="kra-value">70</p>
+                          </div>
+                          <div class="card--style-2">
+                            <h2 class="b4--bold saved">Advances Officer</h2>
+                            <div class="role-details-wrapper">
+                              <div class="addrole-details">
+                                <div class="assignment-input mt-2">
+                                  <div>
+                                    <p>Role Start Date</p>
+                                    <p class="start-date">23-JAN-23</p>
+                                  </div>
+                                  <p class="total-duration">
+                                    <span></span>
+                                    0y 0m
+                                    <span></span>
+                                  </p>
+                                  <div class="text-end">
+                                    <p>Role End Date</p>
+                                    <p class="end-date">Present</p>
+                                  </div>
+                                </div>
+
+
+                              </div>
+
                             </div>
 
-
                           </div>
 
                         </div>
                       </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="profile-tab">
-                  <div class="card">
-                    <div class="card-header">
-                      <div class="profile-picture--no flagged dotted-border">
-                        <div class="intro profile">
-                          <span class="profile-picture allocated--no">RD</span>
-                          <div class="member-details">
-                            <p class="member__name">Robin Devdas</p>
-                            <p class="member__designation">Savings Account Officer</p>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="guide-lines dotted-border">
+                      <div class="kra--view">
                         <div class="row">
-                          <div class="col-xl-8">
-                            <p class="b2">Robin Devdas has raised a flag for discussion</p>
-                          </div>
-                          <div class="col-xl-4 role-actions mt-xl-0 mt-4">
-                            <a href="#" class="btn btn-danger" data-bs-toggle="modal"
-                              data-bs-target="#makeInactive2">Make
-                              inactive </a>
-
-                            <!-- modal for making inactive -->
-                            <!-- <div class="modal fade " id="makeInactive" data-bs-backdrop="static" data-bs-keyboard="false"
-                            aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                             <div class="modal-dialog">
-                               <div class="modal-content">
-                                 <div class="d-flex d-flex justify-content-between">
-                                   <div class="modal-header">
-                                     <h5 class="modal-title b2" id="staticBackdropLabel">Make User Inactive</h5>
-                                     <p class="modal-subtitle b4">Confirmation</p>
-                                   </div>
-                                   <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                     aria-label="Close"></button>
-                                 </div>
-                                 <div class="modal-body">
-                                   <div class="make-inactive-form">
-                                     <div class="form-floating">
-                                       <select class="form-select" id="floatingSelectGrid"
-                                         aria-label="Floating label select example">
-                                         <option selected>Current Account Officer</option>
-                                         <option value="1">One</option>
-                                         <option value="2">Two</option>
-                                         <option value="3">Three</option>
-                                       </select>
-                                       <label for="floatingSelectGrid">Select appropriate reason</label>
-                                     </div>
-                                     <div class="role-duration">
-                                       <div class="row">
-                                         <div class="col-sm-6">
-                                           <div class="form-floating d-flex">
-                                             <input class="datepicker form-control border-2" id="datepicker2"
-                                               value="- - / - - / - - - -">
-                                             <label for="datepicker2">Leaving Date</label>
-                                           </div>
-                                         </div>
-                                         <div class="col-sm-6">
-                                           <div class="form-floating  d-flex">
-                                             <input class="datepicker form-control border-2" id="datepicker2"
-                                               placeholder="DD/MM/YYYY">
-                                             <label for="datepicker3">Return Date</label>
-                                           </div>
-                                         </div>
-                                       </div>
-
-
-                                     </div>
-                                     <div class="popup-actions form-action">
-                                       <a href="#" type="button" class="btn btn-arrow btn-primary"
-                                         data-bs-toggle="modal" data-bs-target="#staticBackdrop">Save and Submit <span
-                                           class="icon-WhiteArrow"></span></a>
-                                     </div>
-                                   </div>
-                                 </div>
-                               </div>
-                             </div>
-                           </div> -->
-                          </div>
+                          <div class="col-6 b3">KRA Description </div>
+                          <div class="col-6 b3"> Wgt</div>
                         </div>
-                      </div>
-                    </div>
 
-                    <div class="add-detail">
-                      <div class=" kra">
-                        <div class="kra--add">
-
-                          <div class="new-role-wrap role-history">
-                            <div class="card--style-2 card--style-2-focused">
-                              <h2 class="b4--bold saved saved--not">Current Account Officer</h2>
-                              <div class="role-details-wrapper">
-                                <div class="addrole-details">
-                                  <div class="assignment-input mt-2">
-                                    <div>
-                                      <p>Role Start Date</p>
-                                      <p class="start-date">23-JAN-23</p>
+                        <!-- modal for making inactive -->
+                        <div class="modal fade view-comment" id="comments" data-bs-backdrop="static"
+                          data-bs-keyboard="false" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                          <div class="modal-dialog">
+                            <div class="modal-content">
+                              <div class="d-flex d-flex justify-content-between">
+                                <div class="modal-header">
+                                  <h5 class="modal-title b2" id="staticBackdropLabel">View Comments</h5>
+                                </div>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                  aria-label="Close"></button>
+                              </div>
+                              <div class="modal-body">
+                                <div class="border-bottom chat-wrapper">
+                                  <div class="comment-header">
+                                    <div class="user-details ">
+                                      <span>RS</span>
+                                      <div>
+                                        <h5 class="name">Ravi Sarman</h5>
+                                        <p>PF ID - #458890</p>
+                                      </div>
                                     </div>
-                                    <p class="total-duration">
-                                      <span></span>
-                                      0y 0m
-                                      <span></span>
-                                    </p>
-                                    <div class="text-end">
-                                      <p>Role End Date</p>
-                                      <p class="end-date">Present</p>
+                                    <div class="designation">
+                                      <span class="star"><img src="images/start.svg" alt="star"></span>
+                                      Operations Officer
+                                    </div>
+                                    <div class="timestamp">
+                                      <h6 class="date">27 Jan 2023</h6>
+                                      <p>Exception No: 12345</p>
                                     </div>
                                   </div>
                                   <div class="comment-chain comment-chain-style-2">
@@ -999,180 +949,433 @@
                                   </div>
 
                                 </div>
-                                <div class="role-actions-wrap">
-                                  <button type="button" class="btn btn-arrow btn-dark">Delete Role <span
-                                      class="icon-WhiteArrow"></span></button>
-                                  <button type="button" class="btn btn-arrow btn-primary">Edit Role <span
-                                      class="icon-WhiteArrow"></span></button>
-
-                                </div>
+                                <ul class="comment-history">
+                                  <li class="received-comments">
+                                    <div class="comment--left">
+                                      <p class="chat-summary">KRA Added</p>
+                                      <div class="chat">
+                                        <p>% Digitally active customers vs. targets</p>
+                                        <p>KRA Wgt. - 4</p>
+                                      </div>
+                                    </div>
+                                  </li>
+                                  <li class="sent-comments">
+                                    <div class="comment--right">
+                                      <div class="chat">
+                                        The official handles the digital awareness for the branch. Hence, the KRA is
+                                        suited to him.
+                                      </div>
+                                      <div class="chat-profile">
+                                        <p>Sonal Rajotia</p>
+                                        <img src="images/johnDoe.jpg" alt="">
+                                      </div>
+                                    </div>
+                                  </li>
+                                  <li class="received-comments">
+                                    <div class="comment--left">
+                                      <p class="chat-summary">KRA Added</p>
+                                      <div class="chat">
+                                        <p>Audit and Compliance score</p>
+                                        <p>KRA Wgt. - 6</p>
+                                        <p>% Growth in Average Standard Advances</p>
+                                        <p>KRA Wgt. - 4</p>
+                                      </div>
+                                    </div>
+                                  </li>
+                                  <li class="sent-comments">
+                                    <div class="comment--right">
+                                      <div class="chat">
+                                        The role is more inclined towards the deposits growth. Hence, KRA weightage
+                                        have been adjusted in the role.
+                                      </div>
+                                      <div class="chat-profile">
+                                        <p>Sonal Rajotia</p>
+                                        <img src="images/johnDoe.jpg" alt="">
+                                      </div>
+                                    </div>
+                                  </li>
+                                </ul>
                               </div>
-
                             </div>
-                            <div class="card--style-2">
-                              <h2 class="b4--bold saved">Advances Officer</h2>
-                              <div class="role-details-wrapper">
-                                <div class="addrole-details">
-                                  <div class="assignment-input mt-2">
-                                    <div>
-                                      <p>Role Start Date</p>
-                                      <p class="start-date">23-JAN-23</p>
-                                    </div>
-                                    <p class="total-duration">
-                                      <span></span>
-                                      0y 0m
-                                      <span></span>
-                                    </p>
-                                    <div class="text-end">
-                                      <p>Role End Date</p>
-                                      <p class="end-date">Present</p>
-                                    </div>
+                          </div>
+                        </div>
+                        <div class="kra-list-wrap">
+                          <ul class="kra-list dotted-border--top">
+                            <li class="kra-list-item">
+                              <div class="kra-detail">
+                                <p class="kra-param">% Growth in average retail term deposits
+                                </p>
+                                <p class="kra-value">12</p>
+                              </div>
+                            </li>
+                            <li class="kra-list-item">
+                              <div class="kra-detail">
+                                <p class="kra-param">% Growth in average retail term deposits
+                                </p>
+                                <p class="kra-value">12</p>
+                              </div>
+                            </li>
+                            <li class="kra-list-item">
+                              <div class="kra-detail">
+                                <p class="kra-param">% Growth in average retail term deposits
+                                </p>
+                                <p class="kra-value">12</p>
+                              </div>
+                            </li>
+                            <li class="kra-list-item">
+                              <div class="kra-detail">
+                                <p class="kra-param">% Growth in average retail term deposits
+                                </p>
+                                <p class="kra-value">12</p>
+                              </div>
+                            </li>
+                            <li class="kra-list-item">
+                              <div class="kra-detail">
+                                <p class="kra-param">% Growth in average retail term deposits
+                                </p>
+                                <p class="kra-value">12</p>
+                              </div>
+                            </li>
+                            <li class="kra-list-item">
+                              <div class="kra-detail">
+                                <p class="kra-param">% Growth in average retail term deposits
+                                </p>
+                                <p class="kra-value">12</p>
+                              </div>
+                            </li>
+                            <li class="kra-list-item kra-list-item--edited">
+                              <div class="kra-detail">
+                                <p class="kra-param">% Growth in average retail term deposits
+                                </p>
+                                <p class="kra-value">12</p>
+                              </div>
+                            </li>
+                          </ul>
+
+                          <div class="kra-summary kra-detail">
+                            <p class="kra-param">Total</p>
+                            <p class="kra-value">70</p>
+                          </div>
+
+
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                <div class="card">
+                  <div class="card-header">
+                    <div class="profile-picture--no flagged dotted-border">
+                      <div class="intro profile">
+                        <span class="profile-picture allocated--no">RD</span>
+                        <div class="member-details">
+                          <p class="member__name">Robin Devdas</p>
+                          <p class="member__designation">Savings Account Officer</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="guide-lines dotted-border">
+                      <div class="row">
+                        <div class="col-xl-8">
+                          <p class="b2">Robin Devdas has raised a flag for discussion</p>
+                        </div>
+                        <div class="col-xl-4 role-actions mt-xl-0 mt-4">
+                          <a href="#" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#makeInactive2">Make
+                            inactive </a>
+
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="add-detail">
+                    <div class=" kra">
+                      <div class="kra--add">
+
+                        <div class="new-role-wrap role-history">
+                          <div class="card--style-2 card--style-2-focused">
+                            <h2 class="b4--bold saved saved--not">Current Account Officer</h2>
+                            <div class="role-details-wrapper">
+                              <div class="addrole-details">
+                                <div class="assignment-input mt-2">
+                                  <div>
+                                    <p>Role Start Date</p>
+                                    <p class="start-date">23-JAN-23</p>
                                   </div>
-
-
+                                  <p class="total-duration">
+                                    <span></span>
+                                    0y 0m
+                                    <span></span>
+                                  </p>
+                                  <div class="text-end">
+                                    <p>Role End Date</p>
+                                    <p class="end-date">Present</p>
+                                  </div>
                                 </div>
+                                <div class="comment-chain comment-chain-style-2">
+                                  <p class="chain-title">Additional Roles</p>
+                                  <ul class="comment-chain-wrapper">
+                                    <li>Credit Officer</li>
+                                    <li>Locker Officer</li>
+                                    <li>Forex Officer</li>
+                                  </ul>
+                                </div>
+
+                              </div>
+                              <div class="role-actions-wrap">
+                                <button type="button" class="btn btn-arrow btn-dark">Delete Role <span
+                                    class="icon-WhiteArrow"></span></button>
+                                <button type="button" class="btn btn-arrow btn-primary">Edit Role <span
+                                    class="icon-WhiteArrow"></span></button>
+
+                              </div>
+                            </div>
+
+                          </div>
+                          <div class="card--style-2">
+                            <h2 class="b4--bold saved">Advances Officer</h2>
+                            <div class="role-details-wrapper">
+                              <div class="addrole-details">
+                                <div class="assignment-input mt-2">
+                                  <div>
+                                    <p>Role Start Date</p>
+                                    <p class="start-date">23-JAN-23</p>
+                                  </div>
+                                  <p class="total-duration">
+                                    <span></span>
+                                    0y 0m
+                                    <span></span>
+                                  </p>
+                                  <div class="text-end">
+                                    <p>Role End Date</p>
+                                    <p class="end-date">Present</p>
+                                  </div>
+                                </div>
+
 
                               </div>
 
                             </div>
 
                           </div>
-                        </div>
-                        <div class="kra--view flagged-reasons">
-                          <h4 class="b4 subsection-title">reason</h4>
-                          <p>More job roles have been allocated to me than I actually work on.</p>
-                          <div class="conclusion__section">
-                            <p class="small-text">conclusion: </p>
-                            <div class="form-check">
-                              <input class="form-check-input" type="checkbox" value="" id="conclusion2">
-                              <label class="form-check-label" for="conclusion2">
-                                No, a detailed discussion was carried out with the role acceptor and he/she agrees to
-                                the scope of the role mix allocated.
-                              </label>
-                            </div>
-                            <div class="form-check">
-                              <input class="form-check-input" type="checkbox" value="" id="conclusion3">
-                              <label class="form-check-label" for="conclusion3">
-                                Yes, the reason cited by the acceptor is valid & he/she is eligible to get a new role
-                                mix.
-                              </label>
-                            </div>
 
-                            <a href="#" type="button" class="btn btn-arrow btn-primary">Save Response<span
-                                class="icon-WhiteArrow"></span></a>
+                        </div>
+                      </div>
+                      <div class="kra--view flagged-reasons">
+                        <h4 class="b4 subsection-title">reason</h4>
+                        <p>More job roles have been allocated to me than I actually work on.</p>
+                        <div class="conclusion__section">
+                          <p class="small-text">conclusion: </p>
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="conclusion2">
+                            <label class="form-check-label" for="conclusion2">
+                              No, a detailed discussion was carried out with the role acceptor and he/she agrees to
+                              the scope of the role mix allocated.
+                            </label>
                           </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="conclusion3">
+                            <label class="form-check-label" for="conclusion3">
+                              Yes, the reason cited by the acceptor is valid & he/she is eligible to get a new role
+                              mix.
+                            </label>
+                          </div>
+
+                          <a href="#" type="button" class="btn btn-arrow btn-primary">Save Response<span
+                              class="icon-WhiteArrow"></span></a>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
+              </div>
 
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- modal for making inactive -->
+      <div class="modal fade " id="makeInactive" data-bs-backdrop="static" data-bs-keyboard="false"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="d-flex d-flex justify-content-between">
+              <div class="modal-header">
+                <h5 class="modal-title b2" id="staticBackdropLabel">Make User Inactive</h5>
+                <p class="modal-subtitle b4">Confirmation</p>
+              </div>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="make-inactive-form">
+
+                <div class="form-floating">
+                  <select class="form-select  " id="make-invalid-options" aria-label="Floating label select example">
+                    <option selected>On Leave</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+                  <label for="make-invalid-options">Select appropriate reason</label>
+                </div>
+                <div class="role-duration">
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <div class="form-floating d-flex">
+                        <input class="datepicker form-control border-2" id="datepicker3" value="- - / - - /- - - -">
+                        <label for="datepicker1">Laeaving Date</label>
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="form-floating  d-flex">
+                        <input class="datepicker form-control border-2" id="datepicker4" value="- - / - - /- - - -">
+                        <label for="datepicker1">Return Date</label>
+                      </div>
+                    </div>
+                  </div>
+
+
+                </div>
+                <div class="popup-actions form-action">
+                  <a href="#" type="button" class="btn btn-arrow btn-primary" data-bs-toggle="modal"
+                    data-bs-target="#staticBackdrop">Save and Submit <span class="icon-WhiteArrow"></span></a>
+                </div>
               </div>
             </div>
           </div>
         </div>
-        <!-- modal for making inactive -->
-        <div class="modal fade " id="makeInactive" data-bs-backdrop="static" data-bs-keyboard="false"
-          aria-labelledby="staticBackdropLabel" aria-hidden="true">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="d-flex d-flex justify-content-between">
-                <div class="modal-header">
-                  <h5 class="modal-title b2" id="staticBackdropLabel">Make User Inactive</h5>
-                  <p class="modal-subtitle b4">Confirmation</p>
-                </div>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <!-- modal for making inactive -->
+      <div class="modal fade " id="makeInactive2" data-bs-backdrop="static" data-bs-keyboard="false"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="d-flex d-flex justify-content-between">
+              <div class="modal-header">
+                <h5 class="modal-title b2" id="staticBackdropLabel">Make User Inactive</h5>
+                <p class="modal-subtitle b4">Confirmation</p>
               </div>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="make-inactive-form">
+
+                <div class="form-floating">
+                  <select class="form-select  " id="make-invalid-options" aria-label="Floating label select example">
+                    <option selected>On Leave</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+                  <label for="make-invalid-options">Select appropriate reason</label>
+                </div>
+                <div class="role-duration">
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <div class="form-floating d-flex">
+                        <input class="datepicker form-control border-2" id="datepicker5" value="- - / - - /- - - -">
+                        <label for="datepicker1">Laeaving Date</label>
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="form-floating  d-flex">
+                        <input class="datepicker form-control border-2" id="datepicker6" value="- - / - - /- - - -">
+                        <label for="datepicker1">Return Date</label>
+                      </div>
+                    </div>
+                  </div>
+
+
+                </div>
+                <div class="popup-actions form-action">
+                  <a href="#" type="button" class="btn btn-arrow btn-primary" data-bs-toggle="modal"
+                    data-bs-target="#staticBackdrop">Save and Submit <span class="icon-WhiteArrow"></span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Modal for accepting exception-->
+      <div class="modal fade exception-confirmation" id="acceptException" data-bs-backdrop="static"
+        data-bs-keyboard="false" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="d-flex d-flex justify-content-between">
+              <div class="modal-header">
+                <h5 class="modal-title b2" id="staticBackdropLabel">Accept Exception</h5>
+                <p class="modal-subtitle">Confirmation</p>
+              </div>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
               <div class="modal-body">
-                <div class="make-inactive-form">
+                <div class="confirmation">
+                  <img src="images/request-confirmation.svg" alt="completed">
+                  <p class="confirmation-text">Are you sure you want to proceed with approving the exception?</p>
 
-                  <div class="form-floating">
-                    <select class="form-select  " id="make-invalid-options" aria-label="Floating label select example">
-                      <option selected>On Leave</option>
-                      <option value="1">One</option>
-                      <option value="2">Two</option>
-                      <option value="3">Three</option>
-                    </select>
-                    <label for="make-invalid-options">Select appropriate reason</label>
-                  </div>
-                  <div class="role-duration">
-                    <div class="row">
-                      <div class="col-sm-6">
-                        <div class="form-floating d-flex">
-                          <input class="datepicker form-control border-2" id="datepicker3" value="- - / - - /- - - -">
-                          <label for="datepicker1">Laeaving Date</label>
-                        </div>
-                      </div>
-                      <div class="col-sm-6">
-                        <div class="form-floating  d-flex">
-                          <input class="datepicker form-control border-2" id="datepicker4" value="- - / - - /- - - -">
-                          <label for="datepicker1">Return Date</label>
-                        </div>
-                      </div>
-                    </div>
+                  <div class="popup-actions">
+                    <button type="button" class="btn btn-arrow btn-arrow--rotated btn-secondary"
+                      data-bs-dismiss="modal"><span class="icon-WhiteArrow"></span>
+                      No</button>
+                    <button type="button" class="btn btn-arrow btn-primary" data-bs-toggle="modal"
+                      data-bs-target="#confirm" data-bs-dismiss="modal">Yes<span
+                        class="icon-WhiteArrow"></span></button>
 
-
-                  </div>
-                  <div class="popup-actions form-action">
-                    <a href="#" type="button" class="btn btn-arrow btn-primary" data-bs-toggle="modal"
-                      data-bs-target="#staticBackdrop">Save and Submit <span class="icon-WhiteArrow"></span></a>
                   </div>
                 </div>
+
               </div>
+
+
+
             </div>
+
           </div>
         </div>
-        <!-- modal for making inactive -->
-        <div class="modal fade " id="makeInactive2" data-bs-backdrop="static" data-bs-keyboard="false"
-          aria-labelledby="staticBackdropLabel" aria-hidden="true">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="d-flex d-flex justify-content-between">
-                <div class="modal-header">
-                  <h5 class="modal-title b2" id="staticBackdropLabel">Make User Inactive</h5>
-                  <p class="modal-subtitle b4">Confirmation</p>
-                </div>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <!-- Modal for rejecting exception-->
+      <div class="modal fade exception-confirmation" id="rejectException" data-bs-backdrop="static"
+        data-bs-keyboard="false" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="d-flex d-flex justify-content-between">
+              <div class="modal-header">
+                <h5 class="modal-title b2" id="staticBackdropLabel">Reject Exception</h5>
+                <p class="modal-subtitle">Confirmation</p>
               </div>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
               <div class="modal-body">
-                <div class="make-inactive-form">
+                <div class="confirmation">
+                  <img src="images/request-confirmation.svg" alt="completed">
+                  <p class="confirmation-text">Are you sure you want to proceed with rejecting the exception?</p>
 
-                  <div class="form-floating">
-                    <select class="form-select  " id="make-invalid-options" aria-label="Floating label select example">
-                      <option selected>On Leave</option>
-                      <option value="1">One</option>
-                      <option value="2">Two</option>
-                      <option value="3">Three</option>
-                    </select>
-                    <label for="make-invalid-options">Select appropriate reason</label>
-                  </div>
-                  <div class="role-duration">
-                    <div class="row">
-                      <div class="col-sm-6">
-                        <div class="form-floating d-flex">
-                          <input class="datepicker form-control border-2" id="datepicker5" value="- - / - - /- - - -">
-                          <label for="datepicker1">Laeaving Date</label>
-                        </div>
-                      </div>
-                      <div class="col-sm-6">
-                        <div class="form-floating  d-flex">
-                          <input class="datepicker form-control border-2" id="datepicker6" value="- - / - - /- - - -">
-                          <label for="datepicker1">Return Date</label>
-                        </div>
-                      </div>
-                    </div>
+                  <div class="popup-actions">
+                    <button type="button" class="btn btn-arrow btn-arrow--rotated btn-secondary"
+                      data-bs-dismiss="modal"><span class="icon-WhiteArrow"></span>
+                      No</button>
+                    <button type="button" class="btn btn-arrow btn-primary" data-bs-toggle="modal"
+                      data-bs-target="#confirm" data-bs-dismiss="modal">Yes<span
+                        class="icon-WhiteArrow"></span></button>
 
-
-                  </div>
-                  <div class="popup-actions form-action">
-                    <a href="#" type="button" class="btn btn-arrow btn-primary" data-bs-toggle="modal"
-                      data-bs-target="#staticBackdrop">Save and Submit <span class="icon-WhiteArrow"></span></a>
                   </div>
                 </div>
+
               </div>
+
+
+
             </div>
+
           </div>
         </div>
+      </div>
     </main>
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.bundle.js"></script>
