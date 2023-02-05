@@ -80,7 +80,10 @@
 }
 .role-details-wrapper{
     display: flex;
+    flex-wrap: wrap;
+    @media screen and (min-width: 1366px) {
     justify-content: space-between;
+    }
     
     .role-actions-wrap{
         display: flex;
@@ -94,7 +97,10 @@
         }
     }
     .addrole-details{
-        width: 60%;
+        @media screen and (min-width: 1366px) {
+            width: 60%;
+        }
+        width: 100%;
     }
 }
 .comment-chain-style-2 {

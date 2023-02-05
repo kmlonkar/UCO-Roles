@@ -11,8 +11,14 @@
     &.sticky-card {
         position: sticky;
         top: 88px;
-        z-index: 1;
+        z-index: 0;
         // width:calc(100% - 475px);
+        @media screen and (max-width:1200px) {
+            top: 10px;
+        }
+        @media screen and (max-width:991px) {
+            top: 0;
+        }
     }
 
     // &+.card {

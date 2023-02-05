@@ -373,7 +373,13 @@
 
     .form-floating {
       width: 30%;
-
+      @media screen and (max-width:1200px) {
+        width: 45%;
+        
+      }
+      @media screen and (max-width: 575px) {
+        width: 100%;
+      }
       .select2-container {
         width: 100% !important;
       }
@@ -400,7 +406,9 @@
 .new-role {
   width: 60%;
   margin-top: 1.5rem;
-
+  @media screen and (max-width:1200px) {
+    width: 100%;
+  }
   &:first-of-type {
     margin-top: 0;
   }

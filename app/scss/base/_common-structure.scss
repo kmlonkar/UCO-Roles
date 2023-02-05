@@ -133,13 +133,32 @@
 
     &:first-child {
       width: 29%;
+      @media screen and (max-width:768px) {
+        width: 50%;
+      }
+      @media screen and (max-width: 575px) {
+        width: 100%;
+      }
     }
 
     &:last-child {
       width: 30%;
+      @media screen and (max-width:768px) {
+        width: 50%;
+      }
+      @media screen and (max-width: 575px) {
+        width: 100%;
+        text-align: start !important;
+      }
     }
 
     width: 35%;
+    @media screen and (max-width:768px) {
+      width: 60%;
+    }
+    @media screen and (max-width: 575px) {
+      width: 100%;
+    }
   }
 
   &>p {

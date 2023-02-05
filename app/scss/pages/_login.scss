@@ -54,9 +54,11 @@
 .login {
     background-color: $primary-blue;
     color: $clr-white;
-    min-width: 43.6rem;
+    width: 43.6rem;
     box-shadow: 0px 3px 79px $common-box-shadow;
-
+    @media screen and (max-width:768px) {
+        width: 100%;
+    }
     &__header {
         .title {
             padding: 4.2rem 9.3rem;
