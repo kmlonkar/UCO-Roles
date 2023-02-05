@@ -1,13 +1,18 @@
 .login-wrapper {
     background-image: url(../images/bg.png);
     background-size: cover;
-    padding: 8rem;
-
+    padding: 8rem 10rem;
+    height: 100vh;
+    position: relative;
     .banner {
         display: flex;
         justify-content: space-between;
         align-items: center;
-
+        position: absolute;
+        top: 50%;
+        width: 80%;
+        left: 50%;
+        transform: translate(-50%, -50%);
         .welcome-msg {
             .logo {
                 min-height: 7.5rem;
